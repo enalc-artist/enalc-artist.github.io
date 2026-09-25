@@ -337,6 +337,26 @@
   background: color-mix(in srgb, var(--acid) 35%, transparent);
 }
 
+.expanded-biography {
+  border-top: 1px solid var(--line);
+}
+
+.expanded-biography-copy {
+  width: min(100%, 960px);
+  margin-left: auto;
+  font-family: Georgia, serif;
+  font-size: clamp(1.1rem, 1.65vw, 1.45rem);
+  line-height: 1.62;
+}
+
+.expanded-biography-copy p {
+  margin: 0 0 1.25em;
+}
+
+.expanded-biography-copy p:last-child {
+  margin-bottom: 0;
+}
+
 .evidence-pending {
   border-style: dashed;
 }

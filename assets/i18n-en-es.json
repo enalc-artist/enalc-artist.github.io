@@ -740,6 +740,26 @@
         "es": "Ha participado en proyectos de videoinstalación y creación multidisciplinar, y su obra plástica ha formado parte de exposiciones colectivas en Madrid. En su etapa actual investiga el tránsito entre materia pictórica, código, luz y espacio inmersivo.",
         "en": "He has participated in video installation and multidisciplinary projects, and his visual work has featured in group exhibitions in Madrid. His current research explores the passage between painterly matter, code, light and immersive space."
       },
+      "extendedBiography.eyebrow": {
+        "es": "Biografía",
+        "en": "Biography"
+      },
+      "extendedBiography.paragraph1": {
+        "es": "De niño, entre las Islas Canarias y el Sáhara Occidental, creía que el mundo estaba hecho únicamente de cielo, océano y arena. Sin embargo, las dunas cambiaban de un día para otro. Aquella experiencia temprana contenía las raíces de mi interés por lo infinito, lo mutable y por aquello que parece estable mientras se transforma sin cesar.",
+        "en": "As a child, between the Canary Islands and Western Sahara, I believed the world was made only of sky, ocean, and sand. Yet the dunes changed from one day to the next. That early experience contained the roots of my interest in the infinite, the mutable, and in what appears stable while constantly transforming."
+      },
+      "extendedBiography.paragraph2": {
+        "es": "El lenguaje fue mi primera herramienta, como dramaturgo y narrador: construía relatos para ordenar la experiencia. Cuando las palabras dejaron de ser suficientes, las llevé al cuerpo a través del teatro y el cine, convirtiéndolas en presencia, tiempo y espacio. Más tarde, esa misma necesidad se expandió hacia el collage, la acuarela, la pintura, la fotografía intervenida, la imagen en movimiento y los sistemas generativos.",
+        "en": "Language was my first tool, as a playwright and storyteller: I built narratives to give order to experience. When words were no longer enough, I carried them into the body through theater and film, turning them into presence, time, and space. Later, the same need expanded into collage, watercolor, painting, altered photography, moving image, and generative systems."
+      },
+      "extendedBiography.paragraph3": {
+        "es": "Mi práctica no cambia de medio; expande una misma pregunta. De la palabra al cuerpo; del cuerpo a la imagen; de la imagen al sistema mutable. El collage fragmenta y recompone la realidad. La acuarela introduce fragilidad, un filtro emocional y una renuncia parcial al control. La fotografía intervenida manipula la memoria y reconstruye los cuerpos. La pintura restituye la materia, la presencia y la resistencia física. El código produce repetición, variación, multiplicidad e identidades que nunca terminan de fijarse.",
+        "en": "My practice does not change medium; it expands the same question. From word to body; from body to image; from image to mutable system. Collage fragments and recomposes reality. Watercolor introduces fragility, emotional filtration, and a partial surrender of control. Altered photography manipulates memory and reconstructs bodies. Painting restores matter, presence, and physical resistance. Code produces repetition, variation, multiplicity, and identities that never fully settle."
+      },
+      "extendedBiography.paragraph4": {
+        "es": "Llegué a comprender mi Asperger como una clave retrospectiva: no explica la obra, pero me ayuda a reconocer una manera persistente de percibir, cuestionar y organizar el mundo. Trabajo con aquello que cambia sin dejar de ser; con las formas provisionales mediante las cuales tratamos de habitarnos. El artista que soy contiene todas esas capas y es, al mismo tiempo, la semilla de otro que todavía no puedo imaginar.",
+        "en": "I came to understand my Asperger’s as a retrospective key: it does not explain the work, but helps me recognize a persistent way of perceiving, questioning, and organizing the world. I work with what changes without ceasing to be; with the provisional forms through which we try to inhabit ourselves. The artist I am contains all these layers and is, at the same time, the seed of another I cannot yet imagine."
+      },
       "statement.eyebrow": {
         "es": "Declaración artística · versión de trabajo",
         "en": "Artistic statement · working version"
