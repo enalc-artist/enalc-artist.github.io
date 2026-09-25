@@ -34,6 +34,9 @@
   var runtimeScript =
     document.currentScript ||
     document.querySelector('script[src*="/assets/site-runtime.js"], script[src*="assets/site-runtime.js"]');
+  var translationVersion = runtimeScript && runtimeScript.src
+    ? new URL(runtimeScript.src).searchParams.get("v")
+    : "";
   var assetBase = runtimeScript && runtimeScript.src
     ? new URL(".", runtimeScript.src)
     : new URL("assets/", document.baseURI);
@@ -150,7 +153,9 @@
   function loadTranslations() {
     return Promise.allSettled(
       TRANSLATION_FILES.map(function (filename) {
-        return loadJson(new URL(filename, assetBase));
+        var url = new URL(filename, assetBase);
+        if (translationVersion) url.searchParams.set("v", translationVersion);
+        return loadJson(url);
       }),
     ).then(function (results) {
       results.forEach(function (result) {
