@@ -1,0 +1,204 @@
+{
+  "_meta": {
+    "scope": "Repetition and variation series",
+    "editorialPolicy": "Artwork titles remain as established by the artist; factual and interpretive context is translated."
+  },
+  "newWorks": {
+    "seriesKicker": {
+      "es": "Repetición · diferencia · poblaciones visuales",
+      "en": "Repetition · difference · visual populations",
+      "fr": "Répétition · différence · populations visuelles",
+      "it": "Ripetizione · differenza · popolazioni visive",
+      "de": "Wiederholung · Differenz · visuelle Populationen"
+    },
+    "seriesTitle": {
+      "es": "Una imagen se convierte en muchas.",
+      "en": "One image becomes many.",
+      "fr": "Une image en devient plusieurs.",
+      "it": "Un’immagine diventa molte.",
+      "de": "Aus einem Bild werden viele."
+    },
+    "seriesIntro": {
+      "es": "Estas series examinan cómo una imagen puede seguir siendo reconocible mientras el color, el ritmo y la estructura interna continúan cambiando.",
+      "en": "These series examine how an image can remain recognisable while colour, rhythm and internal structure keep changing.",
+      "fr": "Ces séries examinent comment une image peut rester reconnaissable tandis que la couleur, le rythme et la structure interne continuent de changer.",
+      "it": "Queste serie esaminano come un’immagine possa rimanere riconoscibile mentre colore, ritmo e struttura interna continuano a cambiare.",
+      "de": "Diese Serien untersuchen, wie ein Bild erkennbar bleiben kann, während Farbe, Rhythmus und innere Struktur sich fortwährend verändern."
+    },
+    "monsterMeta": {
+      "es": "Serie de imágenes generativas · 1.000 variaciones",
+      "en": "Generative image series · 1,000 variations",
+      "fr": "Série d’images génératives · 1 000 variations",
+      "it": "Serie di immagini generative · 1.000 variazioni",
+      "de": "Generative Bildserie · 1.000 Variationen"
+    },
+    "monsterText": {
+      "es": "El proyecto nace de un pequeño monstruo que Enrique Alcides dibujó de niño. Años después, lo digitalizó y produjo manualmente más de setenta variaciones de color. Un sistema generativo extendió después esa misma figura hasta una población de mil, explorando cómo la repetición puede preservar una identidad mientras la diferencia la desestabiliza continuamente.",
+      "en": "The project begins with a little monster Enrique Alcides drew as a child. Years later, he digitised it and produced more than seventy colour variants by hand. A generative system then extended the same figure into a population of one thousand, exploring how repetition can preserve an identity while difference continually unsettles it.",
+      "fr": "Le projet part d’un petit monstre qu’Enrique Alcides a dessiné enfant. Des années plus tard, il l’a numérisé et a produit manuellement plus de soixante-dix variations de couleur. Un système génératif a ensuite prolongé cette même figure en une population de mille, explorant la manière dont la répétition peut préserver une identité tandis que la différence la déstabilise continuellement.",
+      "it": "Il progetto nasce da un piccolo mostro che Enrique Alcides disegnò da bambino. Anni dopo lo ha digitalizzato e ha prodotto manualmente più di settanta variazioni cromatiche. Un sistema generativo ha poi esteso la stessa figura fino a una popolazione di mille, esplorando come la ripetizione possa preservare un’identità mentre la differenza la destabilizza continuamente.",
+      "de": "Das Projekt geht von einem kleinen Monster aus, das Enrique Alcides als Kind zeichnete. Jahre später digitalisierte er es und schuf von Hand mehr als siebzig Farbvarianten. Ein generatives System erweiterte dieselbe Figur anschließend zu einer Population von tausend und untersucht, wie Wiederholung Identität bewahren kann, während Differenz sie fortwährend destabilisiert."
+    },
+    "origin": {
+      "es": "Origen",
+      "en": "Origin",
+      "fr": "Origine",
+      "it": "Origine",
+      "de": "Ursprung"
+    },
+    "childhoodDrawing": {
+      "es": "Dibujo de infancia del artista",
+      "en": "Childhood drawing by the artist",
+      "fr": "Dessin d’enfance de l’artiste",
+      "it": "Disegno d’infanzia dell’artista",
+      "de": "Kinderzeichnung des Künstlers"
+    },
+    "process": {
+      "es": "Proceso",
+      "en": "Process",
+      "fr": "Processus",
+      "it": "Processo",
+      "de": "Prozess"
+    },
+    "monsterProcess": {
+      "es": "Digitalización, variación manual del color y sistema generativo",
+      "en": "Digitisation, manual colour variation and generative system",
+      "fr": "Numérisation, variation manuelle des couleurs et système génératif",
+      "it": "Digitalizzazione, variazione cromatica manuale e sistema generativo",
+      "de": "Digitalisierung, manuelle Farbvariation und generatives System"
+    },
+    "scope": {
+      "es": "Alcance",
+      "en": "Scope",
+      "fr": "Étendue",
+      "it": "Estensione",
+      "de": "Umfang"
+    },
+    "thousandVariations": {
+      "es": "1.000 variaciones",
+      "en": "1,000 variations",
+      "fr": "1 000 variations",
+      "it": "1.000 variazioni",
+      "de": "1.000 Variationen"
+    },
+    "cellMeta": {
+      "es": "Serie de imágenes · dos variaciones seleccionadas",
+      "en": "Image series · two selected variations",
+      "fr": "Série d’images · deux variations sélectionnées",
+      "it": "Serie di immagini · due variazioni selezionate",
+      "de": "Bildserie · zwei ausgewählte Variationen"
+    },
+    "cellText": {
+      "es": "Un campo celular se repite sin llegar a ser idéntico. El color y la densidad recorren una misma estructura orgánica y convierten una imagen compartida en estados distintos.",
+      "en": "A cellular field repeats without becoming identical. Colour and density move across the same organic structure, turning a shared image into distinct states.",
+      "fr": "Un champ cellulaire se répète sans devenir identique. La couleur et la densité parcourent une même structure organique et transforment une image commune en états distincts.",
+      "it": "Un campo cellulare si ripete senza diventare identico. Colore e densità attraversano la stessa struttura organica, trasformando un’immagine condivisa in stati distinti.",
+      "de": "Ein zelluläres Feld wiederholt sich, ohne identisch zu werden. Farbe und Dichte durchlaufen dieselbe organische Struktur und verwandeln ein gemeinsames Bild in unterschiedliche Zustände."
+    },
+    "selection": {
+      "es": "Selección",
+      "en": "Selection",
+      "fr": "Sélection",
+      "it": "Selezione",
+      "de": "Auswahl"
+    },
+    "largerSeries": {
+      "es": "Dos variaciones de una serie más amplia",
+      "en": "Two variations from a larger series",
+      "fr": "Deux variations issues d’une série plus vaste",
+      "it": "Due variazioni da una serie più ampia",
+      "de": "Zwei Variationen aus einer größeren Serie"
+    },
+    "yearMedium": {
+      "es": "Año / técnica",
+      "en": "Year / medium",
+      "fr": "Année / technique",
+      "it": "Anno / tecnica",
+      "de": "Jahr / Technik"
+    },
+    "monsterAlt": {
+      "es": "Treinta y seis variaciones de Mis Monstruitos Favoritos — ENALC 1000, de Enrique Alcides",
+      "en": "Thirty-six variations from Mis Monstruitos Favoritos — ENALC 1000 by Enrique Alcides",
+      "fr": "Trente-six variations de Mis Monstruitos Favoritos — ENALC 1000, d’Enrique Alcides",
+      "it": "Trentasei variazioni di Mis Monstruitos Favoritos — ENALC 1000, di Enrique Alcides",
+      "de": "Sechsunddreißig Variationen aus Mis Monstruitos Favoritos — ENALC 1000 von Enrique Alcides"
+    },
+    "cellAltA": {
+      "es": "Primera variación cromática de Cell Drops, de Enrique Alcides",
+      "en": "First colour variation from Cell Drops by Enrique Alcides",
+      "fr": "Première variation chromatique de Cell Drops, d’Enrique Alcides",
+      "it": "Prima variazione cromatica di Cell Drops, di Enrique Alcides",
+      "de": "Erste Farbvariation aus Cell Drops von Enrique Alcides"
+    },
+    "cellAltB": {
+      "es": "Segunda variación cromática de Cell Drops, de Enrique Alcides",
+      "en": "Second colour variation from Cell Drops by Enrique Alcides",
+      "fr": "Deuxième variation chromatique de Cell Drops, d’Enrique Alcides",
+      "it": "Seconda variazione cromatica di Cell Drops, di Enrique Alcides",
+      "de": "Zweite Farbvariation aus Cell Drops von Enrique Alcides"
+    },
+    "studiesKicker": {
+      "es": "Estudios de imagen",
+      "en": "Image studies",
+      "fr": "Études d’image",
+      "it": "Studi d’immagine",
+      "de": "Bildstudien"
+    },
+    "studiesTitle": {
+      "es": "Imágenes en desarrollo.",
+      "en": "Images in development.",
+      "fr": "Images en développement.",
+      "it": "Immagini in sviluppo.",
+      "de": "Bilder in Entwicklung."
+    },
+    "studiesIntro": {
+      "es": "Dos estudios actuales cuyas formas futuras permanecen abiertas al movimiento, la recombinación y el desarrollo técnico.",
+      "en": "Two current studies whose future forms remain open to movement, recombination and technical development.",
+      "fr": "Deux études actuelles dont les formes futures restent ouvertes au mouvement, à la recomposition et au développement technique.",
+      "it": "Due studi attuali le cui forme future restano aperte al movimento, alla ricombinazione e allo sviluppo tecnico.",
+      "de": "Zwei aktuelle Studien, deren künftige Formen für Bewegung, Neukombination und technische Entwicklung offenbleiben."
+    },
+    "figureStudy": {
+      "es": "Estudio de figuras",
+      "en": "Figure study",
+      "fr": "Étude de figures",
+      "it": "Studio di figure",
+      "de": "Figurenstudie"
+    },
+    "figureCaption": {
+      "es": "Composición en rojo, negro y blanco seleccionada por el artista para una posible animación futura.",
+      "en": "Red, black and white composition selected by the artist for possible future animation.",
+      "fr": "Composition rouge, noire et blanche sélectionnée par l’artiste en vue d’une possible animation future.",
+      "it": "Composizione rossa, nera e bianca selezionata dall’artista per una possibile animazione futura.",
+      "de": "Rot-schwarz-weiße Komposition, die der Künstler für eine mögliche künftige Animation ausgewählt hat."
+    },
+    "saharaStudy": {
+      "es": "Estudio cósmico / Sáhara",
+      "en": "Cosmic / Sahara study",
+      "fr": "Étude cosmique / Sahara",
+      "it": "Studio cosmico / Sahara",
+      "de": "Kosmos-/Sahara-Studie"
+    },
+    "saharaCaption": {
+      "es": "Imagen compuesta que reúne un rostro cósmico y un patrón vinculado a los recuerdos del Sáhara del artista.",
+      "en": "Composite image bringing together a cosmic face and a pattern connected to the artist’s Sahara memories.",
+      "fr": "Image composite réunissant un visage cosmique et un motif lié aux souvenirs sahariens de l’artiste.",
+      "it": "Immagine composita che riunisce un volto cosmico e un motivo legato ai ricordi sahariani dell’artista.",
+      "de": "Kompositbild, das ein kosmisches Gesicht mit einem Muster verbindet, das an die Sahara-Erinnerungen des Künstlers anknüpft."
+    },
+    "figureAlt": {
+      "es": "Composición roja, negra y blanca con tres figuras estilizadas, de Enrique Alcides",
+      "en": "Red, black and white composition with three stylised figures by Enrique Alcides",
+      "fr": "Composition rouge, noire et blanche avec trois figures stylisées, d’Enrique Alcides",
+      "it": "Composizione rossa, nera e bianca con tre figure stilizzate, di Enrique Alcides",
+      "de": "Rot-schwarz-weiße Komposition mit drei stilisierten Figuren von Enrique Alcides"
+    },
+    "saharaAlt": {
+      "es": "Estudio compuesto con rostros cósmicos repetidos y un patrón geométrico del Sáhara, de Enrique Alcides",
+      "en": "Composite study with repeated cosmic faces and a geometric Sahara pattern by Enrique Alcides",
+      "fr": "Étude composite avec des visages cosmiques répétés et un motif géométrique saharien, d’Enrique Alcides",
+      "it": "Studio composito con volti cosmici ripetuti e un motivo geometrico sahariano, di Enrique Alcides",
+      "de": "Kompositstudie mit wiederholten kosmischen Gesichtern und einem geometrischen Sahara-Muster von Enrique Alcides"
+    }
+  }
+}

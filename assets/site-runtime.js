@@ -9,6 +9,7 @@
     "i18n-de.json",
     "i18n-extra.json",
     "i18n-v8-archive.json",
+    "i18n-new-works.json",
   ];
   var TRANSLATABLE_ATTRIBUTES = [
     "alt",
