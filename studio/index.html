@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow, noarchive" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'"
+    />
+    <title>ENALC — Estudio de contenidos</title>
+    <link rel="stylesheet" href="/assets/studio.css" />
+  </head>
+  <body>
+    <header class="studio-header">
+      <p class="studio-mark">ENALC</p>
+      <div>
+        <h1>Estudio de contenidos</h1>
+        <p>Edita títulos, años y datos de catálogo sin tocar el diseño de la web.</p>
+      </div>
+    </header>
+
+    <main class="studio-shell">
+      <section class="access-panel" aria-labelledby="access-heading">
+        <div>
+          <h2 id="access-heading">Acceso privado</h2>
+          <p>
+            Introduce tu clave del estudio. Solo se conserva durante esta sesión
+            del navegador y únicamente se envía al guardar.
+          </p>
+        </div>
+        <form
+          id="access-form"
+          class="access-form"
+          method="post"
+          autocomplete="off"
+        >
+          <label for="access-token">Clave de acceso</label>
+          <div class="access-row">
+            <input
+              id="access-token"
+              type="password"
+              autocomplete="off"
+              spellcheck="false"
+              required
+            />
+            <button type="submit">Usar clave</button>
+            <button id="forget-token" class="button-secondary" type="button">
+              Olvidar clave
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <p id="studio-status" class="studio-status" role="status" aria-live="polite">
+        Cargando los datos publicados…
+      </p>
+
+      <form
+        id="content-form"
+        class="content-form"
+        method="post"
+        autocomplete="off"
+      >
+        <div id="content-fields" class="content-fields"></div>
+        <div class="studio-actions">
+          <button id="save-content" type="submit">Guardar y publicar</button>
+          <button id="reload-content" class="button-secondary" type="button">
+            Recargar datos publicados
+          </button>
+        </div>
+      </form>
+    </main>
+
+    <script src="/assets/editable-content.js"></script>
+    <script type="module" src="/assets/studio.js"></script>
+  </body>
+</html>
