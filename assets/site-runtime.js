@@ -33,7 +33,7 @@
 
   var runtimeScript =
     document.currentScript ||
-    document.querySelector('script[src$="/assets/site-runtime.js"], script[src$="assets/site-runtime.js"]');
+    document.querySelector('script[src*="/assets/site-runtime.js"], script[src*="assets/site-runtime.js"]');
   var assetBase = runtimeScript && runtimeScript.src
     ? new URL(".", runtimeScript.src)
     : new URL("assets/", document.baseURI);
