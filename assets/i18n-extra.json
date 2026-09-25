@@ -1,0 +1,353 @@
+{
+  "_meta": {
+    "sourceLanguage": "es",
+    "targetLanguages": ["en", "fr", "it", "de"],
+    "editorialPolicy": "Display titles are localised where approved; intentionally established artist and institutional titles remain unchanged. Interface and descriptive copy are translated."
+  },
+  "selectedWorks": {
+    "sectionLabel": {
+      "es": "Acuarela y técnica mixta",
+      "en": "Watercolour and mixed media",
+      "fr": "Aquarelle et technique mixte",
+      "it": "Acquerello e tecnica mista",
+      "de": "Aquarell und Mischtechnik"
+    },
+    "heading": {
+      "es": "Obras seleccionadas.",
+      "en": "Selected works.",
+      "fr": "Œuvres sélectionnées.",
+      "it": "Opere selezionate.",
+      "de": "Ausgewählte Werke."
+    },
+    "watercolour2020": {
+      "es": "Acuarela · 2020",
+      "en": "Watercolour · 2020",
+      "fr": "Aquarelle · 2020",
+      "it": "Acquerello · 2020",
+      "de": "Aquarell · 2020"
+    },
+    "secretsAlt": {
+      "es": "Acuarela sssshhhecrets de Enrique Alcides, con dos figuras en primer plano",
+      "en": "Enrique Alcides’s watercolour sssshhhecrets, with two figures in close-up",
+      "fr": "Aquarelle sssshhhecrets d’Enrique Alcides, avec deux figures en gros plan",
+      "it": "Acquerello sssshhhecrets di Enrique Alcides, con due figure in primo piano",
+      "de": "Enrique Alcides’ Aquarell sssshhhecrets mit zwei Figuren in Nahaufnahme"
+    },
+    "tearsAlt": {
+      "es": "Acuarela Tears in Rain de Enrique Alcides, con dos rostros",
+      "en": "Enrique Alcides’s watercolour Tears in Rain, with two faces",
+      "fr": "Aquarelle Tears in Rain d’Enrique Alcides, avec deux visages",
+      "it": "Acquerello Tears in Rain di Enrique Alcides, con due volti",
+      "de": "Enrique Alcides’ Aquarell Tears in Rain mit zwei Gesichtern"
+    },
+    "bladeRunnerReference": {
+      "es": "Título en referencia a Blade Runner",
+      "en": "Title referencing Blade Runner",
+      "fr": "Titre faisant référence à Blade Runner",
+      "it": "Titolo in riferimento a Blade Runner",
+      "de": "Titel in Anlehnung an Blade Runner"
+    },
+    "mixedMedia": {
+      "es": "Técnica mixta sobre lienzo: fotografía, pintura y retoque digital",
+      "en": "Mixed media on canvas: photography, painting and digital retouching",
+      "fr": "Technique mixte sur toile : photographie, peinture et retouche numérique",
+      "it": "Tecnica mista su tela: fotografia, pittura e ritocco digitale",
+      "de": "Mischtechnik auf Leinwand: Fotografie, Malerei und digitale Retusche"
+    },
+    "mixedMedia2017": {
+      "es": "Técnica mixta sobre lienzo: fotografía, pintura y retoque digital · 2017",
+      "en": "Mixed media on canvas: photography, painting and digital retouching · 2017",
+      "fr": "Technique mixte sur toile : photographie, peinture et retouche numérique · 2017",
+      "it": "Tecnica mista su tela: fotografia, pittura e ritocco digitale · 2017",
+      "de": "Mischtechnik auf Leinwand: Fotografie, Malerei und digitale Retusche · 2017"
+    },
+    "tangoAlt": {
+      "es": "Il tango dell’amore, obra vertical de Enrique Alcides con dos bailarines",
+      "en": "Il tango dell’amore, a vertical work by Enrique Alcides depicting two dancers",
+      "fr": "Il tango dell’amore, œuvre verticale d’Enrique Alcides représentant deux danseurs",
+      "it": "Il tango dell’amore, opera verticale di Enrique Alcides con due ballerini",
+      "de": "Il tango dell’amore, ein Hochformat von Enrique Alcides mit zwei Tänzern"
+    },
+    "suspiciousAlt": {
+      "es": "Suspicious Mind, acuarela de Enrique Alcides inspirada en un recuerdo de Paloma Picasso",
+      "en": "Suspicious Mind, a watercolour by Enrique Alcides inspired by a memory of Paloma Picasso",
+      "fr": "Suspicious Mind, aquarelle d’Enrique Alcides inspirée d’un souvenir de Paloma Picasso",
+      "it": "Suspicious Mind, acquerello di Enrique Alcides ispirato a un ricordo di Paloma Picasso",
+      "de": "Suspicious Mind, ein Aquarell von Enrique Alcides, inspiriert von einer Erinnerung an Paloma Picasso"
+    },
+    "suspiciousKicker": {
+      "es": "Acuarela · 2017 · archivo recuperado",
+      "en": "Watercolour · 2017 · recovered archive",
+      "fr": "Aquarelle · 2017 · archives retrouvées",
+      "it": "Acquerello · 2017 · archivio recuperato",
+      "de": "Aquarell · 2017 · wiederentdecktes Archiv"
+    },
+    "suspiciousDescription": {
+      "es": "Una acuarela inspirada en el recuerdo de Paloma Picasso en un anuncio de perfume de los años ochenta. La pieza formó parte de una de las exposiciones colectivas del artista; el nombre de la muestra y los datos de catálogo se incorporarán cuando se recupere la documentación.",
+      "en": "A watercolour inspired by a memory of Paloma Picasso in a 1980s perfume advertisement. The piece appeared in one of the artist’s group exhibitions; the exhibition name and catalogue details will be added when the documentation is recovered.",
+      "fr": "Une aquarelle inspirée du souvenir de Paloma Picasso dans une publicité pour un parfum des années 1980. La pièce a figuré dans l’une des expositions collectives de l’artiste ; le nom de l’exposition et les données du catalogue seront ajoutés lorsque la documentation aura été retrouvée.",
+      "it": "Un acquerello ispirato al ricordo di Paloma Picasso in una pubblicità di profumo degli anni Ottanta. L’opera ha fatto parte di una delle mostre collettive dell’artista; il nome della mostra e i dati di catalogo saranno aggiunti quando la documentazione sarà recuperata.",
+      "de": "Ein Aquarell, inspiriert von der Erinnerung an Paloma Picasso in einer Parfümwerbung aus den 1980er-Jahren. Das Werk war Teil einer Gruppenausstellung des Künstlers; Ausstellungstitel und Katalogangaben werden ergänzt, sobald die Dokumentation wieder vorliegt."
+    },
+    "remainingDetails": {
+      "es": "Soporte y dimensiones por completar",
+      "en": "Support and dimensions to be added",
+      "fr": "Support et dimensions à compléter",
+      "it": "Supporto e dimensioni da completare",
+      "de": "Träger und Maße noch zu ergänzen"
+    }
+  },
+  "motionWork": {
+    "sectionLabel": {
+      "es": "Obra en movimiento · creación digital generativa",
+      "en": "Moving image · generative digital creation",
+      "fr": "Œuvre en mouvement · création numérique générative",
+      "it": "Opera in movimento · creazione digitale generativa",
+      "de": "Bewegtbild · generatives digitales Schaffen"
+    },
+    "cosmicReading2026": {
+      "es": "Lectura de Rostro cósmico · 2026",
+      "en": "Reading of Cosmic Face · 2026",
+      "fr": "Lecture de Visage cosmique · 2026",
+      "it": "Lettura di Volto cosmico · 2026",
+      "de": "Lektüre: Kosmisches Gesicht · 2026"
+    },
+    "livingImage2026": {
+      "es": "Creación generativa · imagen viva · 2026",
+      "en": "Generative creation · living image · 2026",
+      "fr": "Création générative · image vivante · 2026",
+      "it": "Creazione generativa · immagine viva · 2026",
+      "de": "Generatives Schaffen · lebendiges Bild · 2026"
+    },
+    "cosmicFaceTitle": {
+      "es": "Rostro cósmico",
+      "en": "Cosmic Face",
+      "fr": "Visage cosmique",
+      "it": "Volto cosmico",
+      "de": "Kosmisches Gesicht"
+    },
+    "introduction": {
+      "es": "Dos variaciones generativas construyen el rostro como territorio de luz, impulso y deriva. Las piezas parten de una misma imagen de origen y ensayan, mediante código, comportamientos distintos.",
+      "en": "Two generative variations construct the face as a territory of light, impulse and drift. The pieces stem from a single source image and explore different behaviours through code.",
+      "fr": "Deux variations génératives font du visage un territoire de lumière, d’impulsion et de dérive. Les pièces procèdent d’une même image source et expérimentent, par le code, des comportements distincts.",
+      "it": "Due variazioni generative costruiscono il volto come territorio di luce, impulso e deriva. Le opere nascono da una stessa immagine di partenza e sperimentano, attraverso il codice, comportamenti diversi.",
+      "de": "Zwei generative Variationen konstruieren das Gesicht als ein Terrain aus Licht, Impuls und Drift. Die Arbeiten gehen von demselben Ausgangsbild aus und erproben mittels Code unterschiedliche Verhaltensweisen."
+    },
+    "magneticFaceDescription": {
+      "es": "El rostro deja de ser retrato y se convierte en una cartografía nerviosa. Las partículas recorren sus líneas como impulsos; ojos, mejillas y labios pulsan mientras una respiración casi imperceptible mantiene viva la imagen.",
+      "en": "The face ceases to be a portrait and becomes a nervous cartography. Particles travel along its lines like impulses; eyes, cheeks and lips pulse as an almost imperceptible breath keeps the image alive.",
+      "fr": "Le visage cesse d’être un portrait pour devenir une cartographie nerveuse. Les particules parcourent ses lignes comme des impulsions ; les yeux, les joues et les lèvres palpitent tandis qu’une respiration presque imperceptible maintient l’image en vie.",
+      "it": "Il volto smette di essere ritratto per diventare una cartografia nervosa. Le particelle percorrono le sue linee come impulsi; occhi, guance e labbra pulsano mentre un respiro quasi impercettibile mantiene viva l’immagine.",
+      "de": "Das Gesicht hört auf, Porträt zu sein, und wird zu einer nervösen Kartografie. Partikel durchlaufen seine Linien wie Impulse; Augen, Wangen und Lippen pulsieren, während ein kaum wahrnehmbarer Atem das Bild lebendig hält."
+    },
+    "innerConstellationDescription": {
+      "es": "La identidad aparece como un campo gravitacional. Planos de profundidad, neón líquido y nebulosas a la deriva sitúan los ojos y la boca como centros de atracción de una presencia que nunca termina de fijarse.",
+      "en": "Identity appears as a gravitational field. Planes of depth, liquid neon and drifting nebulae position the eyes and mouth as centres of attraction within a presence that never fully settles.",
+      "fr": "L’identité apparaît comme un champ gravitationnel. Plans de profondeur, néon liquide et nébuleuses à la dérive font des yeux et de la bouche les centres d’attraction d’une présence qui ne se fixe jamais tout à fait.",
+      "it": "L’identità appare come un campo gravitazionale. Piani di profondità, neon liquido e nebulose alla deriva fanno degli occhi e della bocca i centri di attrazione di una presenza che non si fissa mai del tutto.",
+      "de": "Identität erscheint als Gravitationsfeld. Tiefenebenen, flüssiges Neon und treibende Nebel machen Augen und Mund zu Anziehungspunkten einer Präsenz, die sich niemals endgültig festlegt."
+    },
+    "processingMedium": {
+      "es": "Creación digital generativa · Processing",
+      "en": "Generative digital creation · Processing",
+      "fr": "Création numérique générative · Processing",
+      "it": "Creazione digitale generativa · Processing",
+      "de": "Generatives digitales Schaffen · Processing"
+    },
+    "glslMedium": {
+      "es": "Creación digital generativa · GLSL",
+      "en": "Generative digital creation · GLSL",
+      "fr": "Création numérique générative · GLSL",
+      "it": "Creazione digitale generativa · GLSL",
+      "de": "Generatives digitales Schaffen · GLSL"
+    },
+    "durationLabel": {
+      "es": "Duración",
+      "en": "Duration",
+      "fr": "Durée",
+      "it": "Durata",
+      "de": "Dauer"
+    },
+    "ownershipLabel": {
+      "es": "Obra propia · creación digital",
+      "en": "Artist’s own work · digital creation",
+      "fr": "Œuvre personnelle · création numérique",
+      "it": "Opera propria · creazione digitale",
+      "de": "Eigenes Werk · digitales Schaffen"
+    },
+    "viewCta": {
+      "es": "Ver obra en movimiento",
+      "en": "View moving-image work",
+      "fr": "Voir l’œuvre en mouvement",
+      "it": "Vedi l’opera in movimento",
+      "de": "Bewegtbild ansehen"
+    },
+    "availableWorks": {
+      "es": "Dos obras disponibles: Constelación interior y Rostro magnético.",
+      "en": "Two works available: Inner Constellation and Magnetic Face.",
+      "fr": "Deux pièces disponibles : Constellation intérieure et Visage magnétique.",
+      "it": "Due opere disponibili: Costellazione interiore e Volto magnetico.",
+      "de": "Zwei Arbeiten verfügbar: Innere Konstellation und Magnetisches Gesicht."
+    }
+  },
+  "archive": {
+    "videoInstallationLabel": {
+      "es": "Videoinstalación · programa internacional",
+      "en": "Video installation · international programme",
+      "fr": "Installation vidéo · programme international",
+      "it": "Videoinstallazione · programma internazionale",
+      "de": "Videoinstallation · internationales Programm"
+    },
+    "festivalProgramme": {
+      "es": "Digital Art Festival de Taipéi · MADATAC · VIDEOsPAIN",
+      "en": "Taipei Digital Art Festival · MADATAC · VIDEOsPAIN",
+      "fr": "Festival d’art numérique de Taipei · MADATAC · VIDEOsPAIN",
+      "it": "Festival di arte digitale di Taipei · MADATAC · VIDEOsPAIN",
+      "de": "Digital Art Festival Taipei · MADATAC · VIDEOsPAIN"
+    },
+    "performerRole": {
+      "es": "Intérprete / performer en la videoinstalación de siete canales de Iury Lech.",
+      "en": "Performer in Iury Lech’s seven-channel video installation.",
+      "fr": "Interprète / performer dans l’installation vidéo à sept canaux d’Iury Lech.",
+      "it": "Interprete / performer nella videoinstallazione a sette canali di Iury Lech.",
+      "de": "Darsteller / Performer in der siebenkanaligen Videoinstallation von Iury Lech."
+    },
+    "videoInstallationNote": {
+      "es": "Videoinstalación de siete canales de Iury Lech presentada en un programa internacional.",
+      "en": "Iury Lech’s seven-channel video installation, presented in an international programme.",
+      "fr": "Installation vidéo à sept canaux d’Iury Lech, présentée dans le cadre d’un programme international.",
+      "it": "Videoinstallazione a sette canali di Iury Lech, presentata nell’ambito di un programma internazionale.",
+      "de": "Siebenkanalige Videoinstallation von Iury Lech, präsentiert in einem internationalen Programm."
+    }
+  },
+  "accessibility": {
+    "verbenaImageAlt": {
+      "es": "Enrique Alcides besando a un maniquí pintado en el anuncio de Verbena Bandarra",
+      "en": "Enrique Alcides kissing a painted mannequin in the Verbena Bandarra announcement",
+      "fr": "Enrique Alcides embrassant un mannequin peint dans l’annonce de Verbena Bandarra",
+      "it": "Enrique Alcides mentre bacia un manichino dipinto nell’annuncio di Verbena Bandarra",
+      "de": "Enrique Alcides küsst in der Ankündigung zu Verbena Bandarra eine bemalte Schaufensterpuppe"
+    },
+    "fashionedDreamsImageAlt": {
+      "es": "Obra publicada con el anuncio de la exposición Fashioned by Their Dreams",
+      "en": "Artwork published with the Fashioned by Their Dreams exhibition announcement",
+      "fr": "Œuvre publiée avec l’annonce de l’exposition Fashioned by Their Dreams",
+      "it": "Opera pubblicata con l’annuncio della mostra Fashioned by Their Dreams",
+      "de": "Mit der Ankündigung der Ausstellung Fashioned by Their Dreams veröffentlichtes Kunstwerk"
+    },
+    "naturalBareImageAlt": {
+      "es": "Natural Bare expuesta en LAB ART, Los Ángeles",
+      "en": "Natural Bare displayed at LAB ART in Los Angeles",
+      "fr": "Natural Bare exposée à LAB ART, à Los Angeles",
+      "it": "Natural Bare esposta presso LAB ART a Los Angeles",
+      "de": "Natural Bare, ausgestellt bei LAB ART in Los Angeles"
+    },
+    "alonePromImageAlt": {
+      "es": "Alone at the Prom expuesta en Lelie Galerij, Ámsterdam",
+      "en": "Alone at the Prom displayed at Lelie Galerij in Amsterdam",
+      "fr": "Alone at the Prom exposée à Lelie Galerij, à Amsterdam",
+      "it": "Alone at the Prom esposta presso Lelie Galerij ad Amsterdam",
+      "de": "Alone at the Prom, ausgestellt in der Lelie Galerij in Amsterdam"
+    },
+    "origineImageAlt": {
+      "es": "Origine expuesta en Thomson Gallery, Zug",
+      "en": "Origine displayed at Thomson Gallery in Zug",
+      "fr": "Origine exposée à Thomson Gallery, à Zoug",
+      "it": "Origine esposta presso Thomson Gallery a Zugo",
+      "de": "Origine, ausgestellt in der Thomson Gallery in Zug"
+    },
+    "metamorphosisImageAlt": {
+      "es": "Performance con imágenes proyectadas de Metamorphosis en Roma",
+      "en": "Projected-image performance from Metamorphosis in Rome",
+      "fr": "Performance avec image projetée de Metamorphosis à Rome",
+      "it": "Performance con immagine proiettata da Metamorphosis a Roma",
+      "de": "Performance mit projizierten Bildern aus Metamorphosis in Rom"
+    },
+    "domesticDemonsImageAlt": {
+      "es": "Fotograma de Endemoniados demonios domésticos, una videoinstalación de siete canales de Iury Lech",
+      "en": "Still from Domesticated Domestic Demons, a seven-channel video installation by Iury Lech",
+      "fr": "Image fixe de Démons domestiques domestiqués, installation vidéo à sept canaux d’Iury Lech",
+      "it": "Fermo immagine da Demoni domestici addomesticati, installazione video a sette canali di Iury Lech",
+      "de": "Standbild aus „Besessene häusliche Dämonen“, einer Siebenkanal-Videoinstallation von Iury Lech"
+    },
+    "cosmicNarcissiImageAlt": {
+      "es": "Fotograma con tratamiento de color de Narcisos Cósmicos, de Claudia Bonollo",
+      "en": "Colour-treated still from Cosmic Narcissi by Claudia Bonollo",
+      "fr": "Image fixe traitée en couleur de Narcisses cosmiques de Claudia Bonollo",
+      "it": "Fermo immagine elaborato a colori da Narcisi cosmici di Claudia Bonollo",
+      "de": "Farbbearbeitetes Standbild aus „Kosmische Narzissten“ von Claudia Bonollo"
+    },
+    "imaginedBodyImageAlt": {
+      "es": "Vistas de la instalación El Cuerpo Imaginado, de Claudia Bonollo",
+      "en": "Installation views from The Imagined Body by Claudia Bonollo",
+      "fr": "Vues de l’installation Le Corps imaginé de Claudia Bonollo",
+      "it": "Vedute dell’installazione Il Corpo immaginato di Claudia Bonollo",
+      "de": "Installationsansichten von „Der imaginierte Körper“ von Claudia Bonollo"
+    },
+    "beautyCureImageAlt": {
+      "es": "Imágenes de la proyección en color y de la performance Beauty Is Itself a Cure, de Claudia Bonollo",
+      "en": "Colour projection and performance imagery from Beauty Is Itself a Cure by Claudia Bonollo",
+      "fr": "Projection en couleur et images de la performance Beauty Is Itself a Cure de Claudia Bonollo",
+      "it": "Proiezione a colori e immagini della performance Beauty Is Itself a Cure di Claudia Bonollo",
+      "de": "Aufnahmen der Farbprojektion und Performance aus Beauty Is Itself a Cure von Claudia Bonollo"
+    },
+    "constellationVideoLabel": {
+      "es": "Constelación interior, obra generativa en movimiento",
+      "en": "Inner Constellation, generative moving-image work",
+      "fr": "Constellation intérieure, œuvre générative en mouvement",
+      "it": "Costellazione interiore, opera generativa in movimento",
+      "de": "Innere Konstellation, generatives Bewegtbild"
+    },
+    "magneticVideoLabel": {
+      "es": "Rostro magnético, obra generativa en movimiento",
+      "en": "Magnetic Face, generative moving-image work",
+      "fr": "Visage magnétique, œuvre générative en mouvement",
+      "it": "Volto magnetico, opera generativa in movimento",
+      "de": "Magnetisches Gesicht, generatives Bewegtbild"
+    },
+    "unsupportedVideo": {
+      "es": "Su navegador no admite la reproducción de vídeo.",
+      "en": "Your browser does not support video playback.",
+      "fr": "Votre navigateur ne prend pas en charge la lecture vidéo.",
+      "it": "Il browser non supporta la riproduzione video.",
+      "de": "Ihr Browser unterstützt die Videowiedergabe nicht."
+    }
+  },
+  "runtime": {
+    "homeDocumentTitle": {
+      "es": "ENALC — Arte y Protoideas",
+      "en": "ENALC — Art and Proto-Ideas",
+      "fr": "ENALC — Art et Proto-idées",
+      "it": "ENALC — Arte e Protoidee",
+      "de": "ENALC — Kunst und Protoideen"
+    },
+    "workDocumentTitle": {
+      "es": "ENALC — Obra",
+      "en": "ENALC — Work",
+      "fr": "ENALC — Œuvre",
+      "it": "ENALC — Opere",
+      "de": "ENALC — Werk"
+    },
+    "projectsDocumentTitle": {
+      "es": "ENALC — Protoideas",
+      "en": "ENALC — Proto-Ideas",
+      "fr": "ENALC — Proto-idées",
+      "it": "ENALC — Protoidee",
+      "de": "ENALC — Protoideen"
+    },
+    "archiveDocumentTitle": {
+      "es": "ENALC — Archivo",
+      "en": "ENALC — Archive",
+      "fr": "ENALC — Archives",
+      "it": "ENALC — Archivio",
+      "de": "ENALC — Archiv"
+    },
+    "aboutDocumentTitle": {
+      "es": "ENALC — Acerca",
+      "en": "ENALC — About",
+      "fr": "ENALC — À propos",
+      "it": "ENALC — Informazioni",
+      "de": "ENALC — Über"
+    }
+  }
+}

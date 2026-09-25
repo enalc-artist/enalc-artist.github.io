@@ -1,0 +1,1038 @@
+{
+  "_meta": {
+    "source_language": "es",
+    "target_languages": ["fr", "it"],
+    "source_pages": [
+      "index.html",
+      "obra.html",
+      "proyectos.html",
+      "archivo.html",
+      "acerca.html"
+    ],
+    "title_policy": "Los títulos de presentación se localizan cuando se ha acordado; los títulos establecidos que el artista o una institución mantienen de forma intencional no se alteran."
+  },
+  "shared": {
+    "brand": {
+      "es": "ENALC",
+      "fr": "ENALC",
+      "it": "ENALC"
+    },
+    "artist_name": {
+      "es": "Enrique Alcides",
+      "fr": "Enrique Alcides",
+      "it": "Enrique Alcides"
+    },
+    "document_title": {
+      "es": "ENALC — Obra y Protoideas",
+      "fr": "ENALC — Œuvres et proto-idées",
+      "it": "ENALC — Opere e protoidee"
+    },
+    "meta_description": {
+      "es": "Obra pictórica, creación digital y proyectos de investigación artística de Enrique Alcides.",
+      "fr": "Œuvre picturale, création numérique et projets de recherche artistique d’Enrique Alcides.",
+      "it": "Opera pittorica, creazione digitale e progetti di ricerca artistica di Enrique Alcides."
+    },
+    "home_aria_label": {
+      "es": "ENALC — inicio",
+      "fr": "ENALC — accueil",
+      "it": "ENALC — home"
+    },
+    "navigation_aria_label": {
+      "es": "Navegación principal",
+      "fr": "Navigation principale",
+      "it": "Navigazione principale"
+    },
+    "language_aria_label": {
+      "es": "Idioma",
+      "fr": "Langue",
+      "it": "Lingua"
+    },
+    "nav_works": {
+      "es": "Obra",
+      "fr": "Œuvres",
+      "it": "Opere"
+    },
+    "nav_protoideas": {
+      "es": "Protoideas",
+      "fr": "Proto-idées",
+      "it": "Protoidee"
+    },
+    "nav_archive": {
+      "es": "Archivo",
+      "fr": "Archives",
+      "it": "Archivio"
+    },
+    "nav_about": {
+      "es": "Acerca",
+      "fr": "À propos",
+      "it": "Profilo"
+    },
+    "footer_tagline": {
+      "es": "Obra y laboratorio de protoideas",
+      "fr": "Œuvres et laboratoire de proto-idées",
+      "it": "Opere e laboratorio di protoidee"
+    },
+    "footer_contact": {
+      "es": "Contacto",
+      "fr": "Contact",
+      "it": "Contatti"
+    },
+    "footer_instagram_art": {
+      "es": "Instagram · obra",
+      "fr": "Instagram · œuvres",
+      "it": "Instagram · opere"
+    },
+    "footer_instagram_actor": {
+      "es": "Instagram · actor",
+      "fr": "Instagram · acteur",
+      "it": "Instagram · attore"
+    },
+    "footer_dossier_archive": {
+      "es": "Dossier / archivo",
+      "fr": "Dossier / archives",
+      "it": "Dossier / archivio"
+    },
+    "footer_location_languages": {
+      "es": "Madrid · ES / EN",
+      "fr": "Madrid · ES / EN",
+      "it": "Madrid · ES / EN"
+    },
+    "copyright": {
+      "es": "© 2026 Enrique Alcides",
+      "fr": "© 2026 Enrique Alcides",
+      "it": "© 2026 Enrique Alcides"
+    },
+    "source_link": {
+      "es": "Documento / fuente",
+      "fr": "Document / source",
+      "it": "Documento / fonte"
+    },
+    "pending_confirmation": {
+      "es": "Por confirmar",
+      "fr": "À confirmer",
+      "it": "Da confermare"
+    },
+    "archive_in_progress": {
+      "es": "Archivo en incorporación",
+      "fr": "Archives en cours d’intégration",
+      "it": "Archivio in fase di integrazione"
+    }
+  },
+  "pages": {
+    "index.html": {
+      "hero_index": {
+        "es": "EA / 00—∞",
+        "fr": "EA / 00—∞",
+        "it": "EA / 00—∞"
+      },
+      "hero_role": {
+        "es": "Artista visual · Madrid",
+        "fr": "Artiste visuel · Madrid",
+        "it": "Artista visivo · Madrid"
+      },
+      "hero_title": {
+        "es": "Enrique Alcides",
+        "fr": "Enrique Alcides",
+        "it": "Enrique Alcides"
+      },
+      "hero_subtitle": {
+        "es": "Obra artística y laboratorio de protoideas",
+        "fr": "Œuvre artistique et laboratoire de proto-idées",
+        "it": "Opera artistica e laboratorio di protoidee"
+      },
+      "hero_enter": {
+        "es": "Entrar",
+        "fr": "Entrer",
+        "it": "Entra"
+      },
+      "hero_caption": {
+        "es": "La obra como territorio inestable: memoria, identidad, materia y futuros posibles.",
+        "fr": "L’œuvre comme territoire instable : mémoire, identité, matière et futurs possibles.",
+        "it": "L’opera come territorio instabile: memoria, identità, materia e futuri possibili."
+      },
+      "manifesto_aria_label": {
+        "es": "Declaración breve",
+        "fr": "Déclaration brève",
+        "it": "Dichiarazione breve"
+      },
+      "manifesto_lead": {
+        "es": "NO ILUSTRAR EL MUNDO",
+        "fr": "NE PAS ILLUSTRER LE MONDE",
+        "it": "NON ILLUSTRARE IL MONDO"
+      },
+      "manifesto_tail": {
+        "es": "—ensayar otros",
+        "fr": "— en expérimenter d’autres",
+        "it": "— sperimentarne altri"
+      },
+      "studio_map_eyebrow": {
+        "es": "Mapa del estudio",
+        "fr": "Cartographie de l’atelier",
+        "it": "Mappa dello studio"
+      },
+      "studio_map_title": {
+        "es": "Tres puertas. Un archivo vivo.",
+        "fr": "Trois portes. Une archive vivante.",
+        "it": "Tre porte. Un archivio vivo."
+      },
+      "pathway_works_title": {
+        "es": "Obra",
+        "fr": "Œuvres",
+        "it": "Opere"
+      },
+      "pathway_works_note": {
+        "es": "Pintura · creación digital · obra en movimiento",
+        "fr": "Peinture · création numérique · œuvre en mouvement",
+        "it": "Pittura · creazione digitale · opera in movimento"
+      },
+      "pathway_protoideas_title": {
+        "es": "Protoideas",
+        "fr": "Proto-idées",
+        "it": "Protoidee"
+      },
+      "pathway_protoideas_note": {
+        "es": "Investigación · inmersión · colaboración",
+        "fr": "Recherche · immersion · collaboration",
+        "it": "Ricerca · immersione · collaborazione"
+      },
+      "pathway_career_title": {
+        "es": "Trayectoria",
+        "fr": "Parcours",
+        "it": "Percorso"
+      },
+      "pathway_career_note": {
+        "es": "Exposiciones · instalaciones · archivo",
+        "fr": "Expositions · installations · archives",
+        "it": "Mostre · installazioni · archivio"
+      },
+      "featured_project_eyebrow": {
+        "es": "Proyecto abierto",
+        "fr": "Projet ouvert",
+        "it": "Progetto aperto"
+      },
+      "featured_project_title": {
+        "es": "Tres tierras para un solo presente",
+        "fr": "Trois terres pour un seul présent",
+        "it": "Tre terre per un solo presente"
+      },
+      "featured_project_summary": {
+        "es": "Una instalación inmersiva en investigación: tres futuros incompatibles ocupan una misma sala y convierten al visitante en parte de la decisión.",
+        "fr": "Une installation immersive en cours de recherche : trois futurs incompatibles occupent une même salle et font du visiteur une partie prenante de la décision.",
+        "it": "Un’installazione immersiva in fase di ricerca: tre futuri incompatibili occupano un’unica sala e fanno del visitatore parte della decisione."
+      },
+      "featured_project_link": {
+        "es": "Abrir cuaderno de proyecto",
+        "fr": "Ouvrir le carnet de projet",
+        "it": "Apri il quaderno di progetto"
+      },
+      "statement_eyebrow": {
+        "es": "Declaración",
+        "fr": "Déclaration",
+        "it": "Dichiarazione"
+      },
+      "statement_quote": {
+        "es": "Trabajo en el punto donde una imagen deja de ser una superficie y empieza a comportarse como una pregunta.",
+        "fr": "Je travaille au point où une image cesse d’être une surface et commence à se comporter comme une question.",
+        "it": "Lavoro nel punto in cui un’immagine smette di essere una superficie e comincia a comportarsi come una domanda."
+      },
+      "statement_link": {
+        "es": "Leer declaración artística",
+        "fr": "Lire la déclaration artistique",
+        "it": "Leggi la dichiarazione artistica"
+      }
+    },
+    "obra.html": {
+      "intro_eyebrow": {
+        "es": "Obra / territorios",
+        "fr": "Œuvres / territoires",
+        "it": "Opere / territori"
+      },
+      "intro_title": {
+        "es": "La imagen no termina en su borde.",
+        "fr": "L’image ne s’arrête pas à ses contours.",
+        "it": "L’immagine non finisce ai suoi margini."
+      },
+      "intro_lede": {
+        "es": "Esta sala reúne obra pictórica, dibujo, creación digital y sistemas generativos. Cada conjunto crecerá como una serie autónoma, con ficha técnica, texto, proceso y disponibilidad.",
+        "fr": "Cette salle réunit œuvre picturale, dessin, création numérique et systèmes génératifs. Chaque ensemble se développera comme une série autonome, avec fiche technique, texte, processus et disponibilité.",
+        "it": "Questa sala riunisce opera pittorica, disegno, creazione digitale e sistemi generativi. Ogni insieme si svilupperà come una serie autonoma, con scheda tecnica, testo, processo e disponibilità."
+      },
+      "people_alt": {
+        "es": "Composición de figuras de Enrique Alcides, donada y vendida en subasta",
+        "fr": "Composition de figures d’Enrique Alcides, donnée puis vendue aux enchères",
+        "it": "Composizione di figure di Enrique Alcides, donata e venduta all’asta"
+      },
+      "people_watermark": {
+        "es": "ENALC · COLECCIÓN PRIVADA",
+        "fr": "ENALC · COLLECTION PRIVÉE",
+        "it": "ENALC · COLLEZIONE PRIVATA"
+      },
+      "people_meta": {
+        "es": "Obra donada · adjudicada en subasta",
+        "fr": "Œuvre donnée · adjugée aux enchères",
+        "it": "Opera donata · aggiudicata all’asta"
+      },
+      "people_title": {
+        "es": "People",
+        "fr": "People",
+        "it": "People"
+      },
+      "people_description": {
+        "es": "Obra donada por Enrique Alcides para una subasta y posteriormente adjudicada. Esta reproducción, facilitada por el artista, preserva el registro de una pieza que hoy pertenece a una colección privada.",
+        "fr": "Œuvre donnée par Enrique Alcides pour une vente aux enchères, puis adjugée. Cette reproduction, fournie par l’artiste, conserve la trace d’une pièce qui appartient aujourd’hui à une collection privée.",
+        "it": "Opera donata da Enrique Alcides per un’asta e successivamente aggiudicata. Questa riproduzione, fornita dall’artista, conserva la testimonianza di un’opera che oggi appartiene a una collezione privata."
+      },
+      "fact_year": {
+        "es": "Año",
+        "fr": "Année",
+        "it": "Anno"
+      },
+      "fact_technique_support": {
+        "es": "Técnica / soporte",
+        "fr": "Technique / support",
+        "it": "Tecnica / supporto"
+      },
+      "fact_dimensions": {
+        "es": "Dimensiones",
+        "fr": "Dimensions",
+        "it": "Dimensioni"
+      },
+      "fact_status": {
+        "es": "Estado",
+        "fr": "Statut",
+        "it": "Stato"
+      },
+      "people_status": {
+        "es": "Vendida en subasta · colección privada",
+        "fr": "Vendue aux enchères · collection privée",
+        "it": "Venduta all’asta · collezione privata"
+      },
+      "people_source_link": {
+        "es": "Ver registro de la subasta",
+        "fr": "Voir la trace de la vente aux enchères",
+        "it": "Vedi la documentazione dell’asta"
+      },
+      "decollage_alt": {
+        "es": "Obra de la serie de décollages urbanos de Enrique Alcides",
+        "fr": "Œuvre de la série de décollages urbains d’Enrique Alcides",
+        "it": "Opera della serie di décollage urbani di Enrique Alcides"
+      },
+      "decollage_watermark": {
+        "es": "ENALC · ARCHIVO DE OBRA",
+        "fr": "ENALC · ARCHIVES DES ŒUVRES",
+        "it": "ENALC · ARCHIVIO DELLE OPERE"
+      },
+      "decollage_meta": {
+        "es": "Carteles recuperados · pintura · proceso digital",
+        "fr": "Affiches récupérées · peinture · processus numérique",
+        "it": "Manifesti recuperati · pittura · processo digitale"
+      },
+      "decollage_title": {
+        "es": "Serie de décollages urbanos",
+        "fr": "Série de décollages urbains",
+        "it": "Serie di décollage urbani"
+      },
+      "decollage_description": {
+        "es": "La obra nace de fragmentos de anuncios arrancados de los muros de la ciudad. Enrique Alcides rescata esos estratos superpuestos, los traslada al estudio, interviene la materia con pintura y vuelve a trabajar el resultado digitalmente. La pared funciona a la vez como archivo, soporte y memoria colectiva.",
+        "fr": "L’œuvre naît de fragments d’affiches arrachés aux murs de la ville. Enrique Alcides recueille ces strates superposées, les transporte à l’atelier, intervient sur la matière par la peinture, puis retravaille le résultat numériquement. Le mur devient à la fois archive, support et mémoire collective.",
+        "it": "L’opera nasce da frammenti di manifesti strappati ai muri della città. Enrique Alcides recupera questi strati sovrapposti, li porta in studio, interviene sulla materia con la pittura e rielabora poi digitalmente il risultato. Il muro agisce al tempo stesso come archivio, supporto e memoria collettiva."
+      },
+      "fact_series": {
+        "es": "Serie",
+        "fr": "Série",
+        "it": "Serie"
+      },
+      "decollage_series_pending": {
+        "es": "Título definitivo por confirmar",
+        "fr": "Titre définitif à confirmer",
+        "it": "Titolo definitivo da confermare"
+      },
+      "fact_origin": {
+        "es": "Origen",
+        "fr": "Origine",
+        "it": "Origine"
+      },
+      "decollage_origin": {
+        "es": "Estratos de anuncios urbanos recuperados",
+        "fr": "Strates d’affiches urbaines récupérées",
+        "it": "Strati recuperati di manifesti urbani"
+      },
+      "fact_process": {
+        "es": "Proceso",
+        "fr": "Processus",
+        "it": "Processo"
+      },
+      "decollage_process": {
+        "es": "Décollage, intervención pictórica y tratamiento digital",
+        "fr": "Décollage, intervention picturale et traitement numérique",
+        "it": "Décollage, intervento pittorico e trattamento digitale"
+      },
+      "fact_technical_sheet": {
+        "es": "Ficha técnica",
+        "fr": "Fiche technique",
+        "it": "Scheda tecnica"
+      },
+      "decollage_technical_pending": {
+        "es": "Año y dimensiones por completar",
+        "fr": "Année et dimensions à compléter",
+        "it": "Anno e dimensioni da completare"
+      },
+      "watercolour_alt": {
+        "es": "Acuarela de Enrique Alcides basada en su recuerdo de Paloma Picasso",
+        "fr": "Aquarelle d’Enrique Alcides inspirée de son souvenir de Paloma Picasso",
+        "it": "Acquerello di Enrique Alcides ispirato al suo ricordo di Paloma Picasso"
+      },
+      "watercolour_meta": {
+        "es": "Acuarela · exposición colectiva · archivo recuperado",
+        "fr": "Aquarelle · exposition collective · archive retrouvée",
+        "it": "Acquerello · mostra collettiva · archivio recuperato"
+      },
+      "watercolour_title_pending": {
+        "es": "Título pendiente",
+        "fr": "Titre à confirmer",
+        "it": "Titolo da confermare"
+      },
+      "watercolour_description": {
+        "es": "Una acuarela construida desde el recuerdo de Paloma Picasso. La pieza formó parte de una de las exposiciones colectivas del artista; el nombre de la muestra y los datos de catálogo se incorporarán cuando se recupere la documentación.",
+        "fr": "Une aquarelle construite à partir du souvenir de Paloma Picasso. La pièce a figuré dans l’une des expositions collectives de l’artiste ; le nom de l’exposition et les données du catalogue seront ajoutés lorsque la documentation aura été retrouvée.",
+        "it": "Un acquerello costruito a partire dal ricordo di Paloma Picasso. L’opera ha fatto parte di una delle mostre collettive dell’artista; il nome della mostra e i dati di catalogo saranno aggiunti quando la documentazione sarà recuperata."
+      },
+      "fact_reference": {
+        "es": "Referencia",
+        "fr": "Référence",
+        "it": "Riferimento"
+      },
+      "watercolour_reference": {
+        "es": "Recuerdo de Paloma Picasso",
+        "fr": "Souvenir de Paloma Picasso",
+        "it": "Ricordo di Paloma Picasso"
+      },
+      "fact_technique": {
+        "es": "Técnica",
+        "fr": "Technique",
+        "it": "Tecnica"
+      },
+      "watercolour_technique": {
+        "es": "Acuarela",
+        "fr": "Aquarelle",
+        "it": "Acquerello"
+      },
+      "fact_exhibition": {
+        "es": "Exposición",
+        "fr": "Exposition",
+        "it": "Mostra"
+      },
+      "watercolour_exhibition_pending": {
+        "es": "Colectiva · nombre y fecha por confirmar",
+        "fr": "Exposition collective · nom et date à confirmer",
+        "it": "Mostra collettiva · nome e data da confermare"
+      },
+      "watercolour_technical_pending": {
+        "es": "Año, soporte y dimensiones por completar",
+        "fr": "Année, support et dimensions à compléter",
+        "it": "Anno, supporto e dimensioni da completare"
+      },
+      "series_aria_label": {
+        "es": "Series de obra",
+        "fr": "Séries d’œuvres",
+        "it": "Serie di opere"
+      },
+      "painting_meta": {
+        "es": "Pintura · series históricas",
+        "fr": "Peinture · séries historiques",
+        "it": "Pittura · serie storiche"
+      },
+      "painting_title": {
+        "es": "Materia pictórica",
+        "fr": "Matière picturale",
+        "it": "Materia pittorica"
+      },
+      "painting_description": {
+        "es": "El archivo físico —lienzos, papel, técnicas mixtas y fichas— se incorporará aquí por series.",
+        "fr": "Les archives physiques — toiles, œuvres sur papier, techniques mixtes et fiches — seront intégrées ici par séries.",
+        "it": "L’archivio fisico — tele, opere su carta, tecniche miste e schede — sarà integrato qui per serie."
+      },
+      "constellation_meta": {
+        "es": "Creación generativa · imagen viva",
+        "fr": "Création générative · image vivante",
+        "it": "Creazione generativa · immagine viva"
+      },
+      "constellation_title": {
+        "es": "Constelación interior",
+        "fr": "Constellation intérieure",
+        "it": "Costellazione interiore"
+      },
+      "constellation_description": {
+        "es": "Rostros, impulsos lumínicos, estrellas y respiración: una imagen que nunca se estabiliza del todo.",
+        "fr": "Visages, impulsions lumineuses, étoiles et respiration : une image qui ne se stabilise jamais tout à fait.",
+        "it": "Volti, impulsi luminosi, stelle e respiro: un’immagine che non si stabilizza mai del tutto."
+      },
+      "water_memory_meta": {
+        "es": "Código · movimiento · variación",
+        "fr": "Code · mouvement · variation",
+        "it": "Codice · movimento · variazione"
+      },
+      "water_memory_title": {
+        "es": "Agua de memoria",
+        "fr": "Eau de mémoire",
+        "it": "Acqua di memoria"
+      },
+      "water_memory_description": {
+        "es": "Superficies líquidas y mallas celestes traducen el recuerdo en un sistema variable.",
+        "fr": "Des surfaces liquides et des maillages célestes traduisent le souvenir en un système variable.",
+        "it": "Superfici liquide e reticoli celesti traducono il ricordo in un sistema variabile."
+      },
+      "figures_meta": {
+        "es": "Dibujo · variación · identidad",
+        "fr": "Dessin · variation · identité",
+        "it": "Disegno · variazione · identità"
+      },
+      "figures_title": {
+        "es": "Figuras indóciles",
+        "fr": "Figures indociles",
+        "it": "Figure indocili"
+      },
+      "figures_description": {
+        "es": "Personajes, criaturas y signos propios sometidos a reglas de color, repetición y diferencia.",
+        "fr": "Personnages, créatures et signes personnels soumis à des règles de couleur, de répétition et de différence.",
+        "it": "Personaggi, creature e segni propri sottoposti a regole di colore, ripetizione e differenza."
+      },
+      "technical_schema_eyebrow": {
+        "es": "Ficha de cada obra",
+        "fr": "Fiche de chaque œuvre",
+        "it": "Scheda di ciascuna opera"
+      },
+      "technical_schema_image": {
+        "es": "Imagen",
+        "fr": "Image",
+        "it": "Immagine"
+      },
+      "technical_schema_title_year": {
+        "es": "Título / año",
+        "fr": "Titre / année",
+        "it": "Titolo / anno"
+      },
+      "technical_schema_technique_support": {
+        "es": "Técnica / soporte",
+        "fr": "Technique / support",
+        "it": "Tecnica / supporto"
+      },
+      "technical_schema_dimensions_edition": {
+        "es": "Medidas / edición",
+        "fr": "Dimensions / édition",
+        "it": "Misure / edizione"
+      },
+      "technical_schema_text_process": {
+        "es": "Texto / proceso",
+        "fr": "Texte / processus",
+        "it": "Testo / processo"
+      },
+      "technical_schema_availability": {
+        "es": "Disponibilidad",
+        "fr": "Disponibilité",
+        "it": "Disponibilità"
+      }
+    },
+    "proyectos.html": {
+      "intro_eyebrow": {
+        "es": "Laboratorio de protoideas",
+        "fr": "Laboratoire de proto-idées",
+        "it": "Laboratorio di protoidee"
+      },
+      "intro_title": {
+        "es": "Proyectos antes de hacerse inevitables.",
+        "fr": "Des projets avant qu’ils ne deviennent inévitables.",
+        "it": "Progetti prima che diventino inevitabili."
+      },
+      "intro_lede": {
+        "es": "No son promesas vagas: cada protoidea contiene una pregunta, una forma espacial, un desarrollo técnico y una puerta concreta a la colaboración.",
+        "fr": "Ce ne sont pas de vagues promesses : chaque proto-idée contient une question, une forme spatiale, un développement technique et une ouverture concrète à la collaboration.",
+        "it": "Non sono promesse vaghe: ogni protoidea contiene una domanda, una forma spaziale, uno sviluppo tecnico e una concreta possibilità di collaborazione."
+      },
+      "three_earths_meta": {
+        "es": "Instalación inmersiva · investigación abierta",
+        "fr": "Installation immersive · recherche ouverte",
+        "it": "Installazione immersiva · ricerca aperta"
+      },
+      "three_earths_title": {
+        "es": "Tres tierras para un solo presente",
+        "fr": "Trois terres pour un seul présent",
+        "it": "Tre terre per un solo presente"
+      },
+      "three_earths_body": {
+        "es": "Tres territorios proyectados coexisten y se contaminan sobre una esfera central, paredes, suelo y techo. La experiencia busca que el público no contemple futuros posibles desde fuera: los atraviese.",
+        "fr": "Trois territoires projetés coexistent et se contaminent sur une sphère centrale, les murs, le sol et le plafond. L’expérience invite le public non pas à contempler de l’extérieur des futurs possibles, mais à les traverser.",
+        "it": "Tre territori proiettati coesistono e si contaminano su una sfera centrale, sulle pareti, sul pavimento e sul soffitto. L’esperienza invita il pubblico non a contemplare dall’esterno futuri possibili, ma ad attraversarli."
+      },
+      "three_earths_ask": {
+        "es": "Busca: residencia técnica · institución coproductora · diseño multicanal",
+        "fr": "Recherche : résidence technique · institution coproductrice · conception multicanal",
+        "it": "Ricerca: residenza tecnica · istituzione coproduttrice · progettazione multicanale"
+      },
+      "expanded_dossier_soon": {
+        "es": "Dossier ampliado · próximamente",
+        "fr": "Dossier détaillé · prochainement",
+        "it": "Dossier di approfondimento · prossimamente"
+      },
+      "impossible_image_meta": {
+        "es": "Arte generativo · fotónica · retrato expandido",
+        "fr": "Art génératif · photonique · portrait élargi",
+        "it": "Arte generativa · fotonica · ritratto espanso"
+      },
+      "impossible_image_title": {
+        "es": "La imagen que nunca existió",
+        "fr": "L’image qui n’a jamais existé",
+        "it": "L’immagine che non è mai esistita"
+      },
+      "impossible_image_body": {
+        "es": "Un rostro aparece como campo magnético: líneas de neón, planos lumínicos y constelaciones lo construyen y lo deshacen en tiempo real. La identidad no es una forma fija, sino una interferencia.",
+        "fr": "Un visage apparaît comme un champ magnétique : lignes de néon, plans lumineux et constellations le construisent et le défont en temps réel. L’identité n’est pas une forme fixe, mais une interférence.",
+        "it": "Un volto appare come un campo magnetico: linee al neon, piani luminosi e costellazioni lo costruiscono e lo dissolvono in tempo reale. L’identità non è una forma fissa, ma un’interferenza."
+      },
+      "impossible_image_ask": {
+        "es": "Busca: laboratorio de medios · colaboración científica · espacio de proyección",
+        "fr": "Recherche : laboratoire médias · collaboration scientifique · espace de projection",
+        "it": "Ricerca: laboratorio multimediale · collaborazione scientifica · spazio di proiezione"
+      },
+      "metamorphosis_meta": {
+        "es": "Imagen en movimiento · cuerpo · transformación",
+        "fr": "Image en mouvement · corps · transformation",
+        "it": "Immagine in movimento · corpo · trasformazione"
+      },
+      "metamorphosis_title": {
+        "es": "La metamorfosis de la identidad saciada",
+        "fr": "La métamorphose de l’identité rassasiée",
+        "it": "La metamorfosi dell’identità sazia"
+      },
+      "metamorphosis_body": {
+        "es": "Una figura andrógina avanza hacia la cámara mientras cuerpo, rostro, indumentaria y paisaje obedecen ritmos de mutación distintos. Una investigación sobre el yo como materia reprogramable.",
+        "fr": "Une figure androgyne avance vers la caméra tandis que le corps, le visage, le vêtement et le paysage obéissent à des rythmes de mutation différents. Une recherche sur le moi comme matière reprogrammable.",
+        "it": "Una figura androgina avanza verso la macchina da presa mentre corpo, volto, abiti e paesaggio seguono ritmi di mutazione diversi. Una ricerca sull’io come materia riprogrammabile."
+      },
+      "metamorphosis_ask": {
+        "es": "Busca: incubadora de creación · animación · exhibición digital",
+        "fr": "Recherche : incubateur de création · animation · exposition numérique",
+        "it": "Ricerca: incubatore creativo · animazione · esposizione digitale"
+      },
+      "collaborations_eyebrow": {
+        "es": "Colaboraciones",
+        "fr": "Collaborations",
+        "it": "Collaborazioni"
+      },
+      "collaborations_title": {
+        "es": "¿Puede tu espacio hacer posible una de estas obras?",
+        "fr": "Votre espace peut-il rendre possible l’une de ces œuvres ?",
+        "it": "Può il tuo spazio rendere possibile una di queste opere?"
+      },
+      "collaborations_body": {
+        "es": "Abierto a residencias, laboratorios, comisariado, producción tecnológica y alianzas científicas.",
+        "fr": "Ouvert aux résidences, laboratoires, commissariat d’exposition, production technologique et partenariats scientifiques.",
+        "it": "Aperto a residenze, laboratori, curatela, produzione tecnologica e collaborazioni scientifiche."
+      },
+      "collaborations_link": {
+        "es": "Iniciar conversación",
+        "fr": "Engager la conversation",
+        "it": "Avvia una conversazione"
+      }
+    },
+    "archivo.html": {
+      "intro_eyebrow": {
+        "es": "Trayectoria / archivo",
+        "fr": "Parcours / archives",
+        "it": "Percorso / archivio"
+      },
+      "intro_title": {
+        "es": "Pruebas, rastros, contextos.",
+        "fr": "Preuves, traces, contextes.",
+        "it": "Prove, tracce, contesti."
+      },
+      "intro_lede": {
+        "es": "Primera reconstrucción de una trayectoria dispersa. Solo aparecen datos con una fuente pública localizada; el archivo crecerá con catálogos, fotografías, críticas, fichas y documentación física.",
+        "fr": "Première reconstitution d’un parcours dispersé. Seules figurent les informations appuyées par une source publique identifiée ; les archives s’enrichiront de catalogues, photographies, critiques, fiches et documents physiques.",
+        "it": "Prima ricostruzione di un percorso disperso. Compaiono soltanto dati supportati da una fonte pubblica individuata; l’archivio si arricchirà di cataloghi, fotografie, recensioni critiche, schede e documentazione fisica."
+      },
+      "method_eyebrow": {
+        "es": "Criterio de archivo",
+        "fr": "Critères d’archivage",
+        "it": "Criterio d’archivio"
+      },
+      "method_body": {
+        "es": "Cada registro separa título, contexto y función acreditada. Cuando una fuente demuestra la participación pero no precisa el papel exacto, la ficha lo declara y queda abierta a futuras pruebas.",
+        "fr": "Chaque entrée distingue le titre, le contexte et la fonction attestée. Lorsqu’une source établit la participation sans en préciser le rôle exact, la fiche le signale et demeure ouverte à de nouvelles preuves.",
+        "it": "Ogni voce distingue titolo, contesto e ruolo accreditato. Quando una fonte attesta la partecipazione senza precisarne il ruolo esatto, la scheda lo dichiara e resta aperta a nuove prove."
+      },
+      "solidarity_meta": {
+        "es": "Exposición colectiva benéfica",
+        "fr": "Exposition collective caritative",
+        "it": "Mostra collettiva benefica"
+      },
+      "solidarity_title": {
+        "es": "Solidarios por los terremotos de Turquía y Siria",
+        "fr": "Solidaires après les séismes en Turquie et en Syrie",
+        "it": "Solidali dopo i terremoti in Turchia e Siria"
+      },
+      "solidarity_place": {
+        "es": "Centro Riojano de Madrid · 28–31 marzo de 2023",
+        "fr": "Centro Riojano de Madrid · 28–31 mars 2023",
+        "it": "Centro Riojano de Madrid · 28–31 marzo 2023"
+      },
+      "solidarity_role": {
+        "es": "Artista participante · obra expuesta: People · comisariado de Lola Rodríguez",
+        "fr": "Artiste participant · œuvre exposée : People · commissariat de Lola Rodríguez",
+        "it": "Artista partecipante · opera esposta: People · a cura di Lola Rodríguez"
+      },
+      "solidarity_note": {
+        "es": "Exposición colectiva benéfica a favor de Mensajeros de la Paz, fundada por el padre Ángel, para apoyar a las víctimas de los terremotos de Turquía y Siria. La obra fue donada y adjudicada en subasta.",
+        "fr": "Exposition collective caritative au profit de Mensajeros de la Paz, fondée par le père Ángel, afin de soutenir les victimes des séismes en Turquie et en Syrie. L’œuvre a été donnée puis adjugée aux enchères.",
+        "it": "Mostra collettiva benefica a favore di Mensajeros de la Paz, fondata da padre Ángel, per sostenere le vittime dei terremoti in Turchia e Siria. L’opera è stata donata e aggiudicata all’asta."
+      },
+      "solidarity_alt": {
+        "es": "People, obra de Enrique Alcides donada para la exposición solidaria de 2023",
+        "fr": "People, œuvre d’Enrique Alcides donnée pour l’exposition caritative de 2023",
+        "it": "People, opera di Enrique Alcides donata per la mostra benefica del 2023"
+      },
+      "metamorphosis_meta": {
+        "es": "Proyecto de investigación multimedia",
+        "fr": "Projet de recherche multimédia",
+        "it": "Progetto di ricerca multimediale"
+      },
+      "metamorphosis_title": {
+        "es": "Metamorphosis",
+        "fr": "Metamorphosis",
+        "it": "Metamorphosis"
+      },
+      "metamorphosis_place": {
+        "es": "Galería Interno 14 / AIAC · Roma · 16 mayo de 2014",
+        "fr": "Galerie Interno 14 / AIAC · Rome · 16 mai 2014",
+        "it": "Galleria Interno 14 / AIAC · Roma · 16 maggio 2014"
+      },
+      "metamorphosis_role": {
+        "es": "Asesoría teatral — «consulenza teatrale»",
+        "fr": "Conseil théâtral — «consulenza teatrale»",
+        "it": "Consulenza teatrale"
+      },
+      "metamorphosis_note": {
+        "es": "Proyecto de Claudia Bonollo y Andrea Buchner. La ficha pública acredita de forma expresa la función de Enrique Alcides.",
+        "fr": "Projet de Claudia Bonollo et Andrea Buchner. La fiche publique atteste explicitement la fonction d’Enrique Alcides.",
+        "it": "Progetto di Claudia Bonollo e Andrea Buchner. La scheda pubblica attesta espressamente il ruolo di Enrique Alcides."
+      },
+      "red_night_year": {
+        "es": "c. 2011",
+        "fr": "vers 2011",
+        "it": "ca. 2011"
+      },
+      "red_night_meta": {
+        "es": "Performance · palabra · color",
+        "fr": "Performance · parole · couleur",
+        "it": "Performance · parola · colore"
+      },
+      "red_night_title": {
+        "es": "Creative Insomnia — Red Night",
+        "fr": "Creative Insomnia — Red Night",
+        "it": "Creative Insomnia — Red Night"
+      },
+      "red_night_place": {
+        "es": "Creative Insomnia / Atelier Cromático · Madrid",
+        "fr": "Creative Insomnia / Atelier Cromático · Madrid",
+        "it": "Creative Insomnia / Atelier Cromático · Madrid"
+      },
+      "red_night_role": {
+        "es": "Voz e interpretación de textos sobre el rojo",
+        "fr": "Voix et interprétation de textes sur le rouge",
+        "it": "Voce e interpretazione di testi sul rosso"
+      },
+      "red_night_note": {
+        "es": "Interpretación de Rouge sang, de Carmen Caillot, y de fragmentos de la novela Rojo esperanza, de Elena Zanca. Fecha exacta pendiente de contrastar.",
+        "fr": "Interprétation de Rouge sang, de Carmen Caillot, et d’extraits du roman Rojo esperanza, d’Elena Zanca. Date exacte à confirmer.",
+        "it": "Interpretazione di Rouge sang, di Carmen Caillot, e di brani del romanzo Rojo esperanza, di Elena Zanca. Data esatta da verificare."
+      },
+      "red_night_alt": {
+        "es": "Retrato de Enrique Alcides asociado a Creative Insomnia Red Night",
+        "fr": "Portrait d’Enrique Alcides associé à Creative Insomnia Red Night",
+        "it": "Ritratto di Enrique Alcides associato a Creative Insomnia Red Night"
+      },
+      "domestic_demons_meta": {
+        "es": "Videoinstalación · colaboración registrada",
+        "fr": "Installation vidéo · collaboration documentée",
+        "it": "Videoinstallazione · collaborazione documentata"
+      },
+      "domestic_demons_title": {
+        "es": "Endemoniados demonios domésticos",
+        "fr": "Démons domestiques domestiqués",
+        "it": "Demoni domestici addomesticati"
+      },
+      "domestic_demons_place": {
+        "es": "Obra de Iury Lech",
+        "fr": "Œuvre de Iury Lech",
+        "it": "Opera di Iury Lech"
+      },
+      "domestic_demons_role": {
+        "es": "Participación incluida en el CV público de Enrique Alcides",
+        "fr": "Participation mentionnée dans le CV public d’Enrique Alcides",
+        "it": "Partecipazione indicata nel CV pubblico di Enrique Alcides"
+      },
+      "domestic_demons_note": {
+        "es": "La fuente no detalla todavía la función concreta. Pendiente de completar con catálogo, créditos o documentación física.",
+        "fr": "La source ne précise pas encore la fonction exacte. À compléter à l’aide du catalogue, des crédits ou de documents physiques.",
+        "it": "La fonte non precisa ancora il ruolo esatto. Da completare con catalogo, crediti o documentazione fisica."
+      },
+      "cosmic_narcissi_meta": {
+        "es": "Videoinstalación · cuerpo e imagen",
+        "fr": "Installation vidéo · corps et image",
+        "it": "Videoinstallazione · corpo e immagine"
+      },
+      "cosmic_narcissi_title": {
+        "es": "Narcisos Cósmicos",
+        "fr": "Narcisses cosmiques",
+        "it": "Narcisi cosmici"
+      },
+      "cosmic_narcissi_place": {
+        "es": "Instituto Italiano de Cultura · Madrid",
+        "fr": "Instituto Italiano de Cultura · Madrid",
+        "it": "Instituto Italiano de Cultura · Madrid"
+      },
+      "cosmic_narcissi_role": {
+        "es": "Participación registrada · obra de Claudia Bonollo",
+        "fr": "Participation documentée · œuvre de Claudia Bonollo",
+        "it": "Partecipazione documentata · opera di Claudia Bonollo"
+      },
+      "cosmic_narcissi_note": {
+        "es": "El proyecto figura en el apartado de videoarte del CV público de Enrique. La función concreta queda pendiente de completar con los materiales del proyecto.",
+        "fr": "Le projet figure dans la rubrique art vidéo du CV public d’Enrique. La fonction exacte reste à préciser à l’aide des documents du projet.",
+        "it": "Il progetto compare nella sezione videoarte del CV pubblico di Enrique. Il ruolo esatto resta da precisare attraverso i materiali del progetto."
+      },
+      "imagined_body_meta": {
+        "es": "Videoinstalación · cuerpo e imagen",
+        "fr": "Installation vidéo · corps et image",
+        "it": "Videoinstallazione · corpo e immagine"
+      },
+      "imagined_body_title": {
+        "es": "El Cuerpo Imaginado",
+        "fr": "Le Corps imaginé",
+        "it": "Il Corpo immaginato"
+      },
+      "imagined_body_place": {
+        "es": "Proyecto de Claudia Bonollo",
+        "fr": "Projet de Claudia Bonollo",
+        "it": "Progetto di Claudia Bonollo"
+      },
+      "imagined_body_role": {
+        "es": "Participación registrada en videoarte",
+        "fr": "Participation documentée en art vidéo",
+        "it": "Partecipazione documentata in ambito videoartistico"
+      },
+      "imagined_body_note": {
+        "es": "La investigación vinculada al proyecto empleó performances con actores —Enrique Alcides entre ellos— para interpretar emociones generadas por imágenes proyectadas sobre el cuerpo.",
+        "fr": "La recherche liée au projet a eu recours à des performances d’acteurs — dont Enrique Alcides — pour interpréter les émotions suscitées par des images projetées sur le corps.",
+        "it": "La ricerca legata al progetto si è avvalsa di performance con attori — tra cui Enrique Alcides — per interpretare le emozioni generate da immagini proiettate sul corpo."
+      },
+      "beauty_cure_meta": {
+        "es": "Videoinstalación · colaboración registrada",
+        "fr": "Installation vidéo · collaboration documentée",
+        "it": "Videoinstallazione · collaborazione documentata"
+      },
+      "beauty_cure_title": {
+        "es": "Beauty is in Itself a Cure",
+        "fr": "Beauty is in Itself a Cure",
+        "it": "Beauty is in Itself a Cure"
+      },
+      "beauty_cure_place": {
+        "es": "Obra de Claudia Bonollo",
+        "fr": "Œuvre de Claudia Bonollo",
+        "it": "Opera di Claudia Bonollo"
+      },
+      "beauty_cure_role": {
+        "es": "Participación incluida en el CV público de Enrique Alcides",
+        "fr": "Participation mentionnée dans le CV public d’Enrique Alcides",
+        "it": "Partecipazione indicata nel CV pubblico di Enrique Alcides"
+      },
+      "beauty_cure_note": {
+        "es": "Título normalizado a partir del registro original. Función concreta y contexto de presentación pendientes de documentar.",
+        "fr": "Titre normalisé à partir de la mention d’origine. Fonction exacte et contexte de présentation restant à documenter.",
+        "it": "Titolo normalizzato a partire dalla registrazione originale. Ruolo esatto e contesto di presentazione ancora da documentare."
+      },
+      "readings_eyebrow": {
+        "es": "Lecturas de obra recuperadas",
+        "fr": "Lectures d’œuvres retrouvées",
+        "it": "Letture delle opere recuperate"
+      },
+      "readings_title": {
+        "es": "Cuatro entradas para mirar lo que está naciendo.",
+        "fr": "Quatre entrées pour regarder ce qui est en train de naître.",
+        "it": "Quattro ingressi per osservare ciò che sta nascendo."
+      },
+      "readings_disclaimer": {
+        "es": "Textos curatoriales de trabajo desarrollados en conversaciones previas. No se presentan como crítica publicada ni sustituyen un texto firmado por un comisario.",
+        "fr": "Textes curatoriaux de travail élaborés lors de conversations antérieures. Ils ne sont pas présentés comme des critiques publiées et ne se substituent pas à un texte signé par un commissaire d’exposition.",
+        "it": "Testi curatoriali di lavoro elaborati in conversazioni precedenti. Non sono presentati come critica pubblicata né sostituiscono un testo firmato da un curatore."
+      },
+      "cosmic_face_reading_label": {
+        "es": "Lectura de Rostro cósmico",
+        "fr": "Lecture de Visage cosmique",
+        "it": "Lettura di Volto cosmico"
+      },
+      "inner_constellation_title": {
+        "es": "Constelación interior",
+        "fr": "Constellation intérieure",
+        "it": "Costellazione interiore"
+      },
+      "inner_constellation_reading": {
+        "es": "El rostro deja de ser retrato para convertirse en cartografía nerviosa. Las partículas recorren sus líneas como impulsos; ojos, mejillas y labios laten mientras una respiración casi imperceptible mantiene la imagen viva.",
+        "fr": "Le visage cesse d’être un portrait pour devenir une cartographie nerveuse. Les particules parcourent ses lignes comme des impulsions ; les yeux, les joues et les lèvres palpitent tandis qu’une respiration presque imperceptible maintient l’image en vie.",
+        "it": "Il volto smette di essere ritratto per diventare una cartografia nervosa. Le particelle percorrono le sue linee come impulsi; occhi, guance e labbra pulsano mentre un respiro quasi impercettibile mantiene viva l’immagine."
+      },
+      "magnetic_face_title": {
+        "es": "Rostro magnético",
+        "fr": "Visage magnétique",
+        "it": "Volto magnetico"
+      },
+      "magnetic_face_reading": {
+        "es": "La identidad aparece como un campo gravitatorio. Planos de profundidad, neón líquido y nebulosas a la deriva sitúan ojos y boca como centros de atracción de una presencia que nunca termina de fijarse.",
+        "fr": "L’identité apparaît comme un champ gravitationnel. Plans de profondeur, néon liquide et nébuleuses à la dérive font des yeux et de la bouche les centres d’attraction d’une présence qui ne se fixe jamais tout à fait.",
+        "it": "L’identità appare come un campo gravitazionale. Piani di profondità, neon liquido e nebulose alla deriva fanno degli occhi e della bocca i centri di attrazione di una presenza che non si fissa mai del tutto."
+      },
+      "geometric_composition_reading_label": {
+        "es": "Lectura de Composición geométrica",
+        "fr": "Lecture de Composition géométrique",
+        "it": "Lettura di Composizione geometrica"
+      },
+      "breathing_architecture_title": {
+        "es": "Arquitectura respirante",
+        "fr": "Architecture respirante",
+        "it": "Architettura respirante"
+      },
+      "breathing_architecture_reading": {
+        "es": "La geometría abandona su inmovilidad y se vuelve partitura. Columnas, ondas turquesa y placas violetas avanzan a destiempo, como una arquitectura que ensaya su propia respiración.",
+        "fr": "La géométrie abandonne son immobilité et devient partition. Colonnes, ondes turquoise et plaques violettes avancent à contretemps, telle une architecture répétant sa propre respiration.",
+        "it": "La geometria abbandona la propria immobilità e diventa partitura. Colonne, onde turchesi e placche viola avanzano fuori tempo, come un’architettura che prova il proprio respiro."
+      },
+      "submerged_temple_title": {
+        "es": "Templo sumergido",
+        "fr": "Temple englouti",
+        "it": "Tempio sommerso"
+      },
+      "submerged_temple_reading": {
+        "es": "Tres profundidades, reflejos acuosos y refracciones minerales convierten el plano en espacio. La obra no ilustra un templo: provoca la sensación física de avanzar hacia una estructura sumergida.",
+        "fr": "Trois profondeurs, des reflets aquatiques et des réfractions minérales transforment le plan en espace. L’œuvre n’illustre pas un temple : elle suscite la sensation physique d’avancer vers une structure immergée.",
+        "it": "Tre profondità, riflessi acquatici e rifrazioni minerali trasformano il piano in spazio. L’opera non illustra un tempio: suscita la sensazione fisica di avanzare verso una struttura sommersa."
+      },
+      "catalogues_title": {
+        "es": "Catálogos",
+        "fr": "Catalogues",
+        "it": "Cataloghi"
+      },
+      "press_title": {
+        "es": "Prensa",
+        "fr": "Presse",
+        "it": "Stampa"
+      },
+      "video_title": {
+        "es": "Vídeo",
+        "fr": "Vidéo",
+        "it": "Video"
+      },
+      "material_pending": {
+        "es": "Material pendiente de digitalización e incorporación.",
+        "fr": "Matériel en attente de numérisation et d’intégration.",
+        "it": "Materiale in attesa di digitalizzazione e integrazione."
+      }
+    },
+    "acerca.html": {
+      "intro_eyebrow": {
+        "es": "Biografía / declaración",
+        "fr": "Biographie / déclaration artistique",
+        "it": "Biografia / dichiarazione artistica"
+      },
+      "intro_title": {
+        "es": "Enrique Alcides trabaja entre imágenes.",
+        "fr": "Enrique Alcides travaille entre les images.",
+        "it": "Enrique Alcides lavora tra le immagini."
+      },
+      "intro_lede": {
+        "es": "Su práctica reúne pintura, dibujo, creación digital, performance e investigación audiovisual. El cuerpo, la memoria y la construcción inestable de la identidad atraviesan un trabajo que se expande ahora hacia sistemas generativos e instalaciones inmersivas.",
+        "fr": "Sa pratique réunit peinture, dessin, création numérique, performance et recherche audiovisuelle. Le corps, la mémoire et la construction instable de l’identité traversent un travail qui s’étend aujourd’hui aux systèmes génératifs et aux installations immersives.",
+        "it": "La sua pratica riunisce pittura, disegno, creazione digitale, performance e ricerca audiovisiva. Il corpo, la memoria e la costruzione instabile dell’identità attraversano un lavoro che oggi si espande verso sistemi generativi e installazioni immersive."
+      },
+      "fact_origin": {
+        "es": "Origen",
+        "fr": "Origine",
+        "it": "Origine"
+      },
+      "fact_origin_value": {
+        "es": "Las Palmas de Gran Canaria",
+        "fr": "Las Palmas de Gran Canaria",
+        "it": "Las Palmas de Gran Canaria"
+      },
+      "fact_base": {
+        "es": "Base",
+        "fr": "Basé à",
+        "it": "Base"
+      },
+      "fact_base_value": {
+        "es": "Madrid",
+        "fr": "Madrid",
+        "it": "Madrid"
+      },
+      "fact_practice": {
+        "es": "Práctica",
+        "fr": "Pratique",
+        "it": "Pratica"
+      },
+      "fact_practice_value": {
+        "es": "Pintura · digital · instalación",
+        "fr": "Peinture · numérique · installation",
+        "it": "Pittura · digitale · installazione"
+      },
+      "fact_signature": {
+        "es": "Firma",
+        "fr": "Signature",
+        "it": "Firma"
+      },
+      "fact_signature_value": {
+        "es": "ENALC",
+        "fr": "ENALC",
+        "it": "ENALC"
+      },
+      "bio_paragraph_1": {
+        "es": "Nacido en Las Palmas de Gran Canaria y formado vitalmente entre el Sáhara, Cádiz y Madrid, Enrique Alcides desarrolla una práctica visual permeable a su larga experiencia en cine y escena. Esa doble mirada —construir una imagen y habitarla— sitúa el cuerpo como medida, archivo y superficie de transformación.",
+        "fr": "Né à Las Palmas de Gran Canaria et façonné par une vie entre le Sahara, Cadix et Madrid, Enrique Alcides développe une pratique visuelle nourrie de sa longue expérience du cinéma et de la scène. Ce double regard — construire une image et l’habiter — fait du corps une mesure, une archive et une surface de transformation.",
+        "it": "Nato a Las Palmas de Gran Canaria e formatosi umanamente tra il Sahara, Cadice e Madrid, Enrique Alcides sviluppa una pratica visiva permeata dalla sua lunga esperienza nel cinema e sulla scena. Questo doppio sguardo — costruire un’immagine e abitarla — pone il corpo come misura, archivio e superficie di trasformazione."
+      },
+      "bio_paragraph_2": {
+        "es": "Ha participado en proyectos de videoinstalación y creación multidisciplinar, y su obra plástica ha formado parte de exposiciones colectivas en Madrid. En su etapa actual investiga el tránsito entre materia pictórica, código, luz y espacio inmersivo.",
+        "fr": "Il a participé à des projets d’installation vidéo et de création multidisciplinaire, et son œuvre plastique a figuré dans des expositions collectives à Madrid. Dans sa recherche actuelle, il explore les passages entre matière picturale, code, lumière et espace immersif.",
+        "it": "Ha partecipato a progetti di videoinstallazione e creazione multidisciplinare, e la sua opera visiva è stata presentata in mostre collettive a Madrid. Nella sua ricerca attuale esplora il passaggio tra materia pittorica, codice, luce e spazio immersivo."
+      },
+      "statement_eyebrow": {
+        "es": "Declaración artística · versión de trabajo",
+        "fr": "Déclaration artistique · version de travail",
+        "it": "Dichiarazione artistica · versione di lavoro"
+      },
+      "statement_title": {
+        "es": "Toda identidad es una imagen en proceso.",
+        "fr": "Toute identité est une image en devenir.",
+        "it": "Ogni identità è un’immagine in divenire."
+      },
+      "statement_paragraph_1": {
+        "es": "Trabajo con imágenes que recuerdan, mutan y contradicen su apariencia. Me interesa el instante en que una figura deja de poder explicarse con una sola lectura: cuando el rostro se vuelve paisaje, el color adopta una conducta, la materia parece respirar o el espectador descubre que también ocupa el interior de la obra.",
+        "fr": "Je travaille avec des images qui se souviennent, mutent et contredisent leur apparence. Je m’intéresse à l’instant où une figure ne peut plus s’expliquer par une lecture unique : lorsque le visage devient paysage, que la couleur adopte un comportement, que la matière semble respirer ou que le spectateur découvre qu’il occupe lui aussi l’intérieur de l’œuvre.",
+        "it": "Lavoro con immagini che ricordano, mutano e contraddicono la propria apparenza. Mi interessa l’istante in cui una figura non può più essere spiegata da un’unica lettura: quando il volto diventa paesaggio, il colore assume un comportamento, la materia sembra respirare o lo spettatore scopre di abitare anch’egli l’interno dell’opera."
+      },
+      "statement_paragraph_2": {
+        "es": "La pintura sigue siendo una raíz física, pero ya no un límite. El código, la proyección, el movimiento y la instalación me permiten convertir una intuición plástica en un sistema vivo. No busco ilustrar un futuro; prefiero construir las condiciones para que varios futuros se hagan sensibles al mismo tiempo.",
+        "fr": "La peinture demeure une racine physique, mais elle n’est plus une limite. Le code, la projection, le mouvement et l’installation me permettent de transformer une intuition plastique en un système vivant. Je ne cherche pas à illustrer un avenir ; je préfère construire les conditions qui rendent plusieurs futurs sensibles en même temps.",
+        "it": "La pittura resta una radice fisica, ma non è più un limite. Il codice, la proiezione, il movimento e l’installazione mi permettono di trasformare un’intuizione visiva in un sistema vivo. Non cerco di illustrare un futuro; preferisco costruire le condizioni affinché più futuri diventino percepibili nello stesso momento."
+      },
+      "contact_eyebrow": {
+        "es": "Estudio / contacto",
+        "fr": "Atelier / contact",
+        "it": "Studio / contatti"
+      },
+      "contact_title": {
+        "es": "Exposiciones, residencias y colaboraciones",
+        "fr": "Expositions, résidences et collaborations",
+        "it": "Mostre, residenze e collaborazioni"
+      }
+    }
+  }
+}

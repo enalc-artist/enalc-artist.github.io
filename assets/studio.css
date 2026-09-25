@@ -1,0 +1,250 @@
+:root {
+  color-scheme: dark;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: #0c0d0f;
+  color: #f4f1ea;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 20rem;
+  margin: 0;
+  background:
+    radial-gradient(circle at 90% 0%, rgb(87 56 176 / 25%), transparent 34rem),
+    #0c0d0f;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  min-height: 2.75rem;
+  padding: 0.7rem 1rem;
+  border: 1px solid #d8ff35;
+  border-radius: 0.25rem;
+  background: #d8ff35;
+  color: #10110c;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e5ff76;
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid #a58cff;
+  outline-offset: 2px;
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: 0.55;
+}
+
+.button-secondary {
+  border-color: #4b4e55;
+  background: transparent;
+  color: #f4f1ea;
+}
+
+.button-secondary:hover {
+  background: #24262b;
+}
+
+.studio-header,
+.studio-shell {
+  width: min(72rem, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.studio-header {
+  display: grid;
+  grid-template-columns: minmax(6rem, 0.25fr) 1fr;
+  gap: 1.5rem;
+  align-items: end;
+  padding-block: clamp(2.5rem, 7vw, 6rem) 2rem;
+  border-bottom: 1px solid #34363c;
+}
+
+.studio-header h1,
+.studio-header p,
+.access-panel h2,
+.access-panel p {
+  margin: 0;
+}
+
+.studio-header h1 {
+  font-size: clamp(2.25rem, 7vw, 5.5rem);
+  font-weight: 600;
+  letter-spacing: -0.055em;
+  line-height: 0.9;
+}
+
+.studio-header div > p {
+  max-width: 43rem;
+  margin-top: 1rem;
+  color: #adafb6;
+}
+
+.studio-mark {
+  color: #d8ff35;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.28em;
+}
+
+.studio-shell {
+  padding-block: 2rem 5rem;
+}
+
+.access-panel {
+  display: grid;
+  grid-template-columns: minmax(12rem, 0.55fr) 1fr;
+  gap: 2rem;
+  padding: 1.5rem;
+  border: 1px solid #34363c;
+  background: rgb(20 21 24 / 88%);
+}
+
+.access-panel h2 {
+  font-size: 1.35rem;
+}
+
+.access-panel p {
+  max-width: 34rem;
+  margin-top: 0.5rem;
+  color: #adafb6;
+  line-height: 1.5;
+}
+
+.access-form label,
+.field-row label {
+  display: block;
+  margin-bottom: 0.45rem;
+  color: #d7d7dc;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.access-row {
+  display: grid;
+  grid-template-columns: minmax(12rem, 1fr) auto auto;
+  gap: 0.65rem;
+}
+
+input {
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #4b4e55;
+  border-radius: 0.25rem;
+  background: #111216;
+  color: #fff;
+}
+
+.studio-status {
+  min-height: 1.5rem;
+  margin: 1.35rem 0;
+  color: #bfc1c8;
+}
+
+.studio-status[data-state="success"] {
+  color: #d8ff35;
+}
+
+.studio-status[data-state="error"] {
+  color: #ff8d9a;
+}
+
+.content-form[aria-busy="true"] {
+  opacity: 0.72;
+}
+
+.content-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.content-group {
+  min-width: 0;
+  margin: 0;
+  padding: 1.25rem;
+  border: 1px solid #34363c;
+  background: #141518;
+}
+
+.content-group legend {
+  padding-inline: 0.35rem;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 750;
+}
+
+.group-description {
+  min-height: 2.6em;
+  margin: 0 0 1.2rem;
+  color: #8f929a;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.field-row + .field-row {
+  margin-top: 1rem;
+}
+
+.field-hint {
+  display: block;
+  margin-top: 0.35rem;
+  color: #777a82;
+  font-size: 0.78rem;
+}
+
+.studio-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #34363c;
+}
+
+@media (max-width: 48rem) {
+  .studio-header,
+  .access-panel,
+  .content-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .studio-mark {
+    margin-bottom: 0;
+  }
+
+  .access-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .access-row input {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 30rem) {
+  .access-row,
+  .studio-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

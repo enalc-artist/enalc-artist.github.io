@@ -1,0 +1,225 @@
+{
+  "_meta": {
+    "scope": "V8 archive additions",
+    "editorialPolicy": "Artwork titles remain as established by the artist; factual context is translated."
+  },
+  "archiveV8": {
+    "verbenaKicker": {
+      "es": "Festival artístico · exposición y venta de obra",
+      "en": "Art festival · exhibition and artwork sales",
+      "fr": "Festival artistique · exposition et vente d’œuvres",
+      "it": "Festival artistico · esposizione e vendita di opere",
+      "de": "Kunstfestival · Ausstellung und Verkauf von Werken"
+    },
+    "verbenaTitle": {
+      "es": "ENALC en Verbena Bandarra",
+      "en": "ENALC at Verbena Bandarra",
+      "fr": "ENALC à Verbena Bandarra",
+      "it": "ENALC a Verbena Bandarra",
+      "de": "ENALC bei Verbena Bandarra"
+    },
+    "verbenaPlace": {
+      "es": "Madreams Music · Madrid · 11 de mayo de 2025",
+      "en": "Madreams Music · Madrid · 11 May 2025",
+      "fr": "Madreams Music · Madrid · 11 mai 2025",
+      "it": "Madreams Music · Madrid · 11 maggio 2025",
+      "de": "Madreams Music · Madrid · 11. Mai 2025"
+    },
+    "verbenaRole": {
+      "es": "Artista visual participante · exposición de obra y venta de láminas",
+      "en": "Participating visual artist · exhibited work and sold prints",
+      "fr": "Artiste visuel participant · exposition d’œuvres et vente de tirages",
+      "it": "Artista visivo partecipante · esposizione di opere e vendita di stampe",
+      "de": "Teilnehmender bildender Künstler · Ausstellung von Werken und Verkauf von Drucken"
+    },
+    "verbenaNote": {
+      "es": "Okan Producciones anunció a Enrique Alcides como artista invitado para presentar parte de su proyecto ENALC. El artista confirma que expuso obra y vendió láminas durante el evento.",
+      "en": "Okan Producciones announced Enrique Alcides as a guest artist presenting part of his ENALC project. The artist confirms that he exhibited work and sold prints during the event.",
+      "fr": "Okan Producciones a annoncé Enrique Alcides comme artiste invité pour présenter une partie de son projet ENALC. L’artiste confirme qu’il a exposé des œuvres et vendu des tirages pendant l’événement.",
+      "it": "Okan Producciones ha annunciato Enrique Alcides come artista invitato per presentare parte del suo progetto ENALC. L’artista conferma di aver esposto opere e venduto stampe durante l’evento.",
+      "de": "Okan Producciones kündigte Enrique Alcides als Gastkünstler an, der einen Teil seines ENALC-Projekts präsentierte. Der Künstler bestätigt, dass er Werke ausstellte und Drucke verkaufte."
+    },
+    "popKicker": {
+      "es": "Experiencia colectiva de Pop Art",
+      "en": "Collective Pop Art experience",
+      "fr": "Expérience collective de Pop Art",
+      "it": "Esperienza collettiva di Pop Art",
+      "de": "Kollektives Pop-Art-Erlebnis"
+    },
+    "popPlace": {
+      "es": "Gris Bar · Madrid · 16 de febrero de 2023",
+      "en": "Gris Bar · Madrid · 16 February 2023",
+      "fr": "Gris Bar · Madrid · 16 février 2023",
+      "it": "Gris Bar · Madrid · 16 febbraio 2023",
+      "de": "Gris Bar · Madrid · 16. Februar 2023"
+    },
+    "popRole": {
+      "es": "Artista visual participante · obra propia expuesta",
+      "en": "Participating visual artist · own work exhibited",
+      "fr": "Artiste visuel participant · œuvre personnelle exposée",
+      "it": "Artista visivo partecipante · opera propria esposta",
+      "de": "Teilnehmender bildender Künstler · eigenes Werk ausgestellt"
+    },
+    "popNote": {
+      "es": "Enrique Alcides anunció un encuentro colectivo de Pop Art en Gris Bar y presentó la imagen de la publicación como otra pieza de su trabajo reciente.",
+      "en": "Enrique Alcides announced a collective Pop Art gathering at Gris Bar and presented the image in the post as another piece of his recent work.",
+      "fr": "Enrique Alcides a annoncé une rencontre collective de Pop Art au Gris Bar et a présenté l’image publiée comme une autre pièce de son travail récent.",
+      "it": "Enrique Alcides ha annunciato un incontro collettivo di Pop Art al Gris Bar e ha presentato l’immagine pubblicata come un’altra opera recente.",
+      "de": "Enrique Alcides kündigte ein kollektives Pop-Art-Treffen in der Gris Bar an und bezeichnete das veröffentlichte Bild als ein weiteres Werk seiner jüngsten Arbeit."
+    },
+    "internationalKicker": {
+      "es": "Exposición internacional · arte digital",
+      "en": "International exhibition · digital art",
+      "fr": "Exposition internationale · art numérique",
+      "it": "Mostra internazionale · arte digitale",
+      "de": "Internationale Ausstellung · digitale Kunst"
+    },
+    "naturalPlace": {
+      "es": "LAB ART / Art Lab California · Los Ángeles · 16–31 de enero de 2023",
+      "en": "LAB ART / Art Lab California · Los Angeles · 16–31 January 2023",
+      "fr": "LAB ART / Art Lab California · Los Angeles · 16–31 janvier 2023",
+      "it": "LAB ART / Art Lab California · Los Angeles · 16–31 gennaio 2023",
+      "de": "LAB ART / Art Lab California · Los Angeles · 16.–31. Januar 2023"
+    },
+    "naturalRole": {
+      "es": "Obra digital propia expuesta: Natural Bare",
+      "en": "Own digital work exhibited: Natural Bare",
+      "fr": "Œuvre numérique personnelle exposée : Natural Bare",
+      "it": "Opera digitale propria esposta: Natural Bare",
+      "de": "Eigenes digitales Werk ausgestellt: Natural Bare"
+    },
+    "naturalNote": {
+      "es": "Registro público de la primera presentación de Enrique Alcides en LAB ART Los Angeles, con la obra identificada expresamente como arte digital.",
+      "en": "Public record of Enrique Alcides’s first presentation at LAB ART Los Angeles, with the work explicitly identified as digital art.",
+      "fr": "Trace publique de la première présentation d’Enrique Alcides à LAB ART Los Angeles, l’œuvre étant explicitement identifiée comme art numérique.",
+      "it": "Documentazione pubblica della prima presentazione di Enrique Alcides a LAB ART Los Angeles, con l’opera esplicitamente identificata come arte digitale.",
+      "de": "Öffentlicher Beleg für Enrique Alcides’ erste Präsentation bei LAB ART Los Angeles; das Werk wird ausdrücklich als digitale Kunst bezeichnet."
+    },
+    "alonePlace": {
+      "es": "Lelie Galerij · Ámsterdam · enero de 2023",
+      "en": "Lelie Galerij · Amsterdam · January 2023",
+      "fr": "Lelie Galerij · Amsterdam · janvier 2023",
+      "it": "Lelie Galerij · Amsterdam · gennaio 2023",
+      "de": "Lelie Galerij · Amsterdam · Januar 2023"
+    },
+    "aloneRole": {
+      "es": "Obra digital propia expuesta: Alone at the Prom",
+      "en": "Own digital work exhibited: Alone at the Prom",
+      "fr": "Œuvre numérique personnelle exposée : Alone at the Prom",
+      "it": "Opera digitale propria esposta: Alone at the Prom",
+      "de": "Eigenes digitales Werk ausgestellt: Alone at the Prom"
+    },
+    "aloneNote": {
+      "es": "El registro público del artista indica que la obra permaneció expuesta en Lelie Galerij durante todo enero de 2023.",
+      "en": "The artist’s public record states that the work remained on display at Lelie Galerij throughout January 2023.",
+      "fr": "Le registre public de l’artiste indique que l’œuvre est restée exposée à la Lelie Galerij pendant tout le mois de janvier 2023.",
+      "it": "Il registro pubblico dell’artista indica che l’opera è rimasta esposta alla Lelie Galerij per tutto gennaio 2023.",
+      "de": "Der öffentliche Beleg des Künstlers hält fest, dass das Werk im gesamten Januar 2023 in der Lelie Galerij ausgestellt war."
+    },
+    "originePlace": {
+      "es": "Thomson Gallery · Zug, Suiza · hasta el 31 de enero de 2023",
+      "en": "Thomson Gallery · Zug, Switzerland · until 31 January 2023",
+      "fr": "Thomson Gallery · Zoug, Suisse · jusqu’au 31 janvier 2023",
+      "it": "Thomson Gallery · Zugo, Svizzera · fino al 31 gennaio 2023",
+      "de": "Thomson Gallery · Zug, Schweiz · bis 31. Januar 2023"
+    },
+    "origineRole": {
+      "es": "Obra digital propia expuesta: Origine",
+      "en": "Own digital work exhibited: Origine",
+      "fr": "Œuvre numérique personnelle exposée : Origine",
+      "it": "Opera digitale propria esposta: Origine",
+      "de": "Eigenes digitales Werk ausgestellt: Origine"
+    },
+    "origineNote": {
+      "es": "La fuente de 2023 registra la obra como Origin. El título definitivo actual indicado por el artista es Origine, en francés.",
+      "en": "The 2023 source records the work as Origin. The artist’s current definitive title is Origine, in French.",
+      "fr": "La source de 2023 enregistre l’œuvre sous le titre Origin. Le titre définitif actuel indiqué par l’artiste est Origine, en français.",
+      "it": "La fonte del 2023 registra l’opera come Origin. Il titolo definitivo attuale indicato dall’artista è Origine, in francese.",
+      "de": "Die Quelle von 2023 führt das Werk als Origin. Der vom Künstler festgelegte heutige Titel lautet Origine, auf Französisch."
+    },
+    "evidenceDirect": {
+      "es": "Prueba: registro directo del organizador",
+      "en": "Evidence: direct organizer record",
+      "fr": "Preuve : publication directe de l’organisateur",
+      "it": "Prova: registrazione diretta dell’organizzatore",
+      "de": "Nachweis: direkter Eintrag des Veranstalters"
+    },
+    "evidencePending": {
+      "es": "Prueba: registro del artista; archivo independiente del evento pendiente",
+      "en": "Evidence: artist record; independent event archive pending",
+      "fr": "Preuve : publication de l’artiste ; archive indépendante de l’événement en attente",
+      "it": "Prova: registrazione dell’artista; archivio indipendente dell’evento in attesa",
+      "de": "Nachweis: Eintrag des Künstlers; unabhängiges Veranstaltungsarchiv noch ausstehend"
+    },
+    "evidenceCorroborated": {
+      "es": "Prueba: registro del artista + corroboración independiente del programa",
+      "en": "Evidence: artist record + independent programme corroboration",
+      "fr": "Preuve : publication de l’artiste + corroboration indépendante du programme",
+      "it": "Prova: registrazione dell’artista + riscontro indipendente del programma",
+      "de": "Nachweis: Eintrag des Künstlers + unabhängige Bestätigung des Programms"
+    },
+    "organizerRecord": {
+      "es": "Registro del organizador · Okan Producciones ↗",
+      "en": "Organizer record · Okan Producciones ↗",
+      "fr": "Publication de l’organisateur · Okan Producciones ↗",
+      "it": "Registrazione dell’organizzatore · Okan Producciones ↗",
+      "de": "Eintrag des Veranstalters · Okan Producciones ↗"
+    },
+    "organizerProfile": {
+      "es": "Perfil del organizador ↗",
+      "en": "Organizer profile ↗",
+      "fr": "Profil de l’organisateur ↗",
+      "it": "Profilo dell’organizzatore ↗",
+      "de": "Profil des Veranstalters ↗"
+    },
+    "artistDatedRecord": {
+      "es": "Registro fechado del artista ↗",
+      "en": "Artist’s dated record ↗",
+      "fr": "Publication datée de l’artiste ↗",
+      "it": "Registrazione datata dell’artista ↗",
+      "de": "Datierter Eintrag des Künstlers ↗"
+    },
+    "independentVenueRecord": {
+      "es": "Registro independiente del espacio ↗",
+      "en": "Independent venue record ↗",
+      "fr": "Référence indépendante du lieu ↗",
+      "it": "Riscontro indipendente dello spazio ↗",
+      "de": "Unabhängiger Nachweis des Veranstaltungsorts ↗"
+    },
+    "independentExhibitionRecord": {
+      "es": "Registro independiente de la exposición ↗",
+      "en": "Independent exhibition record ↗",
+      "fr": "Référence indépendante de l’exposition ↗",
+      "it": "Riscontro indipendente della mostra ↗",
+      "de": "Unabhängiger Ausstellungsnachweis ↗"
+    },
+    "independentCircuitRecord": {
+      "es": "Registro independiente del circuito ↗",
+      "en": "Independent circuit record ↗",
+      "fr": "Référence indépendante du circuit ↗",
+      "it": "Riscontro indipendente del circuito ↗",
+      "de": "Unabhängiger Nachweis des Ausstellungsnetzwerks ↗"
+    },
+    "officialGallery": {
+      "es": "Galería oficial ↗",
+      "en": "Official gallery ↗",
+      "fr": "Galerie officielle ↗",
+      "it": "Galleria ufficiale ↗",
+      "de": "Offizielle Galerie ↗"
+    },
+    "artboxyNetwork": {
+      "es": "Red ARTBOXY ↗",
+      "en": "ARTBOXY network ↗",
+      "fr": "Réseau ARTBOXY ↗",
+      "it": "Rete ARTBOXY ↗",
+      "de": "ARTBOXY-Netzwerk ↗"
+    },
+    "sourceLabel": {
+      "es": "Documento / fuente ↗",
+      "en": "Document / source ↗",
+      "fr": "Document / source ↗",
+      "it": "Documento / fonte ↗",
+      "de": "Dokument / Quelle ↗"
+    }
+  }
+}
