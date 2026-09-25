@@ -531,20 +531,8 @@
         "de": "Werdegang / Archiv"
       },
       "intro.title": {
-        "es": "Pruebas, rastros, contextos.",
-        "de": "Belege, Spuren, Kontexte."
-      },
-      "intro.lede": {
-        "es": "Primera reconstrucción de una trayectoria dispersa. Solo aparecen datos con una fuente pública localizada; el archivo crecerá con catálogos, fotografías, críticas, fichas y documentación física.",
-        "de": "Eine erste Rekonstruktion eines verstreuten Werdegangs. Aufgeführt werden ausschließlich Angaben, für die eine öffentliche Quelle gefunden wurde; das Archiv wird um Kataloge, Fotografien, Kritiken, Werkdaten und physische Dokumente erweitert."
-      },
-      "method.eyebrow": {
-        "es": "Criterio de archivo",
-        "de": "Archivkriterium"
-      },
-      "method.body": {
-        "es": "Cada registro separa título, contexto y función acreditada. Cuando una fuente demuestra la participación pero no precisa el papel exacto, la ficha lo declara y queda abierta a futuras pruebas.",
-        "de": "Jeder Eintrag trennt Titel, Kontext und belegte Funktion. Weist eine Quelle die Mitwirkung nach, ohne die genaue Rolle zu benennen, wird dies im Eintrag offengelegt; er bleibt für künftige Nachweise offen."
+        "es": "Una trayectoria ecléctica.",
+        "de": "Ein vielseitiger künstlerischer Weg."
       },
       "timeline.2023.meta": {
         "es": "Exposición colectiva benéfica",
@@ -559,12 +547,12 @@
         "de": "Centro Riojano de Madrid · 28.–31. März 2023"
       },
       "timeline.2023.role": {
-        "es": "Artista participante · obra expuesta: People · comisariado de Lola Rodríguez",
-        "de": "Teilnehmender Künstler · ausgestelltes Werk: People · kuratiert von Lola Rodríguez"
+        "es": "Obra expuesta y vendida: People · comisariado de Lola Rodríguez",
+        "de": "Ausgestelltes und verkauftes Werk: People · kuratiert von Lola Rodríguez"
       },
       "timeline.2023.note": {
-        "es": "Exposición colectiva benéfica a favor de Mensajeros de la Paz, fundada por el padre Ángel, para apoyar a las víctimas de los terremotos de Turquía y Siria. La obra fue donada y adjudicada en subasta.",
-        "de": "Benefiz-Gruppenausstellung zugunsten von Mensajeros de la Paz, gegründet von Padre Ángel, zur Unterstützung der Opfer der Erdbeben in der Türkei und in Syrien. Das Werk wurde gestiftet und bei einer Auktion zugeschlagen."
+        "es": "Exposición colectiva benéfica para apoyar a las víctimas de los terremotos de Turquía y Siria. La recaudación de la venta de People se destinó a Fundación Mensajeros de la Paz.",
+        "de": "Benefiz-Gruppenausstellung zur Unterstützung der Opfer der Erdbeben in der Türkei und in Syrien. Der Erlös aus dem Verkauf von People ging an die Fundación Mensajeros de la Paz."
       },
       "timeline.2023.imageAlt": {
         "es": "People, obra de Enrique Alcides donada para la exposición solidaria de 2023",
@@ -607,8 +595,8 @@
         "de": "Stimme und Interpretation von Texten über die Farbe Rot"
       },
       "timeline.2011.note": {
-        "es": "Interpretación de Rouge sang, de Carmen Caillot, y de fragmentos de la novela Rojo esperanza, de Elena Zanca. Fecha exacta pendiente de contrastar.",
-        "de": "Interpretation von Rouge sang von Carmen Caillot sowie von Auszügen aus dem Roman Rojo esperanza von Elena Zanca. Das genaue Datum muss noch überprüft werden."
+        "es": "Interpretación de Rouge sang, de Carmen Caillot, y de fragmentos de la novela Rojo esperanza, de Elena Zanca.",
+        "de": "Interpretation von Rouge sang von Carmen Caillot sowie von Auszügen aus dem Roman Rojo esperanza von Elena Zanca."
       },
       "timeline.2011.imageAlt": {
         "es": "Retrato de Enrique Alcides asociado a Creative Insomnia Red Night",
@@ -630,10 +618,6 @@
         "es": "Participación incluida en el CV público de Enrique Alcides",
         "de": "Mitwirkung im öffentlich zugänglichen CV von Enrique Alcides aufgeführt"
       },
-      "timeline.2010.note": {
-        "es": "La fuente no detalla todavía la función concreta. Pendiente de completar con catálogo, créditos o documentación física.",
-        "de": "Die Quelle nennt die konkrete Funktion bislang nicht. Der Eintrag ist noch durch Katalog, Credits oder physische Dokumente zu ergänzen."
-      },
       "timeline.2008.meta": {
         "es": "Videoinstalación · cuerpo e imagen",
         "de": "Videoinstallation · Körper und Bild"
@@ -649,10 +633,6 @@
       "timeline.2008.role": {
         "es": "Participación registrada · obra de Claudia Bonollo",
         "de": "Dokumentierte Mitwirkung · Werk von Claudia Bonollo"
-      },
-      "timeline.2008.note": {
-        "es": "El proyecto figura en el apartado de videoarte del CV público de Enrique. La función concreta queda pendiente de completar con los materiales del proyecto.",
-        "de": "Das Projekt ist im Bereich Videokunst des öffentlich zugänglichen CV von Enrique aufgeführt. Die konkrete Funktion muss anhand der Projektunterlagen noch ergänzt werden."
       },
       "timeline.2007.meta": {
         "es": "Videoinstalación · cuerpo e imagen",
@@ -689,10 +669,6 @@
       "timeline.2003.role": {
         "es": "Participación incluida en el CV público de Enrique Alcides",
         "de": "Mitwirkung im öffentlich zugänglichen CV von Enrique Alcides aufgeführt"
-      },
-      "timeline.2003.note": {
-        "es": "Título normalizado a partir del registro original. Función concreta y contexto de presentación pendientes de documentar.",
-        "de": "Titel auf Grundlage des Originaleintrags vereinheitlicht. Konkrete Funktion und Präsentationskontext sind noch zu dokumentieren."
       },
       "timeline.sourceCta": {
         "es": "Documento / fuente",
@@ -761,10 +737,6 @@
       "materials.video": {
         "es": "Vídeo",
         "de": "Video"
-      },
-      "materials.pending": {
-        "es": "Material pendiente de digitalización e incorporación.",
-        "de": "Material wartet auf Digitalisierung und Aufnahme in das Archiv."
       }
     },
     "about": {

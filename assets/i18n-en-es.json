@@ -499,20 +499,8 @@
         "en": "Trajectory / archive"
       },
       "intro.title": {
-        "es": "Pruebas, rastros, contextos.",
-        "en": "Evidence, traces, contexts."
-      },
-      "intro.description": {
-        "es": "Primera reconstrucción de una trayectoria dispersa. Solo aparecen datos con una fuente pública localizada; el archivo crecerá con catálogos, fotografías, críticas, fichas y documentación física.",
-        "en": "A first reconstruction of a dispersed trajectory. Only information supported by an identified public source appears here; the archive will grow to include catalogues, photographs, criticism, records and physical documentation."
-      },
-      "criteria.title": {
-        "es": "Criterio de archivo",
-        "en": "Archival criteria"
-      },
-      "criteria.description": {
-        "es": "Cada registro separa título, contexto y función acreditada. Cuando una fuente demuestra la participación pero no precisa el papel exacto, la ficha lo declara y queda abierta a futuras pruebas.",
-        "en": "Each record distinguishes between title, context and credited role. When a source confirms participation without specifying the exact role, the entry states this and remains open to further evidence."
+        "es": "Una trayectoria ecléctica.",
+        "en": "An eclectic trajectory."
       },
       "solidarity.type": {
         "es": "Exposición colectiva benéfica",
@@ -527,12 +515,12 @@
         "en": "Centro Riojano de Madrid · 28–31 March 2023"
       },
       "solidarity.role": {
-        "es": "Artista participante · obra expuesta: People · comisariado de Lola Rodríguez",
-        "en": "Participating artist · work exhibited: People · curated by Lola Rodríguez"
+        "es": "Obra expuesta y vendida: People · comisariado de Lola Rodríguez",
+        "en": "Work exhibited and sold: People · curated by Lola Rodríguez"
       },
       "solidarity.description": {
-        "es": "Exposición colectiva benéfica a favor de Mensajeros de la Paz, fundada por el padre Ángel, para apoyar a las víctimas de los terremotos de Turquía y Siria. La obra fue donada y adjudicada en subasta.",
-        "en": "A charity group exhibition in support of Mensajeros de la Paz, founded by Father Ángel, to aid those affected by the earthquakes in Turkey and Syria. The work was donated and sold at auction."
+        "es": "Exposición colectiva benéfica para apoyar a las víctimas de los terremotos de Turquía y Siria. La recaudación de la venta de People se destinó a Fundación Mensajeros de la Paz.",
+        "en": "A charity group exhibition supporting victims of the earthquakes in Turkey and Syria. Proceeds from the sale of People were donated to Fundación Mensajeros de la Paz."
       },
       "solidarity.imageAlt": {
         "es": "People, obra de Enrique Alcides donada para la exposición solidaria de 2023",
@@ -571,8 +559,8 @@
         "en": "Voice performance and interpretation of texts on the colour red"
       },
       "creativeInsomnia.description": {
-        "es": "Interpretación de Rouge sang, de Carmen Caillot, y de fragmentos de la novela Rojo esperanza, de Elena Zanca. Fecha exacta pendiente de contrastar.",
-        "en": "Performance of Rouge sang by Carmen Caillot and excerpts from Elena Zanca’s novel Rojo esperanza. Exact date pending verification."
+        "es": "Interpretación de Rouge sang, de Carmen Caillot, y de fragmentos de la novela Rojo esperanza, de Elena Zanca.",
+        "en": "Performance of Rouge sang by Carmen Caillot and excerpts from Elena Zanca’s novel Rojo esperanza."
       },
       "creativeInsomnia.imageAlt": {
         "es": "Retrato de Enrique Alcides asociado a Creative Insomnia Red Night",
@@ -594,10 +582,6 @@
         "es": "Participación incluida en el CV público de Enrique Alcides",
         "en": "Participation listed in Enrique Alcides’s public CV"
       },
-      "domesticDemons.description": {
-        "es": "La fuente no detalla todavía la función concreta. Pendiente de completar con catálogo, créditos o documentación física.",
-        "en": "The source does not yet specify the exact role. To be completed with a catalogue, credits or physical documentation."
-      },
       "cosmicNarcissi.type": {
         "es": "Videoinstalación · cuerpo e imagen",
         "en": "Video installation · body and image"
@@ -609,10 +593,6 @@
       "cosmicNarcissi.role": {
         "es": "Participación registrada · obra de Claudia Bonollo",
         "en": "Documented participation · work by Claudia Bonollo"
-      },
-      "cosmicNarcissi.description": {
-        "es": "El proyecto figura en el apartado de videoarte del CV público de Enrique. La función concreta queda pendiente de completar con los materiales del proyecto.",
-        "en": "The project appears in the video art section of Enrique’s public CV. His exact role is to be completed once the project materials have been recovered."
       },
       "imaginedBody.type": {
         "es": "Videoinstalación · cuerpo e imagen",
@@ -649,10 +629,6 @@
       "beautyCure.role": {
         "es": "Participación incluida en el CV público de Enrique Alcides",
         "en": "Participation listed in Enrique Alcides’s public CV"
-      },
-      "beautyCure.description": {
-        "es": "Título normalizado a partir del registro original. Función concreta y contexto de presentación pendientes de documentar.",
-        "en": "Title normalised from the original record. Exact role and presentation context still to be documented."
       },
       "record.sourceCta": {
         "es": "Documento / fuente",
@@ -721,10 +697,6 @@
       "materials.video": {
         "es": "Vídeo",
         "en": "Video"
-      },
-      "materials.pending": {
-        "es": "Material pendiente de digitalización e incorporación.",
-        "en": "Material awaiting digitisation and inclusion."
       }
     },
     "about": {

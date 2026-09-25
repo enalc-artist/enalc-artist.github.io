@@ -26,18 +26,18 @@
       "de": "Madreams Music · Madrid · 11. Mai 2025"
     },
     "verbenaRole": {
-      "es": "Artista visual participante · exposición de obra y venta de láminas",
-      "en": "Participating visual artist · exhibited work and sold prints",
-      "fr": "Artiste visuel participant · exposition d’œuvres et vente de tirages",
-      "it": "Artista visivo partecipante · esposizione di opere e vendita di stampe",
-      "de": "Teilnehmender bildender Künstler · Ausstellung von Werken und Verkauf von Drucken"
+      "es": "Artista visual · exposición y venta de obra",
+      "en": "Visual artist · exhibition and sale of artwork",
+      "fr": "Artiste visuel · exposition et vente d’œuvres",
+      "it": "Artista visivo · esposizione e vendita di opere",
+      "de": "Bildender Künstler · Ausstellung und Verkauf von Kunstwerken"
     },
     "verbenaNote": {
-      "es": "Okan Producciones anunció a Enrique Alcides como artista invitado para presentar parte de su proyecto ENALC. El artista confirma que expuso obra y vendió láminas durante el evento.",
-      "en": "Okan Producciones announced Enrique Alcides as a guest artist presenting part of his ENALC project. The artist confirms that he exhibited work and sold prints during the event.",
-      "fr": "Okan Producciones a annoncé Enrique Alcides comme artiste invité pour présenter une partie de son projet ENALC. L’artiste confirme qu’il a exposé des œuvres et vendu des tirages pendant l’événement.",
-      "it": "Okan Producciones ha annunciato Enrique Alcides come artista invitato per presentare parte del suo progetto ENALC. L’artista conferma di aver esposto opere e venduto stampe durante l’evento.",
-      "de": "Okan Producciones kündigte Enrique Alcides als Gastkünstler an, der einen Teil seines ENALC-Projekts präsentierte. Der Künstler bestätigt, dass er Werke ausstellte und Drucke verkaufte."
+      "es": "Okan Producciones presentó a Enrique Alcides como artista invitado con una selección de su proyecto ENALC. Durante el evento expuso y vendió obra.",
+      "en": "Okan Producciones presented Enrique Alcides as a guest artist showing a selection from his ENALC project. He exhibited and sold artwork during the event.",
+      "fr": "Okan Producciones a présenté Enrique Alcides comme artiste invité avec une sélection de son projet ENALC. Il a exposé et vendu des œuvres pendant l’événement.",
+      "it": "Okan Producciones ha presentato Enrique Alcides come artista ospite con una selezione del suo progetto ENALC. Durante l’evento ha esposto e venduto opere.",
+      "de": "Okan Producciones präsentierte Enrique Alcides als Gastkünstler mit einer Auswahl aus seinem ENALC-Projekt. Während der Veranstaltung stellte er Werke aus und verkaufte sie."
     },
     "popKicker": {
       "es": "Experiencia colectiva de Pop Art",
@@ -136,27 +136,6 @@
       "fr": "La source de 2023 enregistre l’œuvre sous le titre Origin. Le titre définitif actuel indiqué par l’artiste est Origine, en français.",
       "it": "La fonte del 2023 registra l’opera come Origin. Il titolo definitivo attuale indicato dall’artista è Origine, in francese.",
       "de": "Die Quelle von 2023 führt das Werk als Origin. Der vom Künstler festgelegte heutige Titel lautet Origine, auf Französisch."
-    },
-    "evidenceDirect": {
-      "es": "Prueba: registro directo del organizador",
-      "en": "Evidence: direct organizer record",
-      "fr": "Preuve : publication directe de l’organisateur",
-      "it": "Prova: registrazione diretta dell’organizzatore",
-      "de": "Nachweis: direkter Eintrag des Veranstalters"
-    },
-    "evidencePending": {
-      "es": "Prueba: registro del artista; archivo independiente del evento pendiente",
-      "en": "Evidence: artist record; independent event archive pending",
-      "fr": "Preuve : publication de l’artiste ; archive indépendante de l’événement en attente",
-      "it": "Prova: registrazione dell’artista; archivio indipendente dell’evento in attesa",
-      "de": "Nachweis: Eintrag des Künstlers; unabhängiges Veranstaltungsarchiv noch ausstehend"
-    },
-    "evidenceCorroborated": {
-      "es": "Prueba: registro del artista + corroboración independiente del programa",
-      "en": "Evidence: artist record + independent programme corroboration",
-      "fr": "Preuve : publication de l’artiste + corroboration indépendante du programme",
-      "it": "Prova: registrazione dell’artista + riscontro indipendente del programma",
-      "de": "Nachweis: Eintrag des Künstlers + unabhängige Bestätigung des Programms"
     },
     "organizerRecord": {
       "es": "Registro del organizador · Okan Producciones ↗",
