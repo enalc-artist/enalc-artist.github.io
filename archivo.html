@@ -5,9 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google" content="notranslate">
     <link rel="preload" as="image" href="/archivo/archivo-verbena-bandarra.webp">
+    <link rel="preload" as="image" href="/obra/people-2023-definitive-v2.jpg">
     <link rel="stylesheet" href="/assets/index-CQIT47yq.css" data-rsc-css-href="/assets/index-CQIT47yq.css" data-precedence="vite-rsc/importer-resources">
     <link rel="stylesheet" href="/assets/enalc-enhancements.css">
-    <style>.timeline-image--people{filter:none!important;transition:none!important}</style>
+    <style>
+      .timeline-image--people{filter:none!important;transition:none!important}
+      .timeline-media-stack{grid-column:3;display:grid;gap:14px;width:100%}
+      .timeline-media-stack .timeline-image{grid-column:1;width:100%}
+      .timeline-media-stack .timeline-image--panoramic{aspect-ratio:auto;height:auto;background:transparent}
+      @media (width <= 900px){.timeline-media-stack{grid-column:2;width:min(100%,440px)}}
+      @media (width <= 600px){.timeline-media-stack{grid-column:1;width:100%}}
+    </style>
     <title>ENALC — Archive</title>
     <meta name="description" content="Painting, digital creation and artistic research projects by Enrique Alcides.">
     <link rel="shortcut icon" href="/favicon.svg">
@@ -73,7 +81,7 @@
             <a href="https://apintoresyescultores.es/wp-content/uploads/2023/05/Junio-2023-1.pdf" target="_blank" rel="noreferrer">Document / source<!-- -->
               ↗</a>
           </div>
-          <img class="timeline-image timeline-image--people" src="/obra/people-2023-definitive.jpg" alt="People, a work by Enrique Alcides donated to the 2023 charity exhibition">
+          <img class="timeline-image timeline-image--people" src="/obra/people-2023-definitive-v2.jpg" alt="People, a work by Enrique Alcides donated to the 2023 charity exhibition">
         </article>
         <article class="timeline-entry">
           <span class="timeline-year">2023</span>
@@ -233,7 +241,10 @@
             <a href="https://claudiabonolloatelier.wordpress.com/exposiciones/ecologia-de-la-mente/" target="_blank" rel="noreferrer">Document / source<!-- -->
               ↗</a>
           </div>
-          <img class="timeline-image" src="/archivo/archivo-the-imagined-body.jpg" alt="Installation views from The Imagined Body by Claudia Bonollo">
+          <div class="timeline-media-stack">
+            <img class="timeline-image" src="/archivo/archivo-the-imagined-body.jpg" alt="Installation views from The Imagined Body by Claudia Bonollo">
+            <img class="timeline-image timeline-image--panoramic" src="/archivo/archivo-the-imagined-body-chromatic-space.png" alt="Colour-treated projection image from The Imagined Body by Claudia Bonollo">
+          </div>
         </article>
         <article class="timeline-entry">
           <span class="timeline-year">2003</span>
@@ -333,6 +344,6 @@
     </footer>
     <script id="_R_" type="application/json">{"disabled":true}</script>
     <script src="/assets/editable-content.js"></script>
-    <script type="module" src="/assets/site-runtime.js?v=9.2"></script>
+    <script type="module" src="/assets/site-runtime.js?v=9.3"></script>
   </body>
 </html>
