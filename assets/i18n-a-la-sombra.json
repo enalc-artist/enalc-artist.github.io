@@ -1,0 +1,65 @@
+{
+  "_meta": {
+    "sourceLanguage": "en",
+    "languages": ["en", "es", "fr", "it", "de"],
+    "project": "A la sombra. El arte de hacer sitio"
+  },
+  "project": {
+    "meta": {
+      "en": "Ongoing proposal · open research · situated practice",
+      "es": "Propuesta en curso · investigación abierta · práctica situada",
+      "fr": "Proposition en cours · recherche ouverte · pratique située",
+      "it": "Proposta in corso · ricerca aperta · pratica situata",
+      "de": "Laufender Vorschlag · offene Forschung · ortsbezogene Praxis"
+    },
+    "title": {
+      "en": "A la sombra. El arte de hacer sitio",
+      "es": "A la sombra. El arte de hacer sitio",
+      "fr": "A la sombra. El arte de hacer sitio",
+      "it": "A la sombra. El arte de hacer sitio",
+      "de": "A la sombra. El arte de hacer sitio"
+    },
+    "statementOne": {
+      "en": "I want to investigate what makes a place welcome us. I begin with an everyday gesture: looking for shade. Across six sites in the ecosystem around Matadero Madrid, I will walk, listen, photograph and compose with social organisations, workers, students, neighbours and people who pass through the area.",
+      "es": "Quiero investigar qué hace que un lugar nos acoja. Parto de un gesto cotidiano: buscar una sombra. En seis lugares del ecosistema urbano del entorno de Matadero Madrid, caminaré, escucharé, fotografiaré y compondré junto a organizaciones sociales, trabajadores, estudiantes, vecinos y personas que transitan el barrio.",
+      "fr": "Je veux explorer ce qui fait qu’un lieu nous accueille. Je pars d’un geste quotidien : chercher de l’ombre. Dans six lieux de l’écosystème urbain autour de Matadero Madrid, je marcherai, écouterai, photographierai et composerai avec des organisations sociales, des travailleurs, des étudiants, des habitants et des personnes de passage dans le quartier.",
+      "it": "Voglio indagare ciò che fa sì che un luogo ci accolga. Parto da un gesto quotidiano: cercare l’ombra. In sei luoghi dell’ecosistema urbano intorno a Matadero Madrid camminerò, ascolterò, fotograferò e comporrò insieme a organizzazioni sociali, lavoratori, studenti, abitanti e persone che attraversano il quartiere.",
+      "de": "Ich möchte untersuchen, wodurch ein Ort uns aufnimmt. Ausgangspunkt ist eine alltägliche Geste: Schatten zu suchen. An sechs Orten im urbanen Gefüge rund um Matadero Madrid werde ich gemeinsam mit sozialen Organisationen, Beschäftigten, Studierenden, Anwohnerinnen und Anwohnern sowie Menschen, die das Viertel durchqueren, gehen, zuhören, fotografieren und gestalten."
+    },
+    "statementTwo": {
+      "en": "The shadow is both a material reality and an image of care: a place that lets another body stop, rest and feel part of the world, without having to buy, produce or justify its presence.",
+      "es": "La sombra es a la vez una realidad material y una imagen del cuidado: un lugar que permite a otro cuerpo detenerse, descansar y sentirse parte del mundo, sin tener que comprar, producir ni justificar su presencia.",
+      "fr": "L’ombre est à la fois une réalité matérielle et une image du soin : un lieu qui permet à un autre corps de s’arrêter, de se reposer et de se sentir partie du monde, sans devoir acheter, produire ni justifier sa présence.",
+      "it": "L’ombra è insieme una realtà materiale e un’immagine della cura: un luogo che permette a un altro corpo di fermarsi, riposare e sentirsi parte del mondo, senza dover comprare, produrre o giustificare la propria presenza.",
+      "de": "Der Schatten ist zugleich materielle Realität und ein Bild der Fürsorge: ein Ort, an dem ein anderer Körper innehalten, ausruhen und sich als Teil der Welt fühlen kann, ohne kaufen, produzieren oder seine Anwesenheit rechtfertigen zu müssen."
+    },
+    "format": {
+      "en": "Proposal · Script 00 — atlas of six shadows · documentary piece · video-art piece",
+      "es": "Propuesta · Guion 00 — atlas de seis sombras · pieza documental · pieza de videoarte",
+      "fr": "Proposition · Script 00 — atlas de six ombres · pièce documentaire · pièce de vidéo-art",
+      "it": "Proposta · Traccia 00 — atlante di sei ombre · opera documentaria · opera di videoarte",
+      "de": "Vorschlag · Skizze 00 — Atlas aus sechs Schatten · Dokumentarstück · Videoarbeit"
+    },
+    "status": {
+      "en": "PROPOSAL IN PROGRESS",
+      "es": "PROPUESTA EN CURSO",
+      "fr": "PROPOSITION EN COURS",
+      "it": "PROPOSTA IN CORSO",
+      "de": "VORSCHLAG IN ARBEIT"
+    },
+    "caption": {
+      "en": "AI-generated concept study. The final atlas will be built from materials generated through the participatory process.",
+      "es": "Estudio conceptual generado con IA. El atlas final se construirá con los materiales producidos durante el proceso participativo.",
+      "fr": "Étude conceptuelle générée avec l’IA. L’atlas final sera construit à partir des matériaux produits au cours du processus participatif.",
+      "it": "Studio concettuale generato con IA. L’atlante finale sarà costruito con i materiali prodotti durante il processo partecipativo.",
+      "de": "KI-generierte Konzeptstudie. Der endgültige Atlas entsteht aus den Materialien des partizipativen Prozesses."
+    },
+    "alt": {
+      "en": "Conceptual collage of moving tree shadows and an empty bench for A la sombra. El arte de hacer sitio",
+      "es": "Collage conceptual de sombras de árboles en movimiento y un banco vacío para A la sombra. El arte de hacer sitio",
+      "fr": "Collage conceptuel d’ombres d’arbres en mouvement et d’un banc vide pour A la sombra. El arte de hacer sitio",
+      "it": "Collage concettuale di ombre di alberi in movimento e una panchina vuota per A la sombra. El arte de hacer sitio",
+      "de": "Konzeptcollage aus bewegten Baumschatten und einer leeren Bank für A la sombra. El arte de hacer sitio"
+    }
+  }
+}
