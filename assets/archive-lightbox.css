@@ -1,0 +1,162 @@
+img[data-lightbox] {
+  cursor: zoom-in;
+}
+
+.archive-page .archive-modules--single {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+img[data-lightbox]:focus-visible {
+  outline: 3px solid #111;
+  outline-offset: 5px;
+}
+
+.archive-page .timeline-entry--no-year .timeline-copy {
+  grid-column: 2;
+}
+
+.archive-page .timeline-entry--no-year .timeline-image {
+  grid-column: 3;
+}
+
+.archive-page .timeline-image--red-night-woman,
+.archive-page .timeline-entry:hover .timeline-image--red-night-woman {
+  aspect-ratio: 461 / 930;
+  width: min(100%, 300px);
+  justify-self: center;
+  object-fit: cover;
+  object-position: left center;
+  background: #111;
+}
+
+.archive-lightbox {
+  width: 100vw;
+  max-width: none;
+  height: 100dvh;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #fff;
+  background: rgba(5, 5, 5, 0.97);
+  overflow: hidden;
+}
+
+.archive-lightbox[open] {
+  display: grid;
+  place-items: center;
+}
+
+.archive-lightbox::backdrop {
+  background: rgba(5, 5, 5, 0.97);
+}
+
+.archive-lightbox__figure {
+  display: grid;
+  place-items: center;
+  gap: 14px;
+  width: min(94vw, 1600px);
+  max-height: 92dvh;
+  margin: 0;
+}
+
+.archive-lightbox__media {
+  display: grid;
+  place-items: center;
+  max-width: 94vw;
+  max-height: 84dvh;
+}
+
+.archive-lightbox__image {
+  display: block;
+  width: auto;
+  max-width: 94vw;
+  height: auto;
+  max-height: 84dvh;
+  object-fit: contain;
+}
+
+.archive-lightbox__media--red-night-woman {
+  width: min(calc(100vw - 48px), calc(84dvh * 461 / 930));
+  aspect-ratio: 461 / 930;
+  overflow: hidden;
+  background: #111;
+}
+
+.archive-lightbox__media--red-night-woman .archive-lightbox__image {
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  max-height: none;
+  object-fit: cover;
+  object-position: left center;
+}
+
+.archive-lightbox__caption {
+  max-width: min(88vw, 820px);
+  margin: 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  line-height: 1.45;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.archive-lightbox__close {
+  position: fixed;
+  z-index: 2;
+  top: max(18px, env(safe-area-inset-top));
+  right: max(18px, env(safe-area-inset-right));
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 50%;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.48);
+  font: inherit;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.archive-lightbox__close:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 4px;
+}
+
+@media (width <= 600px) {
+  .archive-page .timeline-entry--no-year .timeline-copy,
+  .archive-page .timeline-entry--no-year .timeline-image {
+    grid-column: 1;
+  }
+
+  .archive-page .timeline-image--red-night-woman,
+  .archive-page .timeline-entry:hover .timeline-image--red-night-woman {
+    width: min(72vw, 300px);
+  }
+
+  .archive-lightbox__figure {
+    gap: 10px;
+  }
+
+  .archive-lightbox__caption {
+    font-size: 0.62rem;
+  }
+}
+
+@media (601px <= width <= 900px) {
+  .archive-page .timeline-entry--no-year .timeline-image {
+    grid-column: 2;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .archive-lightbox,
+  .archive-lightbox * {
+    scroll-behavior: auto;
+  }
+}
