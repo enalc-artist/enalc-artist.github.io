@@ -119,6 +119,10 @@
         "archive-lightbox__media--red-night-woman",
         image.dataset.lightboxCrop === "red-night-woman",
       );
+      enlarged.classList.toggle(
+        "archive-lightbox__image--rotate-180",
+        image.dataset.lightboxTransform === "rotate-180",
+      );
       dialog.showModal();
       closeButton.focus();
     }

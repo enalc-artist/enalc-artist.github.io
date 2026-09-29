@@ -1,0 +1,543 @@
+{
+  "_meta": {
+    "scope": "Work-page digital image territories",
+    "editorialPolicy": "Established artwork titles remain unchanged; category, context and accessibility text are translated."
+  },
+  "workGallery": {
+    "eyebrow": {
+      "en": "Digital image · ongoing research",
+      "es": "Imagen digital · investigación en curso",
+      "fr": "Image numérique · recherche en cours",
+      "it": "Immagine digitale · ricerca in corso",
+      "de": "Digitales Bild · laufende Forschung"
+    },
+    "title": {
+      "en": "Digital image territories.",
+      "es": "Territorios de la imagen digital.",
+      "fr": "Territoires de l’image numérique.",
+      "it": "Territori dell’immagine digitale.",
+      "de": "Territorien des digitalen Bildes."
+    },
+    "intro": {
+      "en": "A growing constellation of altered images, fractured portraits, colour fields and working records, organised here by visual affinity.",
+      "es": "Una constelación en crecimiento de imágenes alteradas, retratos fragmentados, campos de color y registros de proceso, organizada aquí por afinidades visuales.",
+      "fr": "Une constellation en expansion d’images altérées, de portraits fragmentés, de champs colorés et de traces de travail, organisée ici par affinités visuelles.",
+      "it": "Una costellazione in crescita di immagini alterate, ritratti frammentati, campi cromatici e tracce di lavoro, organizzata qui per affinità visive.",
+      "de": "Eine wachsende Konstellation aus veränderten Bildern, fragmentierten Porträts, Farbfeldern und Arbeitsaufzeichnungen, hier nach visuellen Verwandtschaften geordnet."
+    },
+    "progress": {
+      "en": "WORK IN PROGRESS",
+      "es": "TRABAJO EN PROCESO",
+      "fr": "TRAVAIL EN COURS",
+      "it": "LAVORO IN CORSO",
+      "de": "IN ARBEIT"
+    },
+    "glitch": {
+      "title": {
+        "en": "Fevered Landscapes",
+        "es": "Paisajes febriles",
+        "fr": "Paysages fiévreux",
+        "it": "Paesaggi febbrili",
+        "de": "Fieberlandschaften"
+      },
+      "intro": {
+        "en": "Chromatic architectures shift between landscape, signal and abstraction.",
+        "es": "Arquitecturas cromáticas que se desplazan entre paisaje, señal y abstracción.",
+        "fr": "Des architectures chromatiques oscillent entre paysage, signal et abstraction.",
+        "it": "Architetture cromatiche si muovono tra paesaggio, segnale e astrazione.",
+        "de": "Chromatische Architekturen bewegen sich zwischen Landschaft, Signal und Abstraktion."
+      },
+      "image03Technique": {
+        "en": "Digital finish",
+        "es": "Acabado digital",
+        "fr": "Finition numérique",
+        "it": "Finitura digitale",
+        "de": "Digitale Ausarbeitung"
+      }
+    },
+    "portraits": {
+      "title": {
+        "en": "Fragmented Portraits",
+        "es": "Retratos fragmentados",
+        "fr": "Portraits fragmentés",
+        "it": "Ritratti frammentati",
+        "de": "Fragmentierte Porträts"
+      },
+      "intro": {
+        "en": "The self-portrait becomes panel, echo and multiplied presence.",
+        "es": "El autorretrato se convierte en panel, eco y presencia multiplicada.",
+        "fr": "L’autoportrait devient panneau, écho et présence démultipliée.",
+        "it": "L’autoritratto diventa pannello, eco e presenza moltiplicata.",
+        "de": "Das Selbstporträt wird zu Bildfeld, Echo und vervielfachter Präsenz."
+      }
+    },
+    "compositions": {
+      "title": {
+        "en": "Digital Compositions",
+        "es": "Composiciones digitales",
+        "fr": "Compositions numériques",
+        "it": "Composizioni digitali",
+        "de": "Digitale Kompositionen"
+      },
+      "intro": {
+        "en": "Colour, distortion and cultural memory meet in independent image studies.",
+        "es": "Color, distorsión y memoria cultural se encuentran en estudios de imagen independientes.",
+        "fr": "Couleur, distorsion et mémoire culturelle se rencontrent dans des études d’image autonomes.",
+        "it": "Colore, distorsione e memoria culturale si incontrano in studi d’immagine autonomi.",
+        "de": "Farbe, Verzerrung und kulturelles Gedächtnis begegnen sich in eigenständigen Bildstudien."
+      },
+      "composition01": {
+        "title": {
+          "en": "Imagined Vinyl Cover",
+          "es": "Imagined Vinyl Cover",
+          "fr": "Imagined Vinyl Cover",
+          "it": "Imagined Vinyl Cover",
+          "de": "Imagined Vinyl Cover"
+        },
+        "technique": {
+          "en": "Photography · digital decomposition",
+          "es": "Fotografía · descomposición digital",
+          "fr": "Photographie · décomposition numérique",
+          "it": "Fotografia · decomposizione digitale",
+          "de": "Fotografie · digitale Dekomposition"
+        }
+      },
+      "composition02": {
+        "title": {
+          "en": "Marilyn’s Scream",
+          "es": "Marilyn’s Scream",
+          "fr": "Marilyn’s Scream",
+          "it": "Marilyn’s Scream",
+          "de": "Marilyn’s Scream"
+        },
+        "technique": {
+          "en": "Painting · watercolour · oil · digital retouching",
+          "es": "Pintura · acuarela · óleo · retoque digital",
+          "fr": "Peinture · aquarelle · huile · retouche numérique",
+          "it": "Pittura · acquerello · olio · ritocco digitale",
+          "de": "Malerei · Aquarell · Öl · digitale Retusche"
+        }
+      },
+      "composition03": {
+        "title": {
+          "en": "Butterfly Mandala",
+          "es": "Butterfly Mandala",
+          "fr": "Butterfly Mandala",
+          "it": "Butterfly Mandala",
+          "de": "Butterfly Mandala"
+        },
+        "technique": {
+          "en": "Digital distortion of a photograph of a giant blue butterfly",
+          "es": "Distorsión digital de una fotografía de una mariposa azul gigante",
+          "fr": "Distorsion numérique d’une photographie d’un papillon bleu géant",
+          "it": "Distorsione digitale di una fotografia di una farfalla blu gigante",
+          "de": "Digitale Verzerrung einer Fotografie eines riesigen blauen Schmetterlings"
+        }
+      }
+    },
+    "collageDrawing": {
+      "title": {
+        "en": "Collage / Drawing",
+        "es": "Collage / dibujo",
+        "fr": "Collage / dessin",
+        "it": "Collage / disegno",
+        "de": "Collage / Zeichnung"
+      },
+      "intro": {
+        "en": "Four ongoing studies in collage and drawing.",
+        "es": "Cuatro estudios en curso de collage y dibujo.",
+        "fr": "Quatre études en cours de collage et de dessin.",
+        "it": "Quattro studi in corso di collage e disegno.",
+        "de": "Vier laufende Studien in Collage und Zeichnung."
+      },
+      "image04Technique": {
+        "en": "Random collage of drawings, paintings, photographs and advertisements",
+        "es": "Collage aleatorio de dibujos, pinturas, fotografías y anuncios",
+        "fr": "Collage aléatoire de dessins, peintures, photographies et publicités",
+        "it": "Collage casuale di disegni, dipinti, fotografie e pubblicità",
+        "de": "Zufällige Collage aus Zeichnungen, Gemälden, Fotografien und Anzeigen"
+      }
+    },
+    "figures": {
+      "title": {
+        "en": "Figurative Images",
+        "es": "Imágenes figurativas",
+        "fr": "Images figuratives",
+        "it": "Immagini figurative",
+        "de": "Figurative Bilder"
+      },
+      "intro": {
+        "en": "Figuration is tested through line, colour and constructed surroundings.",
+        "es": "La figuración se pone a prueba mediante la línea, el color y los entornos construidos.",
+        "fr": "La figuration est éprouvée par la ligne, la couleur et des environnements construits.",
+        "it": "La figurazione viene messa alla prova attraverso linea, colore e ambienti costruiti.",
+        "de": "Figuration wird durch Linie, Farbe und konstruierte Umgebungen erprobt."
+      }
+    },
+    "process": {
+      "title": {
+        "en": "Process Documents",
+        "es": "Documentos de proceso",
+        "fr": "Documents de processus",
+        "it": "Documenti di processo",
+        "de": "Prozessdokumente"
+      },
+      "intro": {
+        "en": "Working interfaces, mirrored states and physical presentations retain the passage from image to object.",
+        "es": "Interfaces de trabajo, estados especulares y presentaciones físicas conservan el tránsito de la imagen al objeto.",
+        "fr": "Interfaces de travail, états en miroir et présentations physiques conservent le passage de l’image à l’objet.",
+        "it": "Interfacce di lavoro, stati speculari e presentazioni fisiche conservano il passaggio dall’immagine all’oggetto.",
+        "de": "Arbeitsoberflächen, gespiegelte Zustände und physische Präsentationen bewahren den Übergang vom Bild zum Objekt."
+      }
+    },
+    "bodies": {
+      "painterlyDescription": {
+        "en": "A growing survey of canvases, works on paper and mixed media, organised as material constellations rather than a single chronology.",
+        "es": "Un recorrido en crecimiento por lienzos, obras sobre papel y técnicas mixtas, organizado como constelaciones materiales y no como una única cronología.",
+        "fr": "Un parcours en expansion parmi des toiles, des œuvres sur papier et des techniques mixtes, organisé en constellations matérielles plutôt qu’en une chronologie unique.",
+        "it": "Un percorso in crescita tra tele, opere su carta e tecniche miste, organizzato come costellazioni materiche anziché in un’unica cronologia.",
+        "de": "Ein wachsender Überblick über Leinwände, Arbeiten auf Papier und Mischtechniken, als materielle Konstellationen statt als einheitliche Chronologie geordnet."
+      },
+      "seriesProgress": {
+        "en": "Series · Work in Progress",
+        "es": "Serie · Trabajo en proceso",
+        "fr": "Série · Travail en cours",
+        "it": "Serie · Lavoro in corso",
+        "de": "Serie · In Arbeit"
+      }
+    },
+    "suspiciousLede": {
+      "en": "A watercolour inspired by a memory of Paloma Picasso in a 1980s perfume advertisement. The piece appeared in one of the artist’s group exhibitions.",
+      "es": "Una acuarela inspirada en un recuerdo de Paloma Picasso en un anuncio de perfume de los años ochenta. La pieza formó parte de una de las exposiciones colectivas del artista.",
+      "fr": "Une aquarelle inspirée par un souvenir de Paloma Picasso dans une publicité de parfum des années 1980. La pièce a figuré dans l’une des expositions collectives de l’artiste.",
+      "it": "Un acquerello ispirato al ricordo di Paloma Picasso in una pubblicità di profumo degli anni Ottanta. L’opera è apparsa in una delle mostre collettive dell’artista.",
+      "de": "Ein Aquarell, angeregt durch die Erinnerung an Paloma Picasso in einer Parfümwerbung der 1980er Jahre. Das Werk war Teil einer Gruppenausstellung des Künstlers."
+    },
+    "groupExhibition": {
+      "en": "Group exhibition",
+      "es": "Exposición colectiva",
+      "fr": "Exposition collective",
+      "it": "Mostra collettiva",
+      "de": "Gruppenausstellung"
+    },
+    "alt": {
+      "glitch01": {
+        "en": "Layered lime, orange, red and lilac glitch landscape by Enrique Alcides",
+        "es": "Paisaje glitch en capas de verde lima, naranja, rojo y lila, de Enrique Alcides",
+        "fr": "Paysage glitch stratifié vert citron, orange, rouge et lilas, d’Enrique Alcides",
+        "it": "Paesaggio glitch stratificato verde lime, arancione, rosso e lilla, di Enrique Alcides",
+        "de": "Geschichtete Glitch-Landschaft in Limettengrün, Orange, Rot und Flieder von Enrique Alcides"
+      },
+      "glitch02": {
+        "en": "Layered red, lime, yellow and blue glitch landscape by Enrique Alcides",
+        "es": "Paisaje glitch en capas de rojo, verde lima, amarillo y azul, de Enrique Alcides",
+        "fr": "Paysage glitch stratifié rouge, vert citron, jaune et bleu, d’Enrique Alcides",
+        "it": "Paesaggio glitch stratificato rosso, verde lime, giallo e blu, di Enrique Alcides",
+        "de": "Geschichtete Glitch-Landschaft in Rot, Limettengrün, Gelb und Blau von Enrique Alcides"
+      },
+      "glitch03": {
+        "en": "Layered green, red, pink and lilac glitch landscape by Enrique Alcides",
+        "es": "Paisaje glitch en capas de verde, rojo, rosa y lila, de Enrique Alcides",
+        "fr": "Paysage glitch stratifié vert, rouge, rose et lilas, d’Enrique Alcides",
+        "it": "Paesaggio glitch stratificato verde, rosso, rosa e lilla, di Enrique Alcides",
+        "de": "Geschichtete Glitch-Landschaft in Grün, Rot, Rosa und Flieder von Enrique Alcides"
+      },
+      "glitch04": {
+        "en": "Red, lime and lilac vertical abstract glitch composition by Enrique Alcides",
+        "es": "Composición glitch abstracta vertical en rojo, verde lima y lila, de Enrique Alcides",
+        "fr": "Composition glitch abstraite verticale rouge, vert citron et lilas, d’Enrique Alcides",
+        "it": "Composizione glitch astratta verticale rossa, verde lime e lilla, di Enrique Alcides",
+        "de": "Vertikale abstrakte Glitch-Komposition in Rot, Limettengrün und Flieder von Enrique Alcides"
+      },
+      "meInPieces": {
+        "en": "Me in Pieces — Self-Portrait by Enrique Alcides, divided into vertical fragments",
+        "es": "Me in Pieces — Self-Portrait, de Enrique Alcides, dividido en fragmentos verticales",
+        "fr": "Me in Pieces — Self-Portrait, d’Enrique Alcides, divisé en fragments verticaux",
+        "it": "Me in Pieces — Self-Portrait, di Enrique Alcides, diviso in frammenti verticali",
+        "de": "Me in Pieces — Self-Portrait von Enrique Alcides, in vertikale Fragmente geteilt"
+      },
+      "portrait01": {
+        "en": "Repeated neon mirrored self-portrait by Enrique Alcides",
+        "es": "Autorretrato neón repetido y reflejado, de Enrique Alcides",
+        "fr": "Autoportrait néon répété et reflété, d’Enrique Alcides",
+        "it": "Autoritratto neon ripetuto e specchiato, di Enrique Alcides",
+        "de": "Wiederholtes gespiegeltes Neon-Selbstporträt von Enrique Alcides"
+      },
+      "portrait02": {
+        "en": "Repeated neon self-portrait arranged as a mirrored field by Enrique Alcides",
+        "es": "Autorretrato neón repetido y dispuesto como un campo especular, de Enrique Alcides",
+        "fr": "Autoportrait néon répété et disposé en champ spéculaire, d’Enrique Alcides",
+        "it": "Autoritratto neon ripetuto e disposto come un campo speculare, di Enrique Alcides",
+        "de": "Wiederholtes Neon-Selbstporträt als Spiegelfeld von Enrique Alcides"
+      },
+      "composition01": {
+        "en": "Imagined Vinyl Cover — photography and digital decomposition by Enrique Alcides",
+        "es": "Imagined Vinyl Cover — fotografía y descomposición digital, de Enrique Alcides",
+        "fr": "Imagined Vinyl Cover — photographie et décomposition numérique, d’Enrique Alcides",
+        "it": "Imagined Vinyl Cover — fotografia e decomposizione digitale, di Enrique Alcides",
+        "de": "Imagined Vinyl Cover — Fotografie und digitale Dekomposition von Enrique Alcides"
+      },
+      "composition02": {
+        "en": "Marilyn’s Scream — painting, watercolour, oil and digital retouching by Enrique Alcides",
+        "es": "Marilyn’s Scream — pintura, acuarela, óleo y retoque digital, de Enrique Alcides",
+        "fr": "Marilyn’s Scream — peinture, aquarelle, huile et retouche numérique, d’Enrique Alcides",
+        "it": "Marilyn’s Scream — pittura, acquerello, olio e ritocco digitale, di Enrique Alcides",
+        "de": "Marilyn’s Scream — Malerei, Aquarell, Öl und digitale Retusche von Enrique Alcides"
+      },
+      "composition03": {
+        "en": "Butterfly Mandala — digital distortion of a photograph of a giant blue butterfly by Enrique Alcides",
+        "es": "Butterfly Mandala — distorsión digital de una fotografía de una mariposa azul gigante, de Enrique Alcides",
+        "fr": "Butterfly Mandala — distorsion numérique d’une photographie d’un papillon bleu géant, d’Enrique Alcides",
+        "it": "Butterfly Mandala — distorsione digitale di una fotografia di una farfalla blu gigante, di Enrique Alcides",
+        "de": "Butterfly Mandala — digitale Verzerrung einer Fotografie eines riesigen blauen Schmetterlings von Enrique Alcides"
+      },
+      "collageDrawing01": {
+        "en": "Colourful figurative drawing with a central elongated figure surrounded by silhouettes, by Enrique Alcides.",
+        "es": "Dibujo figurativo colorido con una figura central alargada rodeada de siluetas, de Enrique Alcides.",
+        "fr": "Dessin figuratif coloré avec une figure centrale allongée entourée de silhouettes, d’Enrique Alcides.",
+        "it": "Disegno figurativo colorato con una figura centrale allungata circondata da silhouette, di Enrique Alcides.",
+        "de": "Farbenfrohe figurative Zeichnung mit einer länglichen zentralen Figur, umgeben von Silhouetten, von Enrique Alcides."
+      },
+      "collageDrawing02": {
+        "en": "Geometric collage with rose-like crystalline forms arranged in a grid, by Enrique Alcides.",
+        "es": "Collage geométrico con formas cristalinas semejantes a rosas dispuestas en una cuadrícula, de Enrique Alcides.",
+        "fr": "Collage géométrique aux formes cristallines évoquant des roses, disposées en grille, d’Enrique Alcides.",
+        "it": "Collage geometrico con forme cristalline simili a rose disposte in una griglia, di Enrique Alcides.",
+        "de": "Geometrische Collage mit rosenähnlichen kristallinen Formen in einem Raster, von Enrique Alcides."
+      },
+      "collageDrawing03": {
+        "en": "Abstract collage and drawing in pink, green, grey and orange, by Enrique Alcides.",
+        "es": "Collage y dibujo abstractos en rosa, verde, gris y naranja, de Enrique Alcides.",
+        "fr": "Collage et dessin abstraits en rose, vert, gris et orange, d’Enrique Alcides.",
+        "it": "Collage e disegno astratti in rosa, verde, grigio e arancione, di Enrique Alcides.",
+        "de": "Abstrakte Collage und Zeichnung in Rosa, Grün, Grau und Orange, von Enrique Alcides."
+      },
+      "collageDrawing04": {
+        "en": "Grid collage of small archival images in blue, red, yellow and magenta, by Enrique Alcides.",
+        "es": "Collage en cuadrícula de pequeñas imágenes de archivo en azul, rojo, amarillo y magenta, de Enrique Alcides.",
+        "fr": "Collage en grille de petites images d’archives en bleu, rouge, jaune et magenta, d’Enrique Alcides.",
+        "it": "Collage a griglia di piccole immagini d’archivio in blu, rosso, giallo e magenta, di Enrique Alcides.",
+        "de": "Rastercollage aus kleinen Archivbildern in Blau, Rot, Gelb und Magenta, von Enrique Alcides."
+      },
+      "figure01": {
+        "en": "Stylised female figure with purple hair and tropical foliage by Enrique Alcides",
+        "es": "Figura femenina estilizada con cabello morado y follaje tropical, de Enrique Alcides",
+        "fr": "Figure féminine stylisée aux cheveux violets entourée de feuillage tropical, d’Enrique Alcides",
+        "it": "Figura femminile stilizzata con capelli viola e fogliame tropicale, di Enrique Alcides",
+        "de": "Stilisierte weibliche Figur mit violettem Haar und tropischem Blattwerk von Enrique Alcides"
+      },
+      "process01": {
+        "en": "Phone-screen record of a mirroring interface used during Enrique Alcides’s image process",
+        "es": "Registro en pantalla de una interfaz de simetría utilizada durante el proceso de imagen de Enrique Alcides",
+        "fr": "Capture d’écran d’une interface de mise en miroir utilisée dans le processus d’image d’Enrique Alcides",
+        "it": "Registrazione su schermo di un’interfaccia di rispecchiamento usata nel processo d’immagine di Enrique Alcides",
+        "de": "Bildschirmaufzeichnung einer Spiegelungsoberfläche aus dem Bildprozess von Enrique Alcides"
+      },
+      "process02": {
+        "en": "Document of a physical presentation with three colour states of a female figure",
+        "es": "Documento de una presentación física con tres estados cromáticos de una figura femenina",
+        "fr": "Document d’une présentation physique montrant trois états chromatiques d’une figure féminine",
+        "it": "Documento di una presentazione fisica con tre stati cromatici di una figura femminile",
+        "de": "Dokument einer physischen Präsentation mit drei Farbzuständen einer weiblichen Figur"
+      },
+      "process03": {
+        "en": "Phone-screen record of a mirrored red and cyan composition in an image editor",
+        "es": "Registro en pantalla de una composición especular roja y cian en un editor de imagen",
+        "fr": "Capture d’écran d’une composition rouge et cyan en miroir dans un logiciel de retouche",
+        "it": "Registrazione su schermo di una composizione speculare rossa e ciano in un editor d’immagine",
+        "de": "Bildschirmaufzeichnung einer gespiegelten rot-cyanfarbenen Komposition in einer Bildbearbeitung"
+      },
+      "biographyPortrait": {
+        "en": "Portrait of Enrique Alcides against a warm red background",
+        "es": "Retrato de Enrique Alcides sobre un fondo rojo cálido",
+        "fr": "Portrait d’Enrique Alcides sur un fond rouge chaleureux",
+        "it": "Ritratto di Enrique Alcides su uno sfondo rosso caldo",
+        "de": "Porträt von Enrique Alcides vor warmrotem Hintergrund"
+      }
+    }
+  },
+  "editorialCleanup": {
+    "workIntro": {
+      "en": "This room brings together painting, drawing, digital creation and generative systems. Each body of work unfolds as an independent series through image, process and material.",
+      "es": "Esta sala reúne pintura, dibujo, creación digital y sistemas generativos. Cada cuerpo de obra se despliega como una serie independiente a través de la imagen, el proceso y la materia.",
+      "fr": "Cette salle réunit peinture, dessin, création numérique et systèmes génératifs. Chaque corpus se déploie comme une série autonome à travers l’image, le processus et la matière.",
+      "it": "Questa sala riunisce pittura, disegno, creazione digitale e sistemi generativi. Ogni corpo di opere si sviluppa come una serie autonoma attraverso immagine, processo e materia.",
+      "de": "Dieser Raum vereint Malerei, Zeichnung, digitale Gestaltung und generative Systeme. Jeder Werkkomplex entfaltet sich als eigenständige Serie durch Bild, Prozess und Material."
+    },
+    "peopleNote": {
+      "en": "Enrique Alcides donated People for the charity exhibition and auction, where it was exhibited and sold. It is now held in a private collection.",
+      "es": "Enrique Alcides donó People para la exposición y subasta benéfica, donde fue expuesta y vendida. Actualmente pertenece a una colección privada.",
+      "fr": "Enrique Alcides a fait don de People pour l’exposition et la vente aux enchères caritatives, où l’œuvre a été exposée et vendue. Elle appartient désormais à une collection privée.",
+      "it": "Enrique Alcides ha donato People per la mostra e l’asta benefiche, dove l’opera è stata esposta e venduta. Oggi appartiene a una collezione privata.",
+      "de": "Enrique Alcides stiftete People für die Benefizausstellung und -auktion, wo das Werk gezeigt und verkauft wurde. Es befindet sich heute in einer Privatsammlung."
+    },
+    "auctionPost": {
+      "en": "View auction post ↗",
+      "es": "Ver publicación de la subasta ↗",
+      "fr": "Voir la publication de la vente aux enchères ↗",
+      "it": "Vedi la pubblicazione dell’asta ↗",
+      "de": "Auktionsbeitrag ansehen ↗"
+    },
+    "okanInstagram": {
+      "en": "Okan Producciones · Instagram ↗",
+      "es": "Okan Producciones · Instagram ↗",
+      "fr": "Okan Producciones · Instagram ↗",
+      "it": "Okan Producciones · Instagram ↗",
+      "de": "Okan Producciones · Instagram ↗"
+    },
+    "okanFacebook": {
+      "en": "Okan Producciones · Facebook ↗",
+      "es": "Okan Producciones · Facebook ↗",
+      "fr": "Okan Producciones · Facebook ↗",
+      "it": "Okan Producciones · Facebook ↗",
+      "de": "Okan Producciones · Facebook ↗"
+    },
+    "exhibitionBulletin": {
+      "en": "Exhibition bulletin ↗",
+      "es": "Boletín de la exposición ↗",
+      "fr": "Bulletin de l’exposition ↗",
+      "it": "Bollettino della mostra ↗",
+      "de": "Ausstellungsbulletin ↗"
+    },
+    "artistInstagram": {
+      "en": "Artist announcement · Instagram ↗",
+      "es": "Anuncio del artista · Instagram ↗",
+      "fr": "Annonce de l’artiste · Instagram ↗",
+      "it": "Annuncio dell’artista · Instagram ↗",
+      "de": "Ankündigung des Künstlers · Instagram ↗"
+    },
+    "grisBar": {
+      "en": "Gris Bar ↗",
+      "es": "Gris Bar ↗",
+      "fr": "Gris Bar ↗",
+      "it": "Gris Bar ↗",
+      "de": "Gris Bar ↗"
+    },
+    "naturalBareNote": {
+      "en": "Natural Bare marked Enrique Alcides’s first presentation at LAB ART Los Angeles and was shown as a digital artwork.",
+      "es": "Natural Bare supuso la primera presentación de Enrique Alcides en LAB ART Los Ángeles y se mostró como obra de arte digital.",
+      "fr": "Natural Bare a marqué la première présentation d’Enrique Alcides à LAB ART Los Angeles et a été montrée comme œuvre d’art numérique.",
+      "it": "Natural Bare ha segnato la prima presentazione di Enrique Alcides a LAB ART Los Angeles ed è stata esposta come opera d’arte digitale.",
+      "de": "Natural Bare war Enrique Alcides’ erste Präsentation bei LAB ART Los Angeles und wurde als digitales Kunstwerk gezeigt."
+    },
+    "labArtPage": {
+      "en": "LAB ART exhibition page ↗",
+      "es": "Página de la exposición en LAB ART ↗",
+      "fr": "Page de l’exposition LAB ART ↗",
+      "it": "Pagina della mostra LAB ART ↗",
+      "de": "Ausstellungsseite von LAB ART ↗"
+    },
+    "aloneNote": {
+      "en": "The work remained on display at Lelie Galerij throughout January 2023.",
+      "es": "La obra permaneció expuesta en Lelie Galerij durante todo enero de 2023.",
+      "fr": "L’œuvre est restée exposée à Lelie Galerij pendant tout le mois de janvier 2023.",
+      "it": "L’opera è rimasta esposta alla Lelie Galerij per tutto gennaio 2023.",
+      "de": "Das Werk war den gesamten Januar 2023 in der Lelie Galerij ausgestellt."
+    },
+    "exhibitionCircuit": {
+      "en": "Exhibition circuit ↗",
+      "es": "Circuito expositivo ↗",
+      "fr": "Circuit d’exposition ↗",
+      "it": "Circuito espositivo ↗",
+      "de": "Ausstellungsprogramm ↗"
+    },
+    "origineNote": {
+      "en": "Presented in 2023 as Origin, the work is now titled Origine.",
+      "es": "Presentada en 2023 como Origin, la obra se titula ahora Origine.",
+      "fr": "Présentée en 2023 sous le titre Origin, l’œuvre s’intitule désormais Origine.",
+      "it": "Presentata nel 2023 come Origin, l’opera si intitola ora Origine.",
+      "de": "2023 als Origin präsentiert, trägt das Werk heute den Titel Origine."
+    },
+    "thomsonGallery": {
+      "en": "Thomson Gallery ↗",
+      "es": "Thomson Gallery ↗",
+      "fr": "Thomson Gallery ↗",
+      "it": "Thomson Gallery ↗",
+      "de": "Thomson Gallery ↗"
+    },
+    "projectPage": {
+      "en": "Project page ↗",
+      "es": "Página del proyecto ↗",
+      "fr": "Page du projet ↗",
+      "it": "Pagina del progetto ↗",
+      "de": "Projektseite ↗"
+    },
+    "festivalProgramme": {
+      "en": "Festival programme ↗",
+      "es": "Programa del festival ↗",
+      "fr": "Programme du festival ↗",
+      "it": "Programma del festival ↗",
+      "de": "Festivalprogramm ↗"
+    },
+    "imaginedBodyRole": {
+      "en": "Performer in the video installation",
+      "es": "Intérprete en la videoinstalación",
+      "fr": "Interprète dans l’installation vidéo",
+      "it": "Performer nella videoinstallazione",
+      "de": "Performer in der Videoinstallation"
+    },
+    "researchProject": {
+      "en": "Research project ↗",
+      "es": "Proyecto de investigación ↗",
+      "fr": "Projet de recherche ↗",
+      "it": "Progetto di ricerca ↗",
+      "de": "Forschungsprojekt ↗"
+    },
+    "curatorialReadings": {
+      "en": "Curatorial readings",
+      "es": "Lecturas curatoriales",
+      "fr": "Lectures curatoriales",
+      "it": "Letture curatoriali",
+      "de": "Kuratorische Lesarten"
+    },
+    "fourPerspectives": {
+      "en": "Four perspectives on the work.",
+      "es": "Cuatro perspectivas sobre la obra.",
+      "fr": "Quatre perspectives sur l’œuvre.",
+      "it": "Quattro prospettive sull’opera.",
+      "de": "Vier Perspektiven auf das Werk."
+    },
+    "artisticStatement": {
+      "en": "Artistic statement",
+      "es": "Declaración artística",
+      "fr": "Déclaration artistique",
+      "it": "Dichiarazione artistica",
+      "de": "Künstlerisches Statement"
+    },
+    "videoInstallation": {
+      "en": "Video installation",
+      "es": "Videoinstalación",
+      "fr": "Installation vidéo",
+      "it": "Videoinstallazione",
+      "de": "Videoinstallation"
+    },
+    "peopleArchiveAlt": {
+      "en": "People, a work by Enrique Alcides exhibited and sold at the 2023 charity exhibition",
+      "es": "People, obra de Enrique Alcides expuesta y vendida en la exposición benéfica de 2023",
+      "fr": "People, œuvre d’Enrique Alcides exposée et vendue lors de l’exposition caritative de 2023",
+      "it": "People, opera di Enrique Alcides esposta e venduta nella mostra benefica del 2023",
+      "de": "People, ein Werk von Enrique Alcides, das bei der Benefizausstellung 2023 gezeigt und verkauft wurde"
+    },
+    "metamorphosisNote": {
+      "en": "Collaborative installation with projected visual work by Claudia Bonollo and performance direction by Enrique Alcides.",
+      "es": "Instalación colaborativa con obra visual proyectada de Claudia Bonollo y dirección de la performance de Enrique Alcides.",
+      "fr": "Installation collaborative avec une œuvre visuelle projetée de Claudia Bonollo et une performance dirigée par Enrique Alcides.",
+      "it": "Installazione collaborativa con opera visiva proiettata di Claudia Bonollo e regia della performance di Enrique Alcides.",
+      "de": "Gemeinschaftsinstallation mit projizierter Bildarbeit von Claudia Bonollo und Performance-Regie von Enrique Alcides."
+    },
+    "redNightRole": {
+      "en": "Performance and spoken-word interpretation of texts on the colour red",
+      "es": "Performance e interpretación oral de textos sobre el color rojo",
+      "fr": "Performance et interprétation orale de textes sur la couleur rouge",
+      "it": "Performance e interpretazione orale di testi sul colore rosso",
+      "de": "Performance und gesprochene Interpretation von Texten über die Farbe Rot"
+    },
+    "redNightNote": {
+      "en": "Performance and spoken-word interpretation of Rouge sang by Carmen Caillot, together with excerpts from Elena Zanca’s novel Rojo esperanza.",
+      "es": "Performance e interpretación oral de Rouge sang, de Carmen Caillot, junto con fragmentos de la novela Rojo esperanza, de Elena Zanca.",
+      "fr": "Performance et interprétation orale de Rouge sang de Carmen Caillot, avec des extraits du roman Rojo esperanza d’Elena Zanca.",
+      "it": "Performance e interpretazione orale di Rouge sang di Carmen Caillot, insieme a brani del romanzo Rojo esperanza di Elena Zanca.",
+      "de": "Performance und gesprochene Interpretation von Rouge sang von Carmen Caillot, zusammen mit Auszügen aus Elena Zancas Roman Rojo esperanza."
+    }
+  }
+}

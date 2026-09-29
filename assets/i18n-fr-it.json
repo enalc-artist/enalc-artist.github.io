@@ -102,20 +102,10 @@
       "fr": "© 2026 Enrique Alcides",
       "it": "© 2026 Enrique Alcides"
     },
-    "source_link": {
-      "es": "Documento / fuente",
-      "fr": "Document / source",
-      "it": "Documento / fonte"
-    },
-    "pending_confirmation": {
-      "es": "Por confirmar",
-      "fr": "À confirmer",
-      "it": "Da confermare"
-    },
-    "archive_in_progress": {
-      "es": "Archivo en incorporación",
-      "fr": "Archives en cours d’intégration",
-      "it": "Archivio in fase di integrazione"
+    "series_in_progress": {
+      "es": "Serie · Obra en proceso",
+      "fr": "Série · Travail en cours",
+      "it": "Serie · Lavoro in corso"
     }
   },
   "pages": {
@@ -161,9 +151,9 @@
         "it": "NON ILLUSTRARE IL MONDO"
       },
       "manifesto_tail": {
-        "es": "—ensayar otros",
-        "fr": "— en expérimenter d’autres",
-        "it": "— sperimentarne altri"
+        "es": "ensayar otros",
+        "fr": "en expérimenter d’autres",
+        "it": "sperimentarne altri"
       },
       "studio_map_eyebrow": {
         "es": "Mapa del estudio",
@@ -278,9 +268,9 @@
         "it": "People"
       },
       "people_description": {
-        "es": "Obra donada por Enrique Alcides para una subasta y posteriormente adjudicada. Esta reproducción, facilitada por el artista, preserva el registro de una pieza que hoy pertenece a una colección privada.",
-        "fr": "Œuvre donnée par Enrique Alcides pour une vente aux enchères, puis adjugée. Cette reproduction, fournie par l’artiste, conserve la trace d’une pièce qui appartient aujourd’hui à une collection privée.",
-        "it": "Opera donata da Enrique Alcides per un’asta e successivamente aggiudicata. Questa riproduzione, fornita dall’artista, conserva la testimonianza di un’opera che oggi appartiene a una collezione privata."
+        "es": "Enrique Alcides donó People para la exposición y subasta benéfica, donde fue expuesta y vendida. Actualmente pertenece a una colección privada.",
+        "fr": "Enrique Alcides a fait don de People pour l’exposition et la vente aux enchères caritatives, où l’œuvre a été exposée et vendue. Elle appartient aujourd’hui à une collection privée.",
+        "it": "Enrique Alcides ha donato People per la mostra e l’asta benefica, dove l’opera è stata esposta e venduta. Oggi appartiene a una collezione privata."
       },
       "fact_year": {
         "es": "Año",
@@ -308,9 +298,9 @@
         "it": "Venduta all’asta · collezione privata"
       },
       "people_source_link": {
-        "es": "Ver registro de la subasta",
-        "fr": "Voir la trace de la vente aux enchères",
-        "it": "Vedi la documentazione dell’asta"
+        "es": "Ver publicación de la subasta",
+        "fr": "Voir la publication de la vente aux enchères",
+        "it": "Vedi la pubblicazione dell’asta"
       },
       "decollage_alt": {
         "es": "Obra de la serie de décollages urbanos de Enrique Alcides",
@@ -343,9 +333,9 @@
         "it": "Serie"
       },
       "decollage_series_pending": {
-        "es": "Título definitivo por confirmar",
-        "fr": "Titre définitif à confirmer",
-        "it": "Titolo definitivo da confermare"
+        "es": "Serie de décollages urbanos",
+        "fr": "Série de décollages urbains",
+        "it": "Serie di décollage urbani"
       },
       "fact_origin": {
         "es": "Origen",
@@ -373,9 +363,9 @@
         "it": "Scheda tecnica"
       },
       "decollage_technical_pending": {
-        "es": "Año y dimensiones por completar",
-        "fr": "Année et dimensions à compléter",
-        "it": "Anno e dimensioni da completare"
+        "es": "2020 · 40 × 60 cm",
+        "fr": "2020 · 40 × 60 cm",
+        "it": "2020 · 40 × 60 cm"
       },
       "watercolour_alt": {
         "es": "Acuarela de Enrique Alcides basada en su recuerdo de Paloma Picasso",
@@ -383,19 +373,19 @@
         "it": "Acquerello di Enrique Alcides ispirato al suo ricordo di Paloma Picasso"
       },
       "watercolour_meta": {
-        "es": "Acuarela · exposición colectiva · archivo recuperado",
-        "fr": "Aquarelle · exposition collective · archive retrouvée",
-        "it": "Acquerello · mostra collettiva · archivio recuperato"
+        "es": "Acuarela sobre papel · 2017",
+        "fr": "Aquarelle sur papier · 2017",
+        "it": "Acquerello su carta · 2017"
       },
       "watercolour_title_pending": {
-        "es": "Título pendiente",
-        "fr": "Titre à confirmer",
-        "it": "Titolo da confermare"
+        "es": "Suspicious Mind",
+        "fr": "Suspicious Mind",
+        "it": "Suspicious Mind"
       },
       "watercolour_description": {
-        "es": "Una acuarela construida desde el recuerdo de Paloma Picasso. La pieza formó parte de una de las exposiciones colectivas del artista; el nombre de la muestra y los datos de catálogo se incorporarán cuando se recupere la documentación.",
-        "fr": "Une aquarelle construite à partir du souvenir de Paloma Picasso. La pièce a figuré dans l’une des expositions collectives de l’artiste ; le nom de l’exposition et les données du catalogue seront ajoutés lorsque la documentation aura été retrouvée.",
-        "it": "Un acquerello costruito a partire dal ricordo di Paloma Picasso. L’opera ha fatto parte di una delle mostre collettive dell’artista; il nome della mostra e i dati di catalogo saranno aggiunti quando la documentazione sarà recuperata."
+        "es": "Una acuarela construida desde el recuerdo de Paloma Picasso. La pieza formó parte de una exposición colectiva del artista.",
+        "fr": "Une aquarelle construite à partir du souvenir de Paloma Picasso. L’œuvre a figuré dans une exposition collective de l’artiste.",
+        "it": "Un acquerello costruito a partire dal ricordo di Paloma Picasso. L’opera ha fatto parte di una mostra collettiva dell’artista."
       },
       "fact_reference": {
         "es": "Referencia",
@@ -423,14 +413,14 @@
         "it": "Mostra"
       },
       "watercolour_exhibition_pending": {
-        "es": "Colectiva · nombre y fecha por confirmar",
-        "fr": "Exposition collective · nom et date à confirmer",
-        "it": "Mostra collettiva · nome e data da confermare"
+        "es": "Exposición colectiva",
+        "fr": "Exposition collective",
+        "it": "Mostra collettiva"
       },
       "watercolour_technical_pending": {
-        "es": "Año, soporte y dimensiones por completar",
-        "fr": "Année, support et dimensions à compléter",
-        "it": "Anno, supporto e dimensioni da completare"
+        "es": "Acuarela sobre papel · 2017 · 30 × 40 cm",
+        "fr": "Aquarelle sur papier · 2017 · 30 × 40 cm",
+        "it": "Acquerello su carta · 2017 · 30 × 40 cm"
       },
       "series_aria_label": {
         "es": "Series de obra",
@@ -446,11 +436,6 @@
         "es": "Materia pictórica",
         "fr": "Matière picturale",
         "it": "Materia pittorica"
-      },
-      "painting_description": {
-        "es": "El archivo físico —lienzos, papel, técnicas mixtas y fichas— se incorporará aquí por series.",
-        "fr": "Les archives physiques — toiles, œuvres sur papier, techniques mixtes et fiches — seront intégrées ici par séries.",
-        "it": "L’archivio fisico — tele, opere su carta, tecniche miste e schede — sarà integrato qui per serie."
       },
       "constellation_meta": {
         "es": "Creación generativa · imagen viva",
@@ -692,19 +677,19 @@
         "it": "Galleria Interno 14 / AIAC · Roma · 16 maggio 2014"
       },
       "metamorphosis_role": {
-        "es": "Asesoría teatral — «consulenza teatrale»",
-        "fr": "Conseil théâtral — «consulenza teatrale»",
-        "it": "Consulenza teatrale"
+        "es": "Dirección de la performance · intervención en el espacio bajo la proyección de obra de la artista Claudia Bonollo",
+        "fr": "Direction de la performance · intervention dans l’espace sous la projection de l’œuvre de l’artiste Claudia Bonollo",
+        "it": "Regia della performance · intervento nello spazio sotto la proiezione dell’opera dell’artista Claudia Bonollo"
       },
       "metamorphosis_note": {
-        "es": "Proyecto de Claudia Bonollo y Andrea Buchner. La ficha pública acredita de forma expresa la función de Enrique Alcides.",
-        "fr": "Projet de Claudia Bonollo et Andrea Buchner. La fiche publique atteste explicitement la fonction d’Enrique Alcides.",
-        "it": "Progetto di Claudia Bonollo e Andrea Buchner. La scheda pubblica attesta espressamente il ruolo di Enrique Alcides."
+        "es": "Instalación colaborativa con obra visual proyectada de Claudia Bonollo y dirección de la performance de Enrique Alcides.",
+        "fr": "Installation collaborative avec une œuvre visuelle projetée de Claudia Bonollo et une performance dirigée par Enrique Alcides.",
+        "it": "Installazione collaborativa con opera visiva proiettata di Claudia Bonollo e regia della performance di Enrique Alcides."
       },
       "red_night_year": {
-        "es": "c. 2011",
-        "fr": "vers 2011",
-        "it": "ca. 2011"
+        "es": "",
+        "fr": "",
+        "it": ""
       },
       "red_night_meta": {
         "es": "Performance · palabra · color",
@@ -722,24 +707,24 @@
         "it": "Creative Insomnia / Atelier Cromático · Madrid"
       },
       "red_night_role": {
-        "es": "Voz e interpretación de textos sobre el rojo",
-        "fr": "Voix et interprétation de textes sur le rouge",
-        "it": "Voce e interpretazione di testi sul rosso"
+        "es": "Performance e interpretación oral de textos sobre el color rojo",
+        "fr": "Performance et interprétation orale de textes sur la couleur rouge",
+        "it": "Performance e interpretazione orale di testi sul colore rosso"
       },
       "red_night_note": {
-        "es": "Interpretación de Rouge sang, de Carmen Caillot, y de fragmentos de la novela Rojo esperanza, de Elena Zanca.",
-        "fr": "Interprétation de Rouge sang, de Carmen Caillot, et d’extraits du roman Rojo esperanza, d’Elena Zanca.",
-        "it": "Interpretazione di Rouge sang, di Carmen Caillot, e di brani del romanzo Rojo esperanza, di Elena Zanca."
+        "es": "Performance e interpretación oral de Rouge sang, de Carmen Caillot, junto con fragmentos de la novela Rojo esperanza, de Elena Zanca.",
+        "fr": "Performance et interprétation orale de Rouge sang, de Carmen Caillot, avec des extraits du roman Rojo esperanza, d’Elena Zanca.",
+        "it": "Performance e interpretazione orale di Rouge sang, di Carmen Caillot, insieme a brani del romanzo Rojo esperanza, di Elena Zanca."
       },
       "red_night_alt": {
-        "es": "Retrato de Enrique Alcides asociado a Creative Insomnia Red Night",
-        "fr": "Portrait d’Enrique Alcides associé à Creative Insomnia Red Night",
-        "it": "Ritratto di Enrique Alcides associato a Creative Insomnia Red Night"
+        "es": "Figura femenina de la obra en rojo y negro asociada a Creative Insomnia — Red Night",
+        "fr": "Figure féminine de l’œuvre rouge et noire associée à Creative Insomnia — Red Night",
+        "it": "Figura femminile dell’opera in rosso e nero associata a Creative Insomnia — Red Night"
       },
       "domestic_demons_meta": {
-        "es": "Videoinstalación · colaboración registrada",
-        "fr": "Installation vidéo · collaboration documentée",
-        "it": "Videoinstallazione · collaborazione documentata"
+        "es": "Videoinstalación · performance",
+        "fr": "Installation vidéo · performance",
+        "it": "Videoinstallazione · performance"
       },
       "domestic_demons_title": {
         "es": "Endemoniados demonios domésticos",
@@ -752,9 +737,9 @@
         "it": "Opera di Iury Lech"
       },
       "domestic_demons_role": {
-        "es": "Participación incluida en el CV público de Enrique Alcides",
-        "fr": "Participation mentionnée dans le CV public d’Enrique Alcides",
-        "it": "Partecipazione indicata nel CV pubblico di Enrique Alcides"
+        "es": "Intérprete en la videoinstalación de siete canales de Iury Lech",
+        "fr": "Interprète dans l’installation vidéo à sept canaux d’Iury Lech",
+        "it": "Interprete nella videoinstallazione a sette canali di Iury Lech"
       },
       "cosmic_narcissi_meta": {
         "es": "Videoinstalación · cuerpo e imagen",
@@ -770,11 +755,6 @@
         "es": "Instituto Italiano de Cultura · Madrid",
         "fr": "Instituto Italiano de Cultura · Madrid",
         "it": "Instituto Italiano de Cultura · Madrid"
-      },
-      "cosmic_narcissi_role": {
-        "es": "Participación registrada · obra de Claudia Bonollo",
-        "fr": "Participation documentée · œuvre de Claudia Bonollo",
-        "it": "Partecipazione documentata · opera di Claudia Bonollo"
       },
       "imagined_body_meta": {
         "es": "Videoinstalación · cuerpo e imagen",
@@ -792,9 +772,9 @@
         "it": "Progetto di Claudia Bonollo"
       },
       "imagined_body_role": {
-        "es": "Participación registrada en videoarte",
-        "fr": "Participation documentée en art vidéo",
-        "it": "Partecipazione documentata in ambito videoartistico"
+        "es": "Intérprete en la videoinstalación",
+        "fr": "Interprète dans l’installation vidéo",
+        "it": "Interprete nella videoinstallazione"
       },
       "imagined_body_note": {
         "es": "La investigación vinculada al proyecto empleó performances con actores —Enrique Alcides entre ellos— para interpretar emociones generadas por imágenes proyectadas sobre el cuerpo.",
@@ -802,9 +782,9 @@
         "it": "La ricerca legata al progetto si è avvalsa di performance con attori — tra cui Enrique Alcides — per interpretare le emozioni generate da immagini proiettate sul corpo."
       },
       "beauty_cure_meta": {
-        "es": "Videoinstalación · colaboración registrada",
-        "fr": "Installation vidéo · collaboration documentée",
-        "it": "Videoinstallazione · collaborazione documentata"
+        "es": "Videoinstalación",
+        "fr": "Installation vidéo",
+        "it": "Videoinstallazione"
       },
       "beauty_cure_title": {
         "es": "Beauty is in Itself a Cure",
@@ -816,25 +796,15 @@
         "fr": "Œuvre de Claudia Bonollo",
         "it": "Opera di Claudia Bonollo"
       },
-      "beauty_cure_role": {
-        "es": "Participación incluida en el CV público de Enrique Alcides",
-        "fr": "Participation mentionnée dans le CV public d’Enrique Alcides",
-        "it": "Partecipazione indicata nel CV pubblico di Enrique Alcides"
-      },
       "readings_eyebrow": {
-        "es": "Lecturas de obra recuperadas",
-        "fr": "Lectures d’œuvres retrouvées",
-        "it": "Letture delle opere recuperate"
+        "es": "Lecturas curatoriales",
+        "fr": "Lectures curatoriales",
+        "it": "Letture curatoriali"
       },
       "readings_title": {
         "es": "Cuatro entradas para mirar lo que está naciendo.",
         "fr": "Quatre entrées pour regarder ce qui est en train de naître.",
         "it": "Quattro ingressi per osservare ciò che sta nascendo."
-      },
-      "readings_disclaimer": {
-        "es": "Textos curatoriales de trabajo desarrollados en conversaciones previas. No se presentan como crítica publicada ni sustituyen un texto firmado por un comisario.",
-        "fr": "Textes curatoriaux de travail élaborés lors de conversations antérieures. Ils ne sont pas présentés comme des critiques publiées et ne se substituent pas à un texte signé par un commissaire d’exposition.",
-        "it": "Testi curatoriali di lavoro elaborati in conversazioni precedenti. Non sono presentati come critica pubblicata né sostituiscono un testo firmato da un curatore."
       },
       "cosmic_face_reading_label": {
         "es": "Lectura de Rostro cósmico",
@@ -994,9 +964,9 @@
         "it": "Sono arrivato a comprendere la mia sindrome di Asperger come una chiave retrospettiva: non spiega l’opera, ma mi aiuta a riconoscere un modo persistente di percepire, interrogare e organizzare il mondo. Lavoro con ciò che cambia senza cessare di essere; con le forme provvisorie attraverso cui cerchiamo di abitare noi stessi. L’artista che sono contiene tutti questi strati ed è, allo stesso tempo, il seme di un altro che non riesco ancora a immaginare."
       },
       "statement_eyebrow": {
-        "es": "Declaración artística · versión de trabajo",
-        "fr": "Déclaration artistique · version de travail",
-        "it": "Dichiarazione artistica · versione di lavoro"
+        "es": "Declaración artística",
+        "fr": "Déclaration artistique",
+        "it": "Dichiarazione artistica"
       },
       "statement_title": {
         "es": "Toda identidad es una imagen en proceso.",

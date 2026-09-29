@@ -6,11 +6,11 @@
   },
   "project": {
     "meta": {
-      "en": "Ongoing proposal · open research · situated practice",
-      "es": "Propuesta en curso · investigación abierta · práctica situada",
-      "fr": "Proposition en cours · recherche ouverte · pratique située",
-      "it": "Proposta in corso · ricerca aperta · pratica situata",
-      "de": "Laufender Vorschlag · offene Forschung · ortsbezogene Praxis"
+      "en": "Ongoing proposal · open research · awaiting authorisation",
+      "es": "Propuesta en curso · investigación abierta · a la espera de autorización",
+      "fr": "Proposition en cours · recherche ouverte · en attente d’autorisation",
+      "it": "Proposta in corso · ricerca aperta · in attesa di autorizzazione",
+      "de": "Laufender Vorschlag · offene Forschung · Genehmigung ausstehend"
     },
     "title": {
       "en": "A la sombra. El arte de hacer sitio",
@@ -41,18 +41,11 @@
       "de": "Vorschlag · Skizze 00 — Atlas aus sechs Schatten · Dokumentarstück · Videoarbeit"
     },
     "status": {
-      "en": "PROPOSAL IN PROGRESS",
-      "es": "PROPUESTA EN CURSO",
-      "fr": "PROPOSITION EN COURS",
-      "it": "PROPOSTA IN CORSO",
-      "de": "VORSCHLAG IN ARBEIT"
-    },
-    "caption": {
-      "en": "AI-generated concept study. The final atlas will be built from materials generated through the participatory process.",
-      "es": "Estudio conceptual generado con IA. El atlas final se construirá con los materiales producidos durante el proceso participativo.",
-      "fr": "Étude conceptuelle générée avec l’IA. L’atlas final sera construit à partir des matériaux produits au cours du processus participatif.",
-      "it": "Studio concettuale generato con IA. L’atlante finale sarà costruito con i materiali prodotti durante il processo partecipativo.",
-      "de": "KI-generierte Konzeptstudie. Der endgültige Atlas entsteht aus den Materialien des partizipativen Prozesses."
+      "en": "PROPOSAL IN PROGRESS · AWAITING AUTHORISATION",
+      "es": "PROPUESTA EN CURSO · A LA ESPERA DE AUTORIZACIÓN",
+      "fr": "PROPOSITION EN COURS · EN ATTENTE D’AUTORISATION",
+      "it": "PROPOSTA IN CORSO · IN ATTESA DI AUTORIZZAZIONE",
+      "de": "VORSCHLAG IN ARBEIT · GENEHMIGUNG AUSSTEHEND"
     },
     "alt": {
       "en": "Conceptual collage of moving tree shadows and an empty bench for A la sombra. El arte de hacer sitio",

@@ -15,14 +15,26 @@ const EDITABLE_CONTENT_DEFAULTS = deepFreeze({
   people: {
     title: "People",
     year: 2023,
+    medium: "Pintura sobre lienzo",
+    dimensions: "50 × 70 cm",
   },
   decollage: {
     title: "Serie de décollages urbanos",
+    year: 2020,
+    dimensions: "40 × 60 cm",
   },
   paloma: {
     title: "Suspicious Mind",
     year: 2017,
-    exhibition: "Colectiva · nombre y fecha por confirmar",
+    medium: "Acuarela sobre papel",
+    dimensions: "30 × 40 cm",
+    exhibition: "Exposición colectiva",
+  },
+  cellDrops: {
+    year: 2021,
+    originalProcess: "Fotografía, ilustración y creación digital",
+    presentation: "Caja de luz",
+    dimensions: "70 × 110 cm",
   },
   redNight: {},
   constelacion: {
@@ -49,6 +61,8 @@ const EDITABLE_CONTENT_FIELDS = deepFreeze([
     fields: [
       { key: "title", label: "Título", type: "text", maxLength: 160 },
       { key: "year", label: "Año", type: "year", min: 1900, max: 2100 },
+      { key: "medium", label: "Técnica / soporte", type: "text", maxLength: 160 },
+      { key: "dimensions", label: "Dimensiones", type: "text", maxLength: 80 },
     ],
   },
   {
@@ -58,6 +72,7 @@ const EDITABLE_CONTENT_FIELDS = deepFreeze([
     fields: [
       { key: "title", label: "Título", type: "text", maxLength: 160 },
       { key: "year", label: "Año", type: "year", min: 1900, max: 2100 },
+      { key: "dimensions", label: "Dimensiones", type: "text", maxLength: 80 },
     ],
   },
   {
@@ -67,6 +82,8 @@ const EDITABLE_CONTENT_FIELDS = deepFreeze([
     fields: [
       { key: "title", label: "Título", type: "text", maxLength: 160 },
       { key: "year", label: "Año", type: "year", min: 1900, max: 2100 },
+      { key: "medium", label: "Técnica / soporte", type: "text", maxLength: 160 },
+      { key: "dimensions", label: "Dimensiones", type: "text", maxLength: 80 },
       {
         key: "exhibition",
         label: "Exposición",
@@ -81,6 +98,17 @@ const EDITABLE_CONTENT_FIELDS = deepFreeze([
     description: "Entrada de performance en el archivo.",
     fields: [
       { key: "year", label: "Año", type: "year", min: 1900, max: 2100 },
+    ],
+  },
+  {
+    key: "cellDrops",
+    label: "Cell Drops",
+    description: "Serie presentada en caja de luz.",
+    fields: [
+      { key: "year", label: "Año", type: "year", min: 1900, max: 2100 },
+      { key: "originalProcess", label: "Proceso original", type: "text", maxLength: 200 },
+      { key: "presentation", label: "Presentación", type: "text", maxLength: 120 },
+      { key: "dimensions", label: "Dimensiones", type: "text", maxLength: 80 },
     ],
   },
   {

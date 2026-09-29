@@ -76,6 +76,10 @@ img[data-lightbox]:focus-visible {
   object-fit: contain;
 }
 
+.archive-lightbox__image--rotate-180 {
+  transform: rotate(180deg);
+}
+
 .archive-lightbox__media--red-night-woman {
   width: min(calc(100vw - 48px), calc(84dvh * 461 / 930));
   aspect-ratio: 461 / 930;

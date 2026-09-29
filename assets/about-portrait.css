@@ -1,0 +1,37 @@
+.expanded-biography-layout {
+  display: grid;
+  grid-template-columns: minmax(250px, 0.72fr) minmax(0, 1.28fr);
+  align-items: start;
+  gap: clamp(38px, 6vw, 96px);
+  margin-top: clamp(28px, 4vw, 58px);
+}
+
+.biography-portrait {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #111;
+}
+
+.biography-portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1271 / 1572;
+  object-fit: cover;
+}
+
+.expanded-biography-layout .expanded-biography-copy {
+  width: 100%;
+  margin-left: 0;
+}
+
+@media (width <= 760px) {
+  .expanded-biography-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .biography-portrait {
+    width: min(100%, 560px);
+  }
+}

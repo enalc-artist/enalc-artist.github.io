@@ -4,6 +4,41 @@
     "editorialPolicy": "Artwork titles remain as established by the artist; factual and interpretive context is translated."
   },
   "newWorks": {
+    "peopleMedium": {
+      "es": "Pintura sobre lienzo",
+      "en": "Painting on canvas",
+      "fr": "Peinture sur toile",
+      "it": "Pittura su tela",
+      "de": "Malerei auf Leinwand"
+    },
+    "peopleDimensions": {
+      "es": "50 × 70 cm",
+      "en": "50 × 70 cm",
+      "fr": "50 × 70 cm",
+      "it": "50 × 70 cm",
+      "de": "50 × 70 cm"
+    },
+    "suspiciousMedium": {
+      "es": "Acuarela sobre papel",
+      "en": "Watercolour on paper",
+      "fr": "Aquarelle sur papier",
+      "it": "Acquerello su carta",
+      "de": "Aquarell auf Papier"
+    },
+    "suspiciousDimensions": {
+      "es": "30 × 40 cm",
+      "en": "30 × 40 cm",
+      "fr": "30 × 40 cm",
+      "it": "30 × 40 cm",
+      "de": "30 × 40 cm"
+    },
+    "suspiciousMeta": {
+      "es": "Acuarela sobre papel · 2017",
+      "en": "Watercolour on paper · 2017",
+      "fr": "Aquarelle sur papier · 2017",
+      "it": "Acquerello su carta · 2017",
+      "de": "Aquarell auf Papier · 2017"
+    },
     "seriesKicker": {
       "es": "Repetición · diferencia · poblaciones visuales",
       "en": "Repetition · difference · visual populations",
@@ -26,53 +61,67 @@
       "de": "Diese Serien untersuchen, wie ein Bild erkennbar bleiben kann, während Farbe, Rhythmus und innere Struktur sich fortwährend verändern."
     },
     "monsterMeta": {
-      "es": "Serie de imágenes generativas · 1.000 variaciones",
-      "en": "Generative image series · 1,000 variations",
-      "fr": "Série d’images génératives · 1 000 variations",
-      "it": "Serie di immagini generative · 1.000 variazioni",
-      "de": "Generative Bildserie · 1.000 Variationen"
+      "es": "Estudio cromático modular · 30 variaciones",
+      "en": "Modular colour study · 30 variations",
+      "fr": "Étude chromatique modulaire · 30 variations",
+      "it": "Studio cromatico modulare · 30 variazioni",
+      "de": "Modulare Farbstudie · 30 Variationen"
+    },
+    "monsterTitle": {
+      "es": "My Favorite Baby Mozta",
+      "en": "My Favorite Baby Mozta",
+      "fr": "My Favorite Baby Mozta",
+      "it": "My Favorite Baby Mozta",
+      "de": "My Favorite Baby Mozta"
+    },
+    "monsterOriginText": {
+      "es": "El proyecto parte de un pequeño monstruo que Enrique Alcides dibujó de niño, cuando vivía en el Sáhara Occidental. Reencontrado y resignificado en la edad adulta, fue digitalizado, y los primeros originales recuperados se colorearon a mano. Después, un sistema generativo extendió la misma figura hacia una población de variaciones, explorando cómo la repetición puede preservar una identidad mientras la diferencia la desestabiliza continuamente. Concebido en un primer momento como una posible serie de NFT, el proyecto podrá más adelante dotar de movimiento a los monstruitos mediante animación.",
+      "en": "The project begins with a little monster Enrique Alcides drew as a child while living in Western Sahara. Rediscovered and re-signified in adulthood, it was digitised, and the first recovered originals were coloured by hand. A generative system then extended the same figure into a population of variations, exploring how repetition can preserve an identity while difference continually unsettles it. Initially conceived as a possible NFT series, the project may later give movement to the little monsters through animation.",
+      "fr": "Le projet part d’un petit monstre qu’Enrique Alcides a dessiné enfant, lorsqu’il vivait au Sahara occidental. Retrouvé et resignifié à l’âge adulte, il a été numérisé, et les premiers originaux récupérés ont été coloriés à la main. Un système génératif a ensuite déployé la même figure en une population de variations, explorant la manière dont la répétition peut préserver une identité tandis que la différence la déstabilise continuellement. D’abord conçu comme une possible série de NFT, le projet pourra ensuite donner du mouvement aux petits monstres par l’animation.",
+      "it": "Il progetto nasce da un piccolo mostro disegnato da Enrique Alcides da bambino, quando viveva nel Sahara Occidentale. Ritrovato e risignificato in età adulta, è stato digitalizzato, e i primi originali recuperati sono stati colorati a mano. Un sistema generativo ha poi esteso la stessa figura in una popolazione di variazioni, esplorando come la ripetizione possa preservare un’identità mentre la differenza la destabilizza continuamente. Inizialmente concepito come una possibile serie di NFT, il progetto potrà in seguito dare movimento ai piccoli mostri attraverso l’animazione.",
+      "de": "Das Projekt geht von einem kleinen Monster aus, das Enrique Alcides als Kind zeichnete, als er in der Westsahara lebte. Im Erwachsenenalter wiederentdeckt und neu gedeutet, wurde es digitalisiert; die ersten wiedergefundenen Originale wurden von Hand koloriert. Anschließend erweiterte ein generatives System dieselbe Figur zu einer Population von Variationen und untersuchte, wie Wiederholung eine Identität bewahren kann, während Differenz sie fortwährend destabilisiert. Ursprünglich als mögliche NFT-Serie gedacht, soll das Projekt den kleinen Monstern später durch Animation Bewegung verleihen."
     },
     "monsterText": {
-      "es": "El proyecto nace de un pequeño monstruo que Enrique Alcides dibujó de niño. Años después, lo digitalizó y produjo manualmente más de setenta variaciones de color. Un sistema generativo extendió después esa misma figura hasta una población de mil, explorando cómo la repetición puede preservar una identidad mientras la diferencia la desestabiliza continuamente.",
-      "en": "The project begins with a little monster Enrique Alcides drew as a child. Years later, he digitised it and produced more than seventy colour variants by hand. A generative system then extended the same figure into a population of one thousand, exploring how repetition can preserve an identity while difference continually unsettles it.",
-      "fr": "Le projet part d’un petit monstre qu’Enrique Alcides a dessiné enfant. Des années plus tard, il l’a numérisé et a produit manuellement plus de soixante-dix variations de couleur. Un système génératif a ensuite prolongé cette même figure en une population de mille, explorant la manière dont la répétition peut préserver une identité tandis que la différence la déstabilise continuellement.",
-      "it": "Il progetto nasce da un piccolo mostro che Enrique Alcides disegnò da bambino. Anni dopo lo ha digitalizzato e ha prodotto manualmente più di settanta variazioni cromatiche. Un sistema generativo ha poi esteso la stessa figura fino a una popolazione di mille, esplorando come la ripetizione possa preservare un’identità mentre la differenza la destabilizza continuamente.",
-      "de": "Das Projekt geht von einem kleinen Monster aus, das Enrique Alcides als Kind zeichnete. Jahre später digitalisierte er es und schuf von Hand mehr als siebzig Farbvarianten. Ein generatives System erweiterte dieselbe Figur anschließend zu einer Population von tausend und untersucht, wie Wiederholung Identität bewahren kann, während Differenz sie fortwährend destabilisiert."
+      "es": "Treinta variaciones exploran un sistema cromático de seis zonas. El fondo, el pelo largo, la corbata larga, el pelaje del cuerpo, el vientre y los ojos/iris cambian de forma independiente, permitiendo que una misma figura sostenga múltiples identidades cromáticas.",
+      "en": "Thirty variations explore a six-zone colour system. Background, long hair, long tie, body fur, belly and eyes/iris change independently, allowing the same figure to hold multiple chromatic identities.",
+      "fr": "Trente variations explorent un système chromatique à six zones. L’arrière-plan, les poils longs, la longue cravate, le pelage du corps, le ventre et les yeux/iris changent indépendamment, permettant à une même figure de revêtir de multiples identités chromatiques.",
+      "it": "Trenta variazioni esplorano un sistema cromatico a sei zone. Lo sfondo, il pelo lungo, la cravatta lunga, la pelliccia del corpo, il ventre e gli occhi/l’iride cambiano indipendentemente, consentendo alla stessa figura di assumere molteplici identità cromatiche.",
+      "de": "Dreißig Variationen erkunden ein Farbsystem aus sechs Zonen. Hintergrund, langes Haar, lange Krawatte, Körperfell, Bauch und Augen/Iris verändern sich unabhängig voneinander, sodass dieselbe Figur mehrere chromatische Identitäten annehmen kann."
     },
-    "origin": {
-      "es": "Origen",
-      "en": "Origin",
-      "fr": "Origine",
-      "it": "Origine",
-      "de": "Ursprung"
+    "monsterStructureLabel": {
+      "es": "Estructura",
+      "en": "Structure",
+      "fr": "Structure",
+      "it": "Struttura",
+      "de": "Struktur"
     },
-    "childhoodDrawing": {
-      "es": "Dibujo de infancia del artista",
-      "en": "Childhood drawing by the artist",
-      "fr": "Dessin d’enfance de l’artiste",
-      "it": "Disegno d’infanzia dell’artista",
-      "de": "Kinderzeichnung des Künstlers"
+    "monsterStructure": {
+      "es": "Seis zonas cromáticas variables de forma independiente",
+      "en": "Six independently variable colour zones",
+      "fr": "Six zones chromatiques variables indépendamment",
+      "it": "Sei zone cromatiche variabili indipendentemente",
+      "de": "Sechs unabhängig variable Farbzonen"
     },
-    "process": {
-      "es": "Proceso",
-      "en": "Process",
-      "fr": "Processus",
-      "it": "Processo",
-      "de": "Prozess"
+    "monsterZonesLabel": {
+      "es": "Zonas",
+      "en": "Zones",
+      "fr": "Zones",
+      "it": "Zone",
+      "de": "Zonen"
     },
-    "monsterProcess": {
-      "es": "Digitalización, variación manual del color y sistema generativo",
-      "en": "Digitisation, manual colour variation and generative system",
-      "fr": "Numérisation, variation manuelle des couleurs et système génératif",
-      "it": "Digitalizzazione, variazione cromatica manuale e sistema generativo",
-      "de": "Digitalisierung, manuelle Farbvariation und generatives System"
+    "monsterZones": {
+      "es": "Fondo · pelo largo · corbata larga · pelaje del cuerpo · vientre · ojos / iris",
+      "en": "Background · long hair · long tie · body fur · belly · eyes / iris",
+      "fr": "Arrière-plan · poils longs · longue cravate · pelage du corps · ventre · yeux / iris",
+      "it": "Sfondo · pelo lungo · cravatta lunga · pelliccia del corpo · ventre · occhi / iride",
+      "de": "Hintergrund · langes Haar · lange Krawatte · Körperfell · Bauch · Augen / Iris"
     },
-    "scope": {
-      "es": "Alcance",
-      "en": "Scope",
-      "fr": "Étendue",
-      "it": "Estensione",
-      "de": "Umfang"
+    "thirtyVariations": {
+      "es": "30 variaciones",
+      "en": "30 variations",
+      "fr": "30 variations",
+      "it": "30 variazioni",
+      "de": "30 Variationen"
     },
     "thousandVariations": {
       "es": "1.000 variaciones",
@@ -81,12 +130,61 @@
       "it": "1.000 variazioni",
       "de": "1.000 Variationen"
     },
+    "dogMeta": {
+      "es": "Repetición · algoritmo · 1.000 variaciones",
+      "en": "Repetition · algorithm · 1,000 variations",
+      "fr": "Répétition · algorithme · 1 000 variations",
+      "it": "Ripetizione · algoritmo · 1.000 variazioni",
+      "de": "Wiederholung · Algorithmus · 1.000 Variationen"
+    },
+    "dogHeading": {
+      "es": "Variaciones algorítmicas a partir de un dibujo original.",
+      "en": "Algorithmic variations from an original drawing.",
+      "fr": "Variations algorithmiques à partir d’un dessin original.",
+      "it": "Variazioni algoritmiche a partire da un disegno originale.",
+      "de": "Algorithmische Variationen auf Grundlage einer Originalzeichnung."
+    },
+    "dogText": {
+      "es": "Un sistema determinista recombina de forma independiente los colores del fondo, el globo, la cuerda, el pelo, la corbata/el collar y el cuerpo, preservando la figura original.",
+      "en": "A deterministic system independently recombines the colours of the background, balloon, string, hair, tie/collar and body, while preserving the original figure.",
+      "fr": "Un système déterministe recombine indépendamment les couleurs du fond, du ballon, de la ficelle, du pelage, de la cravate/du collier et du corps, tout en préservant la figure originale.",
+      "it": "Un sistema deterministico ricombina in modo indipendente i colori dello sfondo, del palloncino, del filo, del pelo, della cravatta/del collare e del corpo, preservando la figura originale.",
+      "de": "Ein deterministisches System kombiniert die Farben von Hintergrund, Ballon, Schnur, Fell, Krawatte/Halsband und Körper unabhängig voneinander neu und bewahrt dabei die ursprüngliche Figur."
+    },
+    "dogSelectionCaption": {
+      "es": "Selección · 25 variaciones",
+      "en": "Selection · 25 variations",
+      "fr": "Sélection · 25 variations",
+      "it": "Selezione · 25 variazioni",
+      "de": "Auswahl · 25 Variationen"
+    },
+    "dogCompleteCaption": {
+      "es": "Serie completa · 1.000 variaciones",
+      "en": "Complete series · 1,000 variations",
+      "fr": "Série complète · 1 000 variations",
+      "it": "Serie completa · 1.000 variazioni",
+      "de": "Vollständige Serie · 1.000 Variationen"
+    },
+    "dogAlt25": {
+      "es": "Selección de veinticinco variaciones cromáticas numeradas de un caniche de estética pop con un globo, de Enrique Alcides",
+      "en": "Selection of twenty-five numbered colour variations of a pop-art poodle with a balloon, by Enrique Alcides",
+      "fr": "Sélection de vingt-cinq variations chromatiques numérotées montrant un caniche pop art avec un ballon, par Enrique Alcides",
+      "it": "Selezione di venticinque variazioni cromatiche numerate di un barboncino in stile pop art con un palloncino, di Enrique Alcides",
+      "de": "Auswahl von fünfundzwanzig nummerierten Farbvariationen eines Pudels im Pop-Art-Stil mit einem Ballon, von Enrique Alcides"
+    },
+    "dogAlt1000": {
+      "es": "Mosaico de mil variaciones cromáticas algorítmicas de un caniche de estética pop con un globo, de Enrique Alcides",
+      "en": "Mosaic of one thousand algorithmic colour variations of a pop-art poodle with a balloon, by Enrique Alcides",
+      "fr": "Mosaïque de mille variations chromatiques algorithmiques montrant un caniche pop art avec un ballon, par Enrique Alcides",
+      "it": "Mosaico di mille variazioni cromatiche algoritmiche di un barboncino in stile pop art con un palloncino, di Enrique Alcides",
+      "de": "Mosaik aus tausend algorithmischen Farbvariationen eines Pudels im Pop-Art-Stil mit einem Ballon, von Enrique Alcides"
+    },
     "cellMeta": {
-      "es": "Serie de imágenes · dos variaciones seleccionadas",
-      "en": "Image series · two selected variations",
-      "fr": "Série d’images · deux variations sélectionnées",
-      "it": "Serie di immagini · due variazioni selezionate",
-      "de": "Bildserie · zwei ausgewählte Variationen"
+      "es": "Caja de luz · 2021 · dos variaciones seleccionadas",
+      "en": "Lightbox · 2021 · two selected variations",
+      "fr": "Caisson lumineux · 2021 · deux variations sélectionnées",
+      "it": "Lightbox · 2021 · due variazioni selezionate",
+      "de": "Leuchtkasten · 2021 · zwei ausgewählte Variationen"
     },
     "cellText": {
       "es": "Un campo celular se repite sin llegar a ser idéntico. El color y la densidad recorren una misma estructura orgánica y convierten una imagen compartida en estados distintos.",
@@ -116,12 +214,47 @@
       "it": "Anno / tecnica",
       "de": "Jahr / Technik"
     },
+    "originalProcessLabel": {
+      "es": "Proceso original",
+      "en": "Original process",
+      "fr": "Processus d’origine",
+      "it": "Processo originale",
+      "de": "Ursprünglicher Prozess"
+    },
+    "cellOriginalProcess": {
+      "es": "Fotografía, ilustración y creación digital",
+      "en": "Photography, illustration and digital creation",
+      "fr": "Photographie, illustration et création numérique",
+      "it": "Fotografia, illustrazione e creazione digitale",
+      "de": "Fotografie, Illustration und digitale Gestaltung"
+    },
+    "presentationLabel": {
+      "es": "Presentación",
+      "en": "Presentation",
+      "fr": "Présentation",
+      "it": "Presentazione",
+      "de": "Präsentation"
+    },
+    "cellPresentation": {
+      "es": "Caja de luz",
+      "en": "Lightbox",
+      "fr": "Caisson lumineux",
+      "it": "Lightbox",
+      "de": "Leuchtkasten"
+    },
+    "cellDimensions": {
+      "es": "70 × 110 cm",
+      "en": "70 × 110 cm",
+      "fr": "70 × 110 cm",
+      "it": "70 × 110 cm",
+      "de": "70 × 110 cm"
+    },
     "monsterAlt": {
-      "es": "Treinta y seis variaciones de Mis Monstruitos Favoritos — ENALC 1000, de Enrique Alcides",
-      "en": "Thirty-six variations from Mis Monstruitos Favoritos — ENALC 1000 by Enrique Alcides",
-      "fr": "Trente-six variations de Mis Monstruitos Favoritos — ENALC 1000, d’Enrique Alcides",
-      "it": "Trentasei variazioni di Mis Monstruitos Favoritos — ENALC 1000, di Enrique Alcides",
-      "de": "Sechsunddreißig Variationen aus Mis Monstruitos Favoritos — ENALC 1000 von Enrique Alcides"
+      "es": "Treinta variaciones de My Favorite Baby Mozta, de Enrique Alcides",
+      "en": "Thirty variations of My Favorite Baby Mozta by Enrique Alcides",
+      "fr": "Trente variations de My Favorite Baby Mozta, d’Enrique Alcides",
+      "it": "Trenta variazioni di My Favorite Baby Mozta, di Enrique Alcides",
+      "de": "Dreißig Variationen von My Favorite Baby Mozta von Enrique Alcides"
     },
     "cellAltA": {
       "es": "Primera variación cromática de Cell Drops, de Enrique Alcides",
@@ -131,11 +264,11 @@
       "de": "Erste Farbvariation aus Cell Drops von Enrique Alcides"
     },
     "cellAltB": {
-      "es": "Segunda variación cromática de Cell Drops, de Enrique Alcides",
-      "en": "Second colour variation from Cell Drops by Enrique Alcides",
-      "fr": "Deuxième variation chromatique de Cell Drops, d’Enrique Alcides",
-      "it": "Seconda variazione cromatica di Cell Drops, di Enrique Alcides",
-      "de": "Zweite Farbvariation aus Cell Drops von Enrique Alcides"
+      "es": "Segunda variación cromática de Cell Drops, de Enrique Alcides, mostrada boca abajo",
+      "en": "Second colour variation from Cell Drops by Enrique Alcides, displayed upside down",
+      "fr": "Deuxième variation chromatique de Cell Drops, d’Enrique Alcides, présentée à l’envers",
+      "it": "Seconda variazione cromatica di Cell Drops, di Enrique Alcides, mostrata capovolta",
+      "de": "Zweite Farbvariation aus Cell Drops von Enrique Alcides, auf dem Kopf gezeigt"
     },
     "studiesKicker": {
       "es": "Estudios de imagen",
@@ -145,11 +278,11 @@
       "de": "Bildstudien"
     },
     "studiesTitle": {
-      "es": "Imágenes en desarrollo.",
-      "en": "Images in development.",
-      "fr": "Images en développement.",
-      "it": "Immagini in sviluppo.",
-      "de": "Bilder in Entwicklung."
+      "es": "Protoideas en desarrollo",
+      "en": "Proto-Ideas in Development",
+      "fr": "Proto-idées en développement",
+      "it": "Proto-idee in sviluppo",
+      "de": "Proto-Ideen in Entwicklung"
     },
     "studiesIntro": {
       "es": "Un estudio actual cuya forma futura permanece abierta al movimiento, la recombinación y el desarrollo técnico.",

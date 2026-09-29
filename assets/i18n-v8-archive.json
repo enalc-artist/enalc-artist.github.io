@@ -89,11 +89,11 @@
       "de": "Eigenes digitales Werk ausgestellt: Natural Bare"
     },
     "naturalNote": {
-      "es": "Registro público de la primera presentación de Enrique Alcides en LAB ART Los Angeles, con la obra identificada expresamente como arte digital.",
-      "en": "Public record of Enrique Alcides’s first presentation at LAB ART Los Angeles, with the work explicitly identified as digital art.",
-      "fr": "Trace publique de la première présentation d’Enrique Alcides à LAB ART Los Angeles, l’œuvre étant explicitement identifiée comme art numérique.",
-      "it": "Documentazione pubblica della prima presentazione di Enrique Alcides a LAB ART Los Angeles, con l’opera esplicitamente identificata come arte digitale.",
-      "de": "Öffentlicher Beleg für Enrique Alcides’ erste Präsentation bei LAB ART Los Angeles; das Werk wird ausdrücklich als digitale Kunst bezeichnet."
+      "es": "Natural Bare marcó la primera presentación de Enrique Alcides en LAB ART Los Angeles y se mostró como obra digital.",
+      "en": "Natural Bare marked Enrique Alcides’s first presentation at LAB ART Los Angeles and was shown as a digital artwork.",
+      "fr": "Natural Bare a marqué la première présentation d’Enrique Alcides à LAB ART Los Angeles et a été montrée comme œuvre numérique.",
+      "it": "Natural Bare ha segnato la prima presentazione di Enrique Alcides al LAB ART Los Angeles ed è stata esposta come opera digitale.",
+      "de": "Natural Bare markierte Enrique Alcides’ erste Präsentation bei LAB ART Los Angeles und wurde als digitales Kunstwerk gezeigt."
     },
     "alonePlace": {
       "es": "Lelie Galerij · Ámsterdam · enero de 2023",
@@ -110,11 +110,11 @@
       "de": "Eigenes digitales Werk ausgestellt: Alone at the Prom"
     },
     "aloneNote": {
-      "es": "El registro público del artista indica que la obra permaneció expuesta en Lelie Galerij durante todo enero de 2023.",
-      "en": "The artist’s public record states that the work remained on display at Lelie Galerij throughout January 2023.",
-      "fr": "Le registre public de l’artiste indique que l’œuvre est restée exposée à la Lelie Galerij pendant tout le mois de janvier 2023.",
-      "it": "Il registro pubblico dell’artista indica che l’opera è rimasta esposta alla Lelie Galerij per tutto gennaio 2023.",
-      "de": "Der öffentliche Beleg des Künstlers hält fest, dass das Werk im gesamten Januar 2023 in der Lelie Galerij ausgestellt war."
+      "es": "La obra permaneció expuesta en Lelie Galerij durante todo enero de 2023.",
+      "en": "The work remained on display at Lelie Galerij throughout January 2023.",
+      "fr": "L’œuvre est restée exposée à la Lelie Galerij pendant tout le mois de janvier 2023.",
+      "it": "L’opera è rimasta esposta alla Lelie Galerij per tutto gennaio 2023.",
+      "de": "Das Werk war im gesamten Januar 2023 in der Lelie Galerij ausgestellt."
     },
     "originePlace": {
       "es": "Thomson Gallery · Zug, Suiza · hasta el 31 de enero de 2023",
@@ -131,18 +131,18 @@
       "de": "Eigenes digitales Werk ausgestellt: Origine"
     },
     "origineNote": {
-      "es": "La fuente de 2023 registra la obra como Origin. El título definitivo actual indicado por el artista es Origine, en francés.",
-      "en": "The 2023 source records the work as Origin. The artist’s current definitive title is Origine, in French.",
-      "fr": "La source de 2023 enregistre l’œuvre sous le titre Origin. Le titre définitif actuel indiqué par l’artiste est Origine, en français.",
-      "it": "La fonte del 2023 registra l’opera come Origin. Il titolo definitivo attuale indicato dall’artista è Origine, in francese.",
-      "de": "Die Quelle von 2023 führt das Werk als Origin. Der vom Künstler festgelegte heutige Titel lautet Origine, auf Französisch."
+      "es": "Presentada en 2023 como Origin, la obra se titula ahora Origine.",
+      "en": "Presented in 2023 as Origin, the work is now titled Origine.",
+      "fr": "Présentée en 2023 sous le titre Origin, l’œuvre s’intitule désormais Origine.",
+      "it": "Presentata nel 2023 come Origin, l’opera è ora intitolata Origine.",
+      "de": "2023 als Origin präsentiert, trägt das Werk heute den Titel Origine."
     },
     "organizerRecord": {
-      "es": "Registro del organizador · Okan Producciones ↗",
-      "en": "Organizer record · Okan Producciones ↗",
-      "fr": "Publication de l’organisateur · Okan Producciones ↗",
-      "it": "Registrazione dell’organizzatore · Okan Producciones ↗",
-      "de": "Eintrag des Veranstalters · Okan Producciones ↗"
+      "es": "Okan Producciones · Instagram ↗",
+      "en": "Okan Producciones · Instagram ↗",
+      "fr": "Okan Producciones · Instagram ↗",
+      "it": "Okan Producciones · Instagram ↗",
+      "de": "Okan Producciones · Instagram ↗"
     },
     "organizerProfile": {
       "es": "Perfil del organizador ↗",
@@ -152,32 +152,32 @@
       "de": "Profil des Veranstalters ↗"
     },
     "artistDatedRecord": {
-      "es": "Registro fechado del artista ↗",
-      "en": "Artist’s dated record ↗",
-      "fr": "Publication datée de l’artiste ↗",
-      "it": "Registrazione datata dell’artista ↗",
-      "de": "Datierter Eintrag des Künstlers ↗"
+      "es": "Anuncio del artista · Instagram ↗",
+      "en": "Artist announcement · Instagram ↗",
+      "fr": "Annonce de l’artiste · Instagram ↗",
+      "it": "Annuncio dell’artista · Instagram ↗",
+      "de": "Ankündigung des Künstlers · Instagram ↗"
     },
     "independentVenueRecord": {
-      "es": "Registro independiente del espacio ↗",
-      "en": "Independent venue record ↗",
-      "fr": "Référence indépendante du lieu ↗",
-      "it": "Riscontro indipendente dello spazio ↗",
-      "de": "Unabhängiger Nachweis des Veranstaltungsorts ↗"
+      "es": "Gris Bar ↗",
+      "en": "Gris Bar ↗",
+      "fr": "Gris Bar ↗",
+      "it": "Gris Bar ↗",
+      "de": "Gris Bar ↗"
     },
     "independentExhibitionRecord": {
-      "es": "Registro independiente de la exposición ↗",
-      "en": "Independent exhibition record ↗",
-      "fr": "Référence indépendante de l’exposition ↗",
-      "it": "Riscontro indipendente della mostra ↗",
-      "de": "Unabhängiger Ausstellungsnachweis ↗"
+      "es": "Página de la exposición ↗",
+      "en": "Exhibition page ↗",
+      "fr": "Page de l’exposition ↗",
+      "it": "Pagina della mostra ↗",
+      "de": "Ausstellungsseite ↗"
     },
     "independentCircuitRecord": {
-      "es": "Registro independiente del circuito ↗",
-      "en": "Independent circuit record ↗",
-      "fr": "Référence indépendante du circuit ↗",
-      "it": "Riscontro indipendente del circuito ↗",
-      "de": "Unabhängiger Nachweis des Ausstellungsnetzwerks ↗"
+      "es": "Circuito de exposiciones ↗",
+      "en": "Exhibition circuit ↗",
+      "fr": "Circuit d’expositions ↗",
+      "it": "Circuito espositivo ↗",
+      "de": "Ausstellungsnetzwerk ↗"
     },
     "officialGallery": {
       "es": "Galería oficial ↗",
@@ -194,11 +194,11 @@
       "de": "ARTBOXY-Netzwerk ↗"
     },
     "sourceLabel": {
-      "es": "Documento / fuente ↗",
-      "en": "Document / source ↗",
-      "fr": "Document / source ↗",
-      "it": "Documento / fonte ↗",
-      "de": "Dokument / Quelle ↗"
+      "es": "Página del proyecto ↗",
+      "en": "Project page ↗",
+      "fr": "Page du projet ↗",
+      "it": "Pagina del progetto ↗",
+      "de": "Projektseite ↗"
     }
   }
 }

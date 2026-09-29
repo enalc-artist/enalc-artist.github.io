@@ -191,8 +191,8 @@
         "en": "People"
       },
       "people.description": {
-        "es": "Obra donada por Enrique Alcides para una subasta y posteriormente adjudicada. Esta reproducción, facilitada por el artista, preserva el registro de una pieza que hoy pertenece a una colección privada.",
-        "en": "A work donated by Enrique Alcides for an auction and subsequently sold. This reproduction, provided by the artist, preserves the record of a piece now held in a private collection."
+        "es": "Enrique Alcides donó People para la exposición y subasta benéfica, donde fue expuesta y vendida. Actualmente pertenece a una colección privada.",
+        "en": "Enrique Alcides donated People for the charity exhibition and auction, where it was exhibited and sold. It is now held in a private collection."
       },
       "people.yearLabel": {
         "es": "Año",
@@ -210,17 +210,13 @@
         "es": "Estado",
         "en": "Status"
       },
-      "people.toBeConfirmed": {
-        "es": "Por confirmar",
-        "en": "To be confirmed"
-      },
       "people.status": {
         "es": "Vendida en subasta · colección privada",
         "en": "Sold at auction · private collection"
       },
       "people.sourceCta": {
-        "es": "Ver registro de la subasta",
-        "en": "View auction record"
+        "es": "Ver publicación de la subasta",
+        "en": "View auction post"
       },
       "people.imageAlt": {
         "es": "Composición de figuras de Enrique Alcides, donada y vendida en subasta",
@@ -247,8 +243,8 @@
         "en": "Series"
       },
       "decollage.seriesStatus": {
-        "es": "Título definitivo por confirmar",
-        "en": "Final title to be confirmed"
+        "es": "Serie de décollages urbanos",
+        "en": "Urban Décollage Series"
       },
       "decollage.originLabel": {
         "es": "Origen",
@@ -271,24 +267,24 @@
         "en": "Technical details"
       },
       "decollage.technicalSheetStatus": {
-        "es": "Año y dimensiones por completar",
-        "en": "Year and dimensions to be added"
+        "es": "2020 · 40 × 60 cm",
+        "en": "2020 · 40 × 60 cm"
       },
       "decollage.imageAlt": {
         "es": "Obra de la serie de décollages urbanos de Enrique Alcides",
         "en": "Work from Enrique Alcides’s urban décollage series"
       },
       "watercolour.kicker": {
-        "es": "Acuarela · exposición colectiva · archivo recuperado",
-        "en": "Watercolour · group exhibition · recovered archive"
+        "es": "Acuarela sobre papel · 2017",
+        "en": "Watercolour on paper · 2017"
       },
       "watercolour.titleStatus": {
-        "es": "Título pendiente",
-        "en": "Title pending"
+        "es": "Suspicious Mind",
+        "en": "Suspicious Mind"
       },
       "watercolour.description": {
-        "es": "Una acuarela construida desde el recuerdo de Paloma Picasso. La pieza formó parte de una de las exposiciones colectivas del artista; el nombre de la muestra y los datos de catálogo se incorporarán cuando se recupere la documentación.",
-        "en": "A watercolour constructed from the memory of Paloma Picasso. The piece formed part of one of the artist’s group exhibitions; the exhibition title and catalogue details will be added once the documentation has been recovered."
+        "es": "Una acuarela construida desde el recuerdo de Paloma Picasso. La pieza formó parte de una exposición colectiva del artista.",
+        "en": "A watercolour constructed from the memory of Paloma Picasso. The work was shown in one of the artist’s group exhibitions."
       },
       "watercolour.referenceLabel": {
         "es": "Referencia",
@@ -311,16 +307,16 @@
         "en": "Exhibition"
       },
       "watercolour.exhibitionStatus": {
-        "es": "Colectiva · nombre y fecha por confirmar",
-        "en": "Group exhibition · title and date to be confirmed"
+        "es": "Exposición colectiva",
+        "en": "Group exhibition"
       },
       "watercolour.technicalSheetLabel": {
         "es": "Ficha técnica",
         "en": "Technical details"
       },
       "watercolour.technicalSheetStatus": {
-        "es": "Año, soporte y dimensiones por completar",
-        "en": "Year, support and dimensions to be added"
+        "es": "Acuarela sobre papel · 2017 · 30 × 40 cm",
+        "en": "Watercolour on paper · 2017 · 30 × 40 cm"
       },
       "watercolour.imageAlt": {
         "es": "Acuarela de Enrique Alcides basada en su recuerdo de Paloma Picasso",
@@ -337,10 +333,6 @@
       "series.painting.title": {
         "es": "Materia pictórica",
         "en": "Painterly Matter"
-      },
-      "series.painting.description": {
-        "es": "El archivo físico —lienzos, papel, técnicas mixtas y fichas— se incorporará aquí por series.",
-        "en": "The physical archive—canvases, works on paper, mixed media and records—will be added here by series."
       },
       "series.generative.kicker": {
         "es": "Creación generativa · imagen viva",
@@ -379,8 +371,8 @@
         "en": "Characters, creatures and personal signs subjected to rules of colour, repetition and difference."
       },
       "series.archiveStatus": {
-        "es": "Archivo en incorporación",
-        "en": "Archive being added"
+        "es": "Serie · Obra en proceso",
+        "en": "Series · Work in Progress"
       },
       "workSheet.title": {
         "es": "Ficha de cada obra",
@@ -539,12 +531,12 @@
         "en": "Galería Interno 14 / AIAC · Rome · 16 May 2014"
       },
       "metamorphosis.role": {
-        "es": "Asesoría teatral — «consulenza teatrale»",
-        "en": "Theatrical consultancy — ‘consulenza teatrale’"
+        "es": "Dirección de la performance · intervención en el espacio bajo la proyección de obra de la artista Claudia Bonollo",
+        "en": "Performance direction · spatial intervention under the projection of work by artist Claudia Bonollo"
       },
       "metamorphosis.description": {
-        "es": "Proyecto de Claudia Bonollo y Andrea Buchner. La ficha pública acredita de forma expresa la función de Enrique Alcides.",
-        "en": "A project by Claudia Bonollo and Andrea Buchner. The public record explicitly credits Enrique Alcides’s role."
+        "es": "Instalación colaborativa con obra visual proyectada de Claudia Bonollo y dirección de la performance de Enrique Alcides.",
+        "en": "Collaborative installation with projected visual work by Claudia Bonollo and performance direction by Enrique Alcides."
       },
       "creativeInsomnia.type": {
         "es": "Performance · palabra · color",
@@ -555,20 +547,20 @@
         "en": "Creative Insomnia — Red Night"
       },
       "creativeInsomnia.role": {
-        "es": "Voz e interpretación de textos sobre el rojo",
-        "en": "Voice performance and interpretation of texts on the colour red"
+        "es": "Performance e interpretación oral de textos sobre el color rojo",
+        "en": "Performance and spoken-word interpretation of texts on the colour red"
       },
       "creativeInsomnia.description": {
-        "es": "Interpretación de Rouge sang, de Carmen Caillot, y de fragmentos de la novela Rojo esperanza, de Elena Zanca.",
-        "en": "Performance of Rouge sang by Carmen Caillot and excerpts from Elena Zanca’s novel Rojo esperanza."
+        "es": "Performance e interpretación oral de Rouge sang, de Carmen Caillot, junto con fragmentos de la novela Rojo esperanza, de Elena Zanca.",
+        "en": "Performance and spoken-word interpretation of Rouge sang by Carmen Caillot, together with excerpts from Elena Zanca’s novel Rojo esperanza."
       },
       "creativeInsomnia.imageAlt": {
-        "es": "Retrato de Enrique Alcides asociado a Creative Insomnia Red Night",
-        "en": "Portrait of Enrique Alcides associated with Creative Insomnia Red Night"
+        "es": "Figura femenina de la obra en rojo y negro asociada a Creative Insomnia — Red Night",
+        "en": "Female figure from the red-and-black work associated with Creative Insomnia — Red Night"
       },
       "domesticDemons.type": {
-        "es": "Videoinstalación · colaboración registrada",
-        "en": "Video installation · documented collaboration"
+        "es": "Videoinstalación · performance",
+        "en": "Video installation · performance"
       },
       "domesticDemons.title": {
         "es": "Endemoniados demonios domésticos",
@@ -579,8 +571,8 @@
         "en": "Work by Iury Lech"
       },
       "domesticDemons.role": {
-        "es": "Participación incluida en el CV público de Enrique Alcides",
-        "en": "Participation listed in Enrique Alcides’s public CV"
+        "es": "Intérprete en la videoinstalación de siete canales de Iury Lech",
+        "en": "Performer in Iury Lech’s seven-channel video installation"
       },
       "cosmicNarcissi.type": {
         "es": "Videoinstalación · cuerpo e imagen",
@@ -589,10 +581,6 @@
       "cosmicNarcissi.title": {
         "es": "Narcisos Cósmicos",
         "en": "Cosmic Narcissi"
-      },
-      "cosmicNarcissi.role": {
-        "es": "Participación registrada · obra de Claudia Bonollo",
-        "en": "Documented participation · work by Claudia Bonollo"
       },
       "imaginedBody.type": {
         "es": "Videoinstalación · cuerpo e imagen",
@@ -607,16 +595,16 @@
         "en": "Project by Claudia Bonollo"
       },
       "imaginedBody.role": {
-        "es": "Participación registrada en videoarte",
-        "en": "Documented participation in video art"
+        "es": "Intérprete en la videoinstalación",
+        "en": "Performer in the video installation"
       },
       "imaginedBody.description": {
         "es": "La investigación vinculada al proyecto empleó performances con actores —Enrique Alcides entre ellos— para interpretar emociones generadas por imágenes proyectadas sobre el cuerpo.",
         "en": "The research associated with the project used performances by actors—including Enrique Alcides—to interpret emotions generated by images projected onto the body."
       },
       "beautyCure.type": {
-        "es": "Videoinstalación · colaboración registrada",
-        "en": "Video installation · documented collaboration"
+        "es": "Videoinstalación",
+        "en": "Video installation"
       },
       "beautyCure.title": {
         "es": "Beauty is in Itself a Cure",
@@ -626,25 +614,13 @@
         "es": "Obra de Claudia Bonollo",
         "en": "Work by Claudia Bonollo"
       },
-      "beautyCure.role": {
-        "es": "Participación incluida en el CV público de Enrique Alcides",
-        "en": "Participation listed in Enrique Alcides’s public CV"
-      },
-      "record.sourceCta": {
-        "es": "Documento / fuente",
-        "en": "Document / source"
-      },
       "readings.eyebrow": {
-        "es": "Lecturas de obra recuperadas",
-        "en": "Recovered readings of the work"
+        "es": "Lecturas curatoriales",
+        "en": "Curatorial readings"
       },
       "readings.title": {
         "es": "Cuatro entradas para mirar lo que está naciendo.",
         "en": "Four points of entry into what is taking shape."
-      },
-      "readings.disclaimer": {
-        "es": "Textos curatoriales de trabajo desarrollados en conversaciones previas. No se presentan como crítica publicada ni sustituyen un texto firmado por un comisario.",
-        "en": "Working curatorial texts developed in previous conversations. They are not presented as published criticism, nor do they replace a text signed by a curator."
       },
       "readings.cosmicFaceLabel": {
         "es": "Lectura de Rostro cósmico",
@@ -761,8 +737,8 @@
         "en": "I came to understand my Asperger’s as a retrospective key: it does not explain the work, but helps me recognize a persistent way of perceiving, questioning, and organizing the world. I work with what changes without ceasing to be; with the provisional forms through which we try to inhabit ourselves. The artist I am contains all these layers and is, at the same time, the seed of another I cannot yet imagine."
       },
       "statement.eyebrow": {
-        "es": "Declaración artística · versión de trabajo",
-        "en": "Artistic statement · working version"
+        "es": "Declaración artística",
+        "en": "Artistic statement"
       },
       "statement.title": {
         "es": "Toda identidad es una imagen en proceso.",
