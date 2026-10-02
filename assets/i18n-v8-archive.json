@@ -54,11 +54,11 @@
       "de": "Gris Bar · Madrid · 16. Februar 2023"
     },
     "popRole": {
-      "es": "Artista visual participante · obra propia expuesta",
-      "en": "Participating visual artist · own work exhibited",
-      "fr": "Artiste visuel participant · œuvre personnelle exposée",
-      "it": "Artista visivo partecipante · opera propria esposta",
-      "de": "Teilnehmender bildender Künstler · eigenes Werk ausgestellt"
+      "es": "Artista visual · obra propia expuesta",
+      "en": "Visual artist · own work exhibited",
+      "fr": "Artiste visuel · œuvre personnelle exposée",
+      "it": "Artista visivo · opera propria esposta",
+      "de": "Bildender Künstler · eigenes Werk ausgestellt"
     },
     "popNote": {
       "es": "Enrique Alcides anunció un encuentro colectivo de Pop Art en Gris Bar y presentó la imagen de la publicación como otra pieza de su trabajo reciente.",
@@ -131,11 +131,11 @@
       "de": "Eigenes digitales Werk ausgestellt: Origine"
     },
     "origineNote": {
-      "es": "Presentada en 2023 como Origin, la obra se titula ahora Origine.",
-      "en": "Presented in 2023 as Origin, the work is now titled Origine.",
-      "fr": "Présentée en 2023 sous le titre Origin, l’œuvre s’intitule désormais Origine.",
-      "it": "Presentata nel 2023 come Origin, l’opera è ora intitolata Origine.",
-      "de": "2023 als Origin präsentiert, trägt das Werk heute den Titel Origine."
+      "es": "Obra digital expuesta en la Thomson Gallery de Zug en 2023.",
+      "en": "Digital artwork exhibited at Thomson Gallery in Zug in 2023.",
+      "fr": "Œuvre numérique exposée à la Thomson Gallery de Zoug en 2023.",
+      "it": "Opera digitale esposta alla Thomson Gallery di Zugo nel 2023.",
+      "de": "Digitales Werk, 2023 in der Thomson Gallery in Zug ausgestellt."
     },
     "organizerRecord": {
       "es": "Okan Producciones · Instagram ↗",

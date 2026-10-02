@@ -1,0 +1,71 @@
+{
+  "_meta": {
+    "sourceLanguage": "en",
+    "languages": ["en", "es", "fr", "it", "de"]
+  },
+  "archiveExtensions": {
+    "verbenaFullPosterAlt": {
+      "en": "Complete poster for Radio Guateke — Verbena Bandarra featuring Enrique Alcides",
+      "es": "Cartel completo de Radio Guateke — Verbena Bandarra con Enrique Alcides",
+      "fr": "Affiche complète de Radio Guateke — Verbena Bandarra avec Enrique Alcides",
+      "it": "Locandina completa di Radio Guateke — Verbena Bandarra con Enrique Alcides",
+      "de": "Vollständiges Plakat für Radio Guateke — Verbena Bandarra mit Enrique Alcides"
+    },
+    "syriaAuctionMeta": {
+      "en": "Charity auction · children’s drawings",
+      "es": "Subasta benéfica · dibujos infantiles",
+      "fr": "Vente aux enchères caritative · dessins d’enfants",
+      "it": "Asta benefica · disegni di bambini",
+      "de": "Benefizauktion · Kinderzeichnungen"
+    },
+    "syriaAuctionTitle": {
+      "en": "Drawings by Children from Syria and Spain",
+      "es": "Dibujos de niños sirios y españoles",
+      "fr": "Dessins d’enfants de Syrie et d’Espagne",
+      "it": "Disegni di bambini siriani e spagnoli",
+      "de": "Zeichnungen von Kindern aus Syrien und Spanien"
+    },
+    "syriaAuctionNote": {
+      "en": "Drawings by children from Syria and Spain were presented at a charity auction. The proceeds were sent to Syria.",
+      "es": "Dibujos realizados por niños sirios y españoles se presentaron en una subasta benéfica. La recaudación se envió a Siria.",
+      "fr": "Des dessins réalisés par des enfants de Syrie et d’Espagne ont été présentés lors d’une vente aux enchères caritative. Les fonds recueillis ont été envoyés en Syrie.",
+      "it": "Disegni realizzati da bambini siriani e spagnoli sono stati presentati in un’asta benefica. Il ricavato è stato inviato in Siria.",
+      "de": "Zeichnungen von Kindern aus Syrien und Spanien wurden bei einer Benefizauktion präsentiert. Der Erlös wurde nach Syrien geschickt."
+    },
+    "syriaAuctionAlt": {
+      "en": "Enrique Alcides beside drawings by children from Syria and Spain at the charity auction",
+      "es": "Enrique Alcides junto a dibujos de niños sirios y españoles en la subasta benéfica",
+      "fr": "Enrique Alcides aux côtés de dessins d’enfants de Syrie et d’Espagne lors de la vente caritative",
+      "it": "Enrique Alcides accanto ai disegni di bambini siriani e spagnoli durante l’asta benefica",
+      "de": "Enrique Alcides neben Zeichnungen von Kindern aus Syrien und Spanien bei der Benefizauktion"
+    },
+    "nadieMeta": {
+      "en": "Stage installation · theatre",
+      "es": "Instalación escénica · teatro",
+      "fr": "Installation scénique · théâtre",
+      "it": "Installazione scenica · teatro",
+      "de": "Bühneninstallation · Theater"
+    },
+    "nadieNote": {
+      "en": "Two photographic compositions of the same installation within the theatre production Nadie, with participants with different disabilities.",
+      "es": "Dos composiciones fotográficas de la misma instalación integrada en la obra de teatro Nadie, con participantes con distintos tipos de discapacidad.",
+      "fr": "Deux compositions photographiques de la même installation intégrée à la production théâtrale Nadie, avec des participantes et participants présentant différents handicaps.",
+      "it": "Due composizioni fotografiche della stessa installazione integrata nella produzione teatrale Nadie, con partecipanti con diverse disabilità.",
+      "de": "Zwei fotografische Kompositionen derselben Installation innerhalb der Theaterproduktion Nadie, mit Mitwirkenden mit unterschiedlichen Behinderungen."
+    },
+    "nadieAltOne": {
+      "en": "Two views of the stage installation in Nadie with participants with different disabilities",
+      "es": "Dos vistas de la instalación escénica de Nadie con participantes con distintos tipos de discapacidad",
+      "fr": "Deux vues de l’installation scénique de Nadie avec des participantes et participants présentant différents handicaps",
+      "it": "Due viste dell’installazione scenica di Nadie con partecipanti con diverse disabilità",
+      "de": "Zwei Ansichten der Bühneninstallation in Nadie mit Mitwirkenden mit unterschiedlichen Behinderungen"
+    },
+    "nadieAltTwo": {
+      "en": "Additional views of the same stage installation in Nadie",
+      "es": "Vistas adicionales de la misma instalación escénica de Nadie",
+      "fr": "Vues supplémentaires de la même installation scénique de Nadie",
+      "it": "Altre viste della stessa installazione scenica di Nadie",
+      "de": "Weitere Ansichten derselben Bühneninstallation in Nadie"
+    }
+  }
+}

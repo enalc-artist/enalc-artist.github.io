@@ -113,7 +113,7 @@
     function open(image) {
       activeTrigger = image;
       enlarged.src = imageSource(image);
-      enlarged.alt = image.alt || "";
+      enlarged.alt = image.dataset.lightboxAlt || image.alt || "";
       caption.textContent = imageTitle(image);
       media.classList.toggle(
         "archive-lightbox__media--red-night-woman",
@@ -161,7 +161,7 @@
     window.addEventListener("enalc:localechange", function () {
       updateLabels();
       if (dialog.open && activeTrigger) {
-        enlarged.alt = activeTrigger.alt || "";
+        enlarged.alt = activeTrigger.dataset.lightboxAlt || activeTrigger.alt || "";
         caption.textContent = imageTitle(activeTrigger);
       }
     });

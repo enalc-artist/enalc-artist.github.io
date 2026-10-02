@@ -12,12 +12,14 @@
     "i18n-new-works.json",
     "i18n-work-gallery.json",
     "i18n-a-la-sombra.json",
+    "i18n-archive-extensions.json",
   ];
   var TRANSLATABLE_ATTRIBUTES = [
     "alt",
     "aria-label",
     "title",
     "placeholder",
+    "data-lightbox-alt",
   ];
   var SKIP_SELECTOR = [
     "script",
