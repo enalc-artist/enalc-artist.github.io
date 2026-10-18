@@ -1,0 +1,32 @@
+{
+  "_meta": {
+    "sourceLanguage": "en",
+    "languages": [
+      "en",
+      "es"
+    ],
+    "project": "E la nave va"
+  },
+  "project": {
+    "meta": {
+      "en": "Artist residency proposal · JRC, European Commission · Decoding Depression · Ispra, 2027",
+      "es": "Propuesta de residencia artística · JRC, Comisión Europea · Decoding Depression · Ispra, 2027"
+    },
+    "body1": {
+      "en": "A ship drawn in section. What weighs on a life is stowed below the waterline; what sustains it floats above. The waterline rises and falls with anonymous contributions and with the currents that move the whole fleet at once: economic crises, pandemics, wars, climate.",
+      "es": "Una nave dibujada en sección. Lo que pesa en una vida se estiba bajo la línea de flotación; lo que la sostiene flota encima. La línea sube y baja con aportaciones anónimas y con las corrientes que mueven a toda la flota a la vez: crisis económicas, pandemias, guerras, el clima."
+    },
+    "body2": {
+      "en": "On the hull sits a Plimsoll line, the safe-load mark that British law made compulsory in 1876. Political decisions are not the sea: they are the rule that sets how much load is safe. The interactive fleet shows six ships (school, work, family, leisure, relationships, digital access), live statistics by age, situation and disability, and two scenarios for 2040. All data in the prototype are invented.",
+      "es": "En el casco, una línea de Plimsoll: la marca de carga segura que la ley británica impuso en 1876. Las decisiones políticas no son el mar: son la norma que marca cuánta carga es segura. La flota interactiva muestra seis naves (estudios, trabajo, familia, ocio, relaciones, acceso digital), estadística en directo por edad, situación y discapacidad, y dos escenarios para 2040. Todos los datos del prototipo son inventados."
+    },
+    "ask": {
+      "en": "Interactive fleet · original sketch · application dossier",
+      "es": "Flota interactiva · boceto original · dossier de candidatura"
+    },
+    "alt": {
+      "en": "A ship drawn in section: coloured crates below the waterline and buoys above it, from the e la nave va prototype",
+      "es": "Una nave dibujada en sección: cajas de colores bajo la línea de flotación y boyas encima, del prototipo e la nave va"
+    }
+  }
+}

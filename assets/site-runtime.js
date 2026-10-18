@@ -13,6 +13,7 @@
     "i18n-work-gallery.json",
     "i18n-a-la-sombra.json",
     "i18n-archive-extensions.json",
+    "i18n-e-la-nave-va.json",
   ];
   var TRANSLATABLE_ATTRIBUTES = [
     "alt",
