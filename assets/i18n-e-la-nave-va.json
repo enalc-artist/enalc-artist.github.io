@@ -27,6 +27,10 @@
     "alt": {
       "en": "A ship drawn in section: coloured crates below the waterline and buoys above it, from the e la nave va prototype",
       "es": "Una nave dibujada en sección: cajas de colores bajo la línea de flotación y boyas encima, del prototipo e la nave va"
+    },
+    "video_label": {
+      "en": "Animated sketch: a ship drawn in section where, month by month, coloured crates gather below the waterline and buoys rise above it",
+      "es": "Boceto animado: una nave dibujada en sección donde, mes a mes, se acumulan cajas de colores bajo la línea de flotación y suben boyas por encima"
     }
   }
 }

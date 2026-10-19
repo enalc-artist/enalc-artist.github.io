@@ -42,13 +42,25 @@
       </section>
       <section class="projects-stack section-pad">
         <article class="project-sheet project-sheet-shadow" id="e-la-nave-va">
-          <figure class="project-visual shadow-research">
+          <figure class="project-visual shadow-research" style="background:linear-gradient(to bottom,#003153 0 50%,#1a2550 50% 100%)">
             <span class="project-number">JRC · 2027</span>
-            <img
-              data-lightbox
-              src="/proyectos/e-la-nave-va/ship-june.webp"
-              alt="A ship drawn in section: coloured crates below the waterline and buoys above it, from the e la nave va prototype"
+            <video
+              poster="/proyectos/e-la-nave-va/ship-loop-poster.webp"
+              autoplay muted loop playsinline preload="auto"
+              aria-label="Animated sketch: a ship drawn in section where, month by month, coloured crates gather below the waterline and buoys rise above it"
+              style="display:block;width:100%;height:100%;min-height:0;object-fit:contain"
             >
+              <source src="/proyectos/e-la-nave-va/ship-loop.mp4" type="video/mp4">
+              <source src="/proyectos/e-la-nave-va/ship-loop.webm" type="video/webm">
+            </video>
+            <script>
+              (function (v) {
+                if (v && window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+                  v.removeAttribute("autoplay");
+                  v.pause();
+                }
+              })(document.currentScript.previousElementSibling);
+            </script>
           </figure>
           <div class="project-detail">
             <p class="work-meta">
@@ -77,7 +89,7 @@
           </div>
         </article>
         <article class="project-sheet project-sheet-shadow" id="a-la-sombra">
-          <figure class="project-visual shadow-research">
+          <figure class="project-visual shadow-research" style="background:linear-gradient(to bottom,#b85c38 0 50%,#c9952b 50% 100%)">
             <span class="project-number">P—00</span>
             <img
               data-lightbox
@@ -87,7 +99,7 @@
           </figure>
           <div class="project-detail">
             <p class="work-meta">
-              Ongoing proposal · open research · awaiting authorisation
+              Artist residency proposal · Medialab Matadero · Situated Research · Madrid, 2026
             </p>
             <h2>In the Shade. The Art of Making Room</h2>
             <p class="project-body">
