@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="/favicon.svg">
+<title>La flotta della nave</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:ital,wght@0,400;1,400;1,500&display=swap">
+<style>
+/* Layout: tablero de una pantalla. Arriba, título y controles. Columna izquierda: las cinco naves en fila, la nave común y los últimos gestos. Columna derecha: la estadística, que crece en directo. En móvil se apila. */
+:root {
+  --bg: #ECEFF0; --panel: #F6F8F8; --ink: #16222C; --muted: #55656F; --rule: #C5CED3;
+  --water: #BCD2DD; --water-deep: #9DBBCB; --plim: #B3261E; --accent: #1F4FBF;
+  --a-estudios: #D9822B; --a-trabajo: #6B7A86; --a-familia: #7B4FA3; --a-ocio: #3F8F5B; --a-relaciones: #C2478E; --a-digital: #2F6FA8;
+  --font-display: "Spectral", Georgia, serif;
+  --font-body: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #11181E; --panel: #182129; --ink: #E4EAEE; --muted: #96A5AF; --rule: #2C3943;
+    --water: #24465A; --water-deep: #1B3646; --plim: #FF6B5E; --accent: #8FB1FF;
+    --a-estudios: #F0A258; --a-trabajo: #93A3AF; --a-familia: #A98AD0; --a-ocio: #6CC38A; --a-relaciones: #E574B3; --a-digital: #6FA8DC;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #11181E; --panel: #182129; --ink: #E4EAEE; --muted: #96A5AF; --rule: #2C3943;
+  --water: #24465A; --water-deep: #1B3646; --plim: #FF6B5E; --accent: #8FB1FF;
+  --a-estudios: #F0A258; --a-trabajo: #93A3AF; --a-familia: #A98AD0; --a-ocio: #6CC38A; --a-relaciones: #E574B3; --a-digital: #6FA8DC;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 14px; line-height: 1.45;
+  padding-block: 14px 28px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+main { max-width: 1400px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+.top { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 10px 24px; }
+.title { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+h1 { font-family: var(--font-display); font-style: italic; font-weight: 500; font-size: clamp(1.7rem, 3.4vw, 2.3rem); line-height: 1.05; margin: 0; }
+h2 { font-family: var(--font-display); font-weight: 500; font-size: 1.1rem; margin: 0; text-wrap: balance; }
+.tag { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.controls { display: flex; flex-direction: column; gap: 8px; flex: 1 1 560px; min-width: 0; max-width: 820px; }
+.row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+button { font: inherit; font-size: 13.5px; background: var(--ink); color: var(--bg); border: 1px solid var(--ink); border-radius: 4px; padding: 6px 12px; cursor: pointer; font-weight: 500; }
+button.ghost { background: transparent; color: var(--ink); border-color: var(--rule); }
+button:hover { border-color: var(--accent); }
+button:focus-visible, .chip input:focus-visible + span, input[type=range]:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.timeline { flex: 1 1 240px; min-width: 0; display: flex; flex-direction: column; gap: 1px; }
+input[type=range] { width: 100%; accent-color: var(--accent); margin: 0; }
+.ticks { position: relative; height: 15px; font-family: var(--font-mono); font-size: 10px; color: var(--muted); }
+.ticks span { position: absolute; transform: translateX(-50%); white-space: nowrap; }
+.ticks i { font-style: normal; }
+.ticks span:first-child { transform: none; }
+.ticks span:last-child { transform: translateX(-100%); }
+.group { display: flex; flex-wrap: wrap; align-items: center; gap: 5px 6px; }
+.group > b { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); font-weight: 500; margin-right: 2px; }
+.chip { cursor: pointer; }
+.chip input { position: absolute; opacity: 0; pointer-events: none; }
+.chip span { display: inline-flex; border: 1px solid var(--rule); border-radius: 4px; padding: 2px 8px; background: var(--panel); font-size: 12.5px; }
+.chip input:checked + span { border-color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); }
+.board { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(320px, 1fr); gap: 12px; align-items: start; }
+.left, .right { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.fleet { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 8px; }
+.ship { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 6px; display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.ship h3 { margin: 0; font-size: 12.5px; font-weight: 600; display: flex; align-items: center; gap: 6px; }
+.ship h3::before { content: ""; width: 9px; height: 9px; border-radius: 2px; background: var(--dot); flex: none; }
+.ship .meta { font-family: var(--font-mono); font-size: 10.5px; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ship .meta.over { color: var(--plim); }
+canvas { display: block; width: 100%; height: auto; max-width: 100%; aspect-ratio: 1000 / 620; border-radius: 3px; }
+.stage { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 8px; display: flex; flex-direction: column; gap: 6px; }
+.stage .head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 14px; align-items: baseline; }
+.legend { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: 12.5px; }
+.legend span { display: inline-flex; align-items: center; gap: 5px; }
+.legend span::before { content: ""; width: 9px; height: 9px; border-radius: 2px; background: var(--dot); }
+.feed { display: flex; flex-wrap: wrap; gap: 6px; min-height: 58px; max-height: 64px; overflow: hidden; align-content: flex-start; }
+.feed .g { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--rule); border-radius: 4px; padding: 3px 8px; font-size: 12.5px; background: var(--bg); animation: in .5s ease-out; }
+.feed .g::before { content: ""; width: 9px; height: 9px; border-radius: 2px; background: var(--dot); flex: none; }
+.feed .g.b::before { border-radius: 50%; }
+.feed .g small { font-family: var(--font-mono); font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+@keyframes in { from { transform: translateY(-4px); opacity: .3; } to { transform: none; opacity: 1; } }
+.panel { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 10px 12px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.tablewrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 12.5px; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 5px 8px 5px 0; border-bottom: 1px solid var(--rule); vertical-align: middle; }
+th { font-family: var(--font-mono); font-size: 10px; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
+td.area { white-space: nowrap; font-weight: 600; }
+td.area i { display: inline-block; width: 9px; height: 9px; border-radius: 2px; background: var(--dot); margin-right: 5px; }
+.split { display: flex; height: 10px; min-width: 70px; border-radius: 2px; overflow: hidden; border: 1px solid var(--rule); }
+.split .w { background: var(--plim); opacity: .78; transition: width .25s; }
+.split .b { background: var(--water-deep); transition: width .25s; }
+.hidden-cell { color: var(--muted); font-style: italic; }
+td.num { white-space: nowrap; }
+.tops { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 14px; }
+.tops h3 { margin: 0 0 4px; font-family: var(--font-mono); font-size: 10.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
+.tops ol { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.tops li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 8px; font-size: 12.5px; }
+.tops li .lab { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tops li .lab i { display: inline-block; width: 8px; height: 8px; border-radius: 2px; background: var(--dot); margin-right: 5px; }
+.tops li .n { font-variant-numeric: tabular-nums; color: var(--muted); }
+.tops li .bar { grid-column: 1 / -1; height: 4px; border-radius: 2px; background: var(--rule); overflow: hidden; }
+.tops li .bar span { display: block; height: 100%; transition: width .25s; }
+.tops .wl .bar span { background: var(--plim); opacity: .78; }
+.tops .bl .bar span { background: var(--water-deep); }
+.addform { display: flex; flex-wrap: wrap; gap: 6px 8px; align-items: center; }
+.addform select, .addform input[type=text] { font: inherit; font-size: 13px; color: var(--ink); background: var(--bg); border: 1px solid var(--rule); border-radius: 4px; padding: 5px 7px; min-width: 0; }
+.addform input[type=text] { flex: 1 1 170px; }
+.addform select:focus-visible, .addform input:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.addmsg { font-size: 12.5px; color: var(--muted); min-height: 1.2em; margin: 0; }
+.howto dl { margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px 18px; }
+.howto dt { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.howto dd { margin: 2px 0 0; font-size: 13px; max-width: 46ch; }
+.curadd { display: inline-flex; gap: 4px; }
+.curadd input { font: inherit; font-size: 12.5px; width: 150px; color: var(--ink); background: var(--panel); border: 1px solid var(--rule); border-radius: 4px; padding: 2px 6px; }
+.curadd button { padding: 2px 8px; font-size: 12.5px; }
+.note { color: var(--muted); font-size: 12.5px; max-width: 75ch; margin: 0; }
+.note strong { color: var(--ink); font-weight: 600; }
+@media (max-width: 1000px) {
+  .board { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 620px) {
+  .fleet { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ticks span.opt, .ticks i.ms { display: none; }
+  .tops { grid-template-columns: minmax(0, 1fr); }
+}
+@media (prefers-reduced-motion: reduce) { .feed .g { animation: none; } }
+</style>
+
+<main>
+  <div class="top">
+    <div class="title">
+      <span class="tag">Bozzetto · dati di esempio inventati</span>
+      <h1>La flotta della nave</h1>
+    </div>
+    <section class="controls" aria-label="Comandi">
+      <div class="row">
+        <button id="play" type="button">Pausa</button>
+        <div class="timeline">
+          <input id="t" type="range" min="0" max="1000" value="0" aria-label="Il tempo nei sei mesi">
+          <div class="ticks" aria-hidden="true">
+            <span style="left:0">gen</span><span class="opt" style="left:16.6%">feb</span><span class="opt" style="left:33.3%">mar</span>
+            <span style="left:50%">apr<i class="ms"> · Tappa 1</i></span><span style="left:100%">giu<i class="ms"> · Tappa 2</i></span>
+          </div>
+        </div>
+        <button id="reset" class="ghost" type="button">Dall’inizio</button>
+      </div>
+      <div class="row">
+        <div class="group" role="radiogroup" aria-label="Velocità">
+          <b>Velocità</b>
+          <label class="chip"><input type="radio" name="spd" value="0.25" id="spd-1"><span>×¼</span></label>
+          <label class="chip"><input type="radio" name="spd" value="0.5" id="spd-2"><span>×½</span></label>
+          <label class="chip"><input type="radio" name="spd" value="1" id="spd-3" checked><span>×1</span></label>
+          <label class="chip"><input type="radio" name="spd" value="2" id="spd-4"><span>×2</span></label>
+          <label class="chip"><input type="radio" name="spd" value="4" id="spd-5"><span>×4</span></label>
+        </div>
+        <div class="group" role="radiogroup" aria-label="Ordine di arrivo">
+          <b>Ordine</b>
+          <label class="chip"><input type="radio" name="ord" value="mixed" id="ord-1" checked><span>Misto</span></label>
+          <label class="chip"><input type="radio" name="ord" value="wfirst" id="ord-2"><span>Prima i carichi</span></label>
+          <label class="chip"><input type="radio" name="ord" value="bfirst" id="ord-3"><span>Prima i sostegni</span></label>
+        </div>
+        <div class="group" role="radiogroup" aria-label="Età">
+          <b>Età</b>
+          <label class="chip"><input type="radio" name="age" value="all" id="age-all" checked><span>Tutte</span></label>
+          <label class="chip"><input type="radio" name="age" value="11–25" id="age-1"><span>11–25</span></label>
+          <label class="chip"><input type="radio" name="age" value="26–64" id="age-2"><span>26–64</span></label>
+          <label class="chip"><input type="radio" name="age" value="65+" id="age-3"><span>65+</span></label>
+        </div>
+      </div>
+      <div class="group" role="radiogroup" aria-label="Situazione">
+        <b>Situazione</b>
+        <label class="chip"><input type="radio" name="sit" value="all" id="sit-all" checked><span>Tutte</span></label>
+        <label class="chip"><input type="radio" name="sit" value="Studying" id="sit-1"><span>Studia</span></label>
+        <label class="chip"><input type="radio" name="sit" value="Working" id="sit-2"><span>Lavora</span></label>
+        <label class="chip"><input type="radio" name="sit" value="Job-seeking" id="sit-3"><span>Cerca lavoro</span></label>
+        <label class="chip"><input type="radio" name="sit" value="Caring" id="sit-4"><span>Assiste familiari</span></label>
+        <label class="chip"><input type="radio" name="sit" value="Retired" id="sit-5"><span>In pensione</span></label>
+      </div>
+                  <div class="group" role="radiogroup" aria-label="Scenario">
+        <b>Scenario</b>
+        <label class="chip"><input type="radio" name="scn" value="" id="scn-0" checked><span>Oggi</span></label>
+        <label class="chip"><input type="radio" name="scn" value="trend" id="scn-1"><span>2040 se nulla cambia</span></label>
+        <label class="chip"><input type="radio" name="scn" value="lines" id="scn-2"><span>2040 con linee di carico</span></label>
+      </div>
+      <div class="group" role="radiogroup" aria-label="Corrente che colpisce tutta la flotta">
+        <b>Corrente</b>
+        <label class="chip"><input type="radio" name="cur" value="" id="cur-0" checked><span>Nessuna</span></label>
+        <label class="chip"><input type="radio" name="cur" value="CRISI ECONOMICA" id="cur-1"><span>Crisi economica</span></label>
+        <label class="chip"><input type="radio" name="cur" value="PANDEMIA" id="cur-2"><span>Pandemia</span></label>
+        <label class="chip"><input type="radio" name="cur" value="GUERRA" id="cur-3"><span>Guerra</span></label>
+        <label class="chip"><input type="radio" name="cur" value="ONDATA DI CALORE" id="cur-4"><span>Ondata di calore</span></label>
+        <span class="curadd"><input type="text" id="cur-new" maxlength="28" placeholder="Altro, es. ondata di freddo" aria-label="Nuova corrente"><button type="button" class="ghost" id="cur-add">Aggiungi</button></span>
+      </div>
+<div class="group" role="radiogroup" aria-label="Disabilità o neurodivergenza">
+        <b>Disabilità</b>
+        <label class="chip"><input type="radio" name="dis" value="all" id="dis-all" checked><span>Tutte le persone</span></label>
+        <label class="chip"><input type="radio" name="dis" value="None" id="dis-0"><span>Nessuna dichiarata</span></label>
+        <label class="chip"><input type="radio" name="dis" value="Physical" id="dis-1"><span>Fisica</span></label>
+        <label class="chip"><input type="radio" name="dis" value="Sensory" id="dis-2"><span>Sensoriale</span></label>
+        <label class="chip"><input type="radio" name="dis" value="Intellectual" id="dis-3"><span>Intellettiva</span></label>
+        <label class="chip"><input type="radio" name="dis" value="Psicosocial" id="dis-4"><span>Mentale o psicosociale</span></label>
+        <label class="chip"><input type="radio" name="dis" value="Neurodivergence" id="dis-5"><span>Neurodivergenza</span></label>
+      </div>
+    </section>
+  </div>
+
+  <div class="board">
+    <div class="left">
+      <section class="fleet" id="fleet" aria-label="Sei navi, una per ambito"></section>
+      <section class="stage" aria-label="La nave comune">
+        <div class="head">
+          <h2>Tutta la flotta in una nave</h2>
+          <div class="legend" id="legend"></div>
+        </div>
+        <canvas id="big" role="img" aria-label="Nave comune con i carichi e i sostegni di tutti gli ambiti"></canvas>
+      </section>
+    </div>
+
+    <div class="right">
+      <section class="panel" aria-label="Ultimi contributi">
+        <div class="stage-head" style="display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap"><h2>Ultimi contributi</h2><span class="tag" id="clock">—</span></div>
+        <div class="feed" id="feed" aria-live="off"></div>
+      </section>
+      <section class="panel" aria-label="Statistiche per ambito">
+        <h2 id="statTitle">Ciò che pesa e ciò che sostiene</h2>
+        <div class="group" role="radiogroup" aria-label="Prospettiva della tabella">
+          <b>Confronta per</b>
+          <label class="chip"><input type="radio" name="per" value="age" id="per-1" checked><span>Età</span></label>
+          <label class="chip"><input type="radio" name="per" value="dis" id="per-2"><span>Disabilità</span></label>
+        </div>
+        <div class="tablewrap">
+          <table>
+            <thead id="thead"></thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+        <p class="note">«Carico»: quota dei contributi dell’ambito segnati come carico, in totale e per gruppo. Le caselle con meno di 10 contributi sono nascoste.</p>
+      </section>
+      <section class="panel" aria-label="I più frequenti">
+        <h2>Ciò che ricorre di più</h2>
+        <div class="tops">
+          <div class="wl"><h3>Carichi</h3><ol id="topW"></ol></div>
+          <div class="bl"><h3>Sostegni</h3><ol id="topB"></ol></div>
+        </div>
+      </section>
+      <section class="panel" aria-label="Aggiungi un contributo">
+        <h2>Aggiungi un contributo</h2>
+        <form class="addform" id="addform" autocomplete="off">
+          <select id="f-area" aria-label="Ambito"></select>
+          <select id="f-type" aria-label="Carico o sostegno"><option value="w">Carico</option><option value="b">Sostegno</option></select>
+          <input type="text" id="f-word" list="f-words" maxlength="32" placeholder="Scegli o scrivi, es. lite con i miei nonni" aria-label="Parola">
+          <datalist id="f-words"></datalist>
+          <select id="f-age" aria-label="Età"><option>11–25</option><option selected>26–64</option><option value="65+">65+</option></select>
+          <select id="f-sit" aria-label="Situazione"><option value="Studying">Studia</option><option value="Working" selected>Lavora</option><option value="Job-seeking">Cerca lavoro</option><option value="Caring">Assiste familiari</option><option value="Retired">In pensione</option></select>
+          <select id="f-dis" aria-label="Disabilità"><option value="None">Nessuna disabilità dichiarata</option><option value="Physical">Fisica</option><option value="Sensory">Sensoriale</option><option value="Intellectual">Intellettiva</option><option value="Psicosocial">Mentale o psicosociale</option><option value="Neurodivergence">Neurodivergenza</option></select>
+          <button type="submit">Aggiungi</button>
+        </form>
+        <p class="addmsg" id="addmsg" aria-live="polite">Se la parola non è nell’elenco, viene creata e resta disponibile per chi viene dopo. Passa il cursore o tocca un carico o un sostegno per vederne il nome.</p>
+      </section>
+      <p class="note"><strong>Dati inventati.</strong> Tutto è generato a caso per provare il formato. Nell’opera reale, ogni persona sceglierebbe un ambito, se si tratta di un carico o di un sostegno, una parola dell’elenco o una nuova e, se vuole, una fascia d’età, una situazione e se ha una disabilità o è neurodivergente. Una persona rivede le parole nuove prima che compaiano, nel caso qualcuno scriva qualcosa che lo identifichi, come un nome o un luogo preciso. Le quattro categorie di disabilità (fisica, mentale o psicosociale, intellettiva e sensoriale) sono quelle della Convenzione ONU, usate dalla Commissione europea e dalla legge spagnola. La neurodivergenza (autismo, ADHD…) è indicata a parte perché, per essere riconosciuta, deve rientrare in una di esse. Niente nomi, niente testo libero e niente dati medici.</p>
+    </div>
+  </div>
+  <section class="panel howto" aria-label="Come leggere la nave">
+    <h2>Come leggere la nave</h2>
+    <dl>
+      <div><dt>Carichi</dt><dd>Casse sotto la linea di galleggiamento. Ciò che pesa su ogni persona in un ambito della sua vita, anche quando non è colpa sua: un licenziamento, una casa allagata, la solitudine.</dd></div>
+      <div><dt>Sostegni</dt><dd>Boe sopra il ponte. Ciò che tiene a galla una vita: gli amici, una buona squadra, una giornata in campagna, qualcuno che aiuta con le pratiche.</dd></div>
+      <div><dt>Correnti</dt><dd>Ciò che muove tutta la flotta insieme: una crisi economica, una pandemia, una guerra, un’ondata di calore in tutta Europa. È la policrisi. Se si allaga la tua casa, è un carico; se il clima peggiora per tutti, è una corrente.</dd></div>
+      <div><dt>Linea di carico</dt><dd>La marca di Plimsoll, resa obbligatoria sulle navi britanniche da una legge del 1876 per evitare il sovraccarico. Le decisioni politiche non sono il mare: sono la regola che stabilisce quanto carico è sicuro. Qui la linea chiede dove si trovi il carico sicuro di una vita, e chi debba dipingerla. Non dà voti a nessuno.</dd></div>
+      <div><dt>2040</dt><dd>Una prova generale del futuro, non una previsione. «Se nulla cambia» prolunga la tendenza: più carichi, meno sostegni. «Con linee di carico» nasce da un secondo giro di domande in cui le persone scelgono quali carichi alleggerire e quali sostegni rafforzare. Qui quella scelta è simulata.</dd></div>
+    </dl>
+  </section>
+</main>
+
+<script>
+(function () {
+  var W = 1000, H = 620, PLIM = 400, DECK = 290, BASE_SECONDS = 40;
+  var AREAS = [
+    { id: "estudios", name: "Studio" }, { id: "trabajo", name: "Lavoro" }, { id: "familia", name: "Famiglia" },
+    { id: "ocio", name: "Tempo libero" }, { id: "relaciones", name: "Relazioni" }, { id: "digital", name: "Accesso digitale" }
+  ];
+  var AREA_NAME = {}; AREAS.forEach(function (a) { AREA_NAME[a.id] = a.name; });
+  var WORDS = {
+    estudios: { w: ["esami", "bullismo", "pressione per i voti", "bocciature", "non sentirsi integrati", "compiti infiniti"],
+                b: ["un buon insegnante", "compagni di classe", "la biblioteca", "imparare qualcosa di nuovo", "una borsa di studio", "essere promossi"] },
+    trabajo: { w: ["licenziamento", "contratto a termine", "orari impossibili", "capo tossico", "lo stipendio non basta", "disoccupazione"],
+               b: ["buona squadra", "contratto a tempo indeterminato", "riconoscimento", "un lavoro con un senso", "conciliazione", "lavoro da remoto", "una promozione"] },
+    familia: { w: ["litigi", "assistere un familiare", "lutto", "debiti", "separazione", "casa piccola", "una lite con mio cugino"],
+               b: ["pasti in famiglia", "fratelli e sorelle", "nonni", "figli", "una telefonata di mia madre", "una casa"] },
+    ocio: { w: ["schermi senza fine", "non avere tempo", "non potermelo permettere", "social network", "insonnia", "rumore"],
+            b: ["andare in campagna", "andare al cinema", "musica", "sport", "leggere", "luce del sole", "la mia squadra vince il campionato"] },
+    relaciones: { w: ["solitudine", "rottura", "rifiuto", "isolamento", "confronto", "conflitti con gli amici"],
+                  b: ["partner", "amici", "una conversazione", "un animale domestico", "vicini", "gruppo di sostegno"] },
+    digital: { w: ["niente connessione a casa", "pratiche solo online", "non capisco i moduli", "siti difficili da usare", "appuntamenti solo online", "niente computer"],
+               b: ["qualcuno che mi aiuta", "wifi in biblioteca", "sportello in presenza", "sito accessibile", "corso di informatica", "lettura facilitata"] }
+  };
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function rng(seed) { return function () { seed |= 0; seed = seed + 0x6D2B79F5 | 0; var t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+  function pick(r, table) { var x = r(), acc = 0, k; for (k in table) { acc += table[k]; if (x < acc) return k; } return k; }
+  function pickWord(r, list) { var i = Math.floor(Math.pow(r(), 1.6) * list.length); return list[Math.min(i, list.length - 1)]; }
+
+  /* ---------- datos de ejemplo ---------- */
+  var R = rng(42), G = [];
+  var SIT_BY_AGE = {
+    "11–25": { "Studying": .7, "Working": .2, "Job-seeking": .1 },
+    "26–64": { "Working": .58, "Job-seeking": .14, "Caring": .16, "Studying": .12 },
+    "65+": { "Retired": .8, "Caring": .2 }
+  };
+  var AREA_BY_SIT = {
+    "Studying": { estudios: .4, relaciones: .2, familia: .13, ocio: .15, trabajo: .05, digital: .07 },
+    "Working": { trabajo: .36, familia: .2, relaciones: .15, ocio: .14, estudios: .07, digital: .08 },
+    "Job-seeking": { trabajo: .38, familia: .17, relaciones: .13, ocio: .08, estudios: .08, digital: .16 },
+    "Caring": { familia: .42, relaciones: .18, trabajo: .1, ocio: .12, estudios: .06, digital: .12 },
+    "Retired": { familia: .26, relaciones: .26, ocio: .24, trabajo: .03, estudios: .03, digital: .18 }
+  };
+  var DIS = { "None": .74, "Physical": .06, "Sensory": .05, "Intellectual": .04, "Psicosocial": .06, "Neurodivergence": .05 };
+  var DIS_W = { "Physical": .12, "Sensory": .14, "Intellectual": .12, "Psicosocial": .14, "Neurodivergence": .1 };
+  var PW = { "estudios|Studying": .66, "trabajo|Job-seeking": .82, "trabajo|Working": .6, "familia|Caring": .62, "relaciones|Retired": .35 };
+  var PW_AREA = { estudios: .5, trabajo: .55, familia: .45, ocio: .22, relaciones: .45, digital: .55 };
+  for (var i = 0; i < 2400; i++) {
+    var age = pick(R, { "11–25": .3, "26–64": .5, "65+": .2 });
+    var sit = pick(R, SIT_BY_AGE[age]);
+    var area = pick(R, AREA_BY_SIT[sit]);
+    var dis = pick(R, DIS);
+    if (dis !== "None" && R() < .25) area = R() < .5 ? "digital" : "trabajo";
+    var pw = PW[area + "|" + sit] != null ? PW[area + "|" + sit] : PW_AREA[area];
+    if (dis !== "None") pw = Math.min(.92, pw + DIS_W[dis]);
+    if (area === "digital" && age === "65+") pw = Math.min(.92, pw + .2);
+    var isW = R() < pw;
+    G.push({ age: age, sit: sit, dis: dis, area: area, w: isW, word: pickWord(R, WORDS[area][isW ? "w" : "b"]), birth: Math.pow(R(), 1.15) });
+  }
+  G.sort(function (a, b) { return a.birth - b.birth; });
+  /* Orden «primero cargas»: las cargas llegan en la primera mitad del tiempo y los sostenes en la segunda. */
+  var ORDER = "mixed";
+  function reseq() {
+    var ws = G.filter(function (g) { return g.w && !g.user; }), bs = G.filter(function (g) { return !g.w && !g.user; });
+    ws.forEach(function (g, i) { g.seqW = 0.5 * (i + 1) / ws.length; g.seqB = 0.5 + 0.5 * (i + 1) / ws.length; });
+    bs.forEach(function (g, i) { g.seqW = 0.5 + 0.5 * (i + 1) / bs.length; g.seqB = 0.5 * (i + 1) / bs.length; });
+  }
+  reseq();
+  function tb(g) { return g.user ? g.birth : ORDER === "mixed" ? g.birth : ORDER === "wfirst" ? g.seqW : g.seqB; }
+
+  /* ---------- geometría del casco (igual que el prototipo) ---------- */
+  var P = [[500, 520], [700, 520], [870, 430], [890, 290]], edge = [];
+  for (var e = 0; e <= 300; e++) { var t = e / 300, u = 1 - t;
+    edge.push({ x: u*u*u*P[0][0] + 3*u*u*t*P[1][0] + 3*u*t*t*P[2][0] + t*t*t*P[3][0], y: u*u*u*P[0][1] + 3*u*u*t*P[1][1] + 3*u*t*t*P[2][1] + t*t*t*P[3][1] }); }
+  function edgeX(y) { var best = edge[0], d = 1e9; for (var k = 0; k < edge.length; k++) { var dd = Math.abs(edge[k].y - y); if (dd < d) { d = dd; best = edge[k]; } } return best.x; }
+  var HULL = new Path2D(); HULL.moveTo(110, DECK); HULL.bezierCurveTo(130, 430, 300, 520, 500, 520); HULL.bezierCurveTo(700, 520, 870, 430, 890, DECK); HULL.closePath();
+  function slotsFor(seed, big) {
+    var rr = rng(seed), sw = [];
+    for (var r = 0; r < 9; r++) {
+      var y = 498 - r * 24, Rx = edgeX(y), L = 1000 - Rx, row = [];
+      var step = big ? 24 : 34, cw = big ? 18 : 26;
+      for (var x = L + 10; x < Rx - cw - 8; x += step + rr() * 4) row.push({ x: x + rr() * 2, y: y, w: cw + rr() * 4, h: 20 });
+      for (var a = row.length - 1; a > 0; a--) { var b = Math.floor(rr() * (a + 1)); var tmp = row[a]; row[a] = row[b]; row[b] = tmp; }
+      sw = sw.concat(row);
+    }
+    var rb = rng(seed + 7), sb = [];
+    for (var q = 0; q < 70; q++) sb.push({ x: 160 + (q * 37.7) % 680 + rb() * 10, y: 60 + rb() * 170, r: big ? 8 + rb() * 5 : 11 + rb() * 6 });
+    for (var s = sb.length - 1; s > 0; s--) { var z = Math.floor(rb() * (s + 1)); var tt = sb[s]; sb[s] = sb[z]; sb[z] = tt; }
+    return { w: sw, b: sb };
+  }
+  function tok(n) { return getComputedStyle(document.documentElement).getPropertyValue(n).trim(); }
+
+  /* ---------- naves ---------- */
+  var fleetEl = document.getElementById("fleet"), ships = [];
+  AREAS.forEach(function (a, i) {
+    var box = document.createElement("div"); box.className = "ship"; box.style.setProperty("--dot", "var(--a-" + a.id + ")");
+    box.innerHTML = '<h3>' + a.name + '</h3><canvas role="img" aria-label="Nave: ' + a.name + '"></canvas><div class="meta">—</div>';
+    fleetEl.appendChild(box);
+    ships.push({ area: a.id, cv: box.querySelector("canvas"), meta: box.querySelector(".meta"), slots: slotsFor(100 + i, false), small: true, wl: 482, items: [], maxLabels: 2, labelPx: 10.5 });
+  });
+  var big = { area: null, cv: document.getElementById("big"), slots: slotsFor(9, true), small: false, wl: 482, items: [], maxLabels: 6, labelPx: 13 };
+  document.getElementById("legend").innerHTML = AREAS.map(function (a) { return '<span style="--dot:var(--a-' + a.id + ')">' + a.name + '</span>'; }).join("");
+
+  var justAdded = null;
+  var T = reduce ? 1 : 0, playing = !reduce, speed = 1, last = performance.now(), fAge = "all", fSit = "all", fDis = "all", PER = "age";
+  function inFilter(g) { return (fAge === "all" || g.age === fAge) && (fSit === "all" || g.sit === fSit) && (fDis === "all" || g.dis === fDis); }
+
+  /* Cada carga o sostén dibujado representa «unit» gestos, para que todo quepa en el casco. */
+  /* Escenarios 2040: se transforman los datos base. */
+  var BASE = G, SCN = "";
+  function scenario(kind) {
+    if (!kind) return BASE.slice();
+    var r2 = rng(kind === "trend" ? 77 : 88), out = [];
+    var topW = {}, topB = {};
+    AREAS.forEach(function (a) {
+      ["w", "b"].forEach(function (k) {
+        var cnt = {}; BASE.forEach(function (g) { if (g.area === a.id && (k === "w") === g.w) cnt[g.word] = (cnt[g.word] || 0) + 1; });
+        var top = Object.keys(cnt).sort(function (x, y) { return cnt[y] - cnt[x]; }).slice(0, 3);
+        (k === "w" ? topW : topB)[a.id] = top;
+      });
+    });
+    BASE.forEach(function (g) {
+      if (kind === "trend") {
+        if (g.w) { out.push(g); if (r2() < .3) out.push(Object.assign({}, g, { user: false })); }
+        else if (r2() > .12) out.push(g);
+      } else {
+        if (g.w && topW[g.area].indexOf(g.word) >= 0) { if (r2() > .55) out.push(g); }
+        else if (!g.w && topB[g.area].indexOf(g.word) >= 0) { out.push(g); if (r2() < .5) out.push(Object.assign({}, g, { user: false })); }
+        else out.push(g);
+      }
+    });
+    return out;
+  }
+  function buildItems() {
+    var F = G.filter(inFilter), maxW = 1, maxB = 1;
+    AREAS.forEach(function (a) {
+      var w = 0, b = 0; F.forEach(function (g) { if (g.area === a.id) { if (g.w) w++; else b++; } });
+      maxW = Math.max(maxW, w); maxB = Math.max(maxB, b);
+    });
+    var unitS = Math.max(1, Math.ceil(Math.max(maxW / 38, maxB / 26)));
+    var totW = F.filter(function (g) { return g.w; }).length, totB = F.length - totW;
+    var unitB = Math.max(1, Math.ceil(Math.max(totW / Math.min(big.slots.w.length, 110), totB / 60)));
+    ships.forEach(function (s) { s.unit = unitS; s.cap = 30; s.items = sample(F.filter(function (g) { return g.area === s.area; }), unitS); });
+    big.unit = unitB; big.cap = Math.max(40, Math.round(totW / unitB * 0.75)); big.items = sample(F, unitB);
+  }
+  function sample(list, unit) {
+    var out = [], cw = 0, cb = 0, iw = 0, ib = 0;
+    list.slice().sort(function (a, b) { return tb(a) - tb(b); }).forEach(function (g) {
+      var bt = tb(g), vis = bt <= T, fresh = g === justAdded;
+      var it = { area: g.area, word: g.word, birth: bt, p: vis && !fresh ? 1 : 0, wasVis: vis && !fresh, shownAt: -1e9 };
+      if (g.w) { cw++; if (cw % unit === 0 || g.user) { it.type = "w"; it.idx = iw++; out.push(it); } }
+      else { cb++; if (cb % unit === 0 || g.user) { it.type = "b"; it.idx = ib++; it.sound = ib % 6 === 0; out.push(it); } }
+    });
+    return out;
+  }
+  /* Línea de flotación más tranquila: depende de la proporción de carga neta respecto a la capacidad de la nave. */
+  var CUR = "";
+  function targetWl(nW, nB, cap) { var r = Math.max(0, Math.min(1, (nW - 0.8 * nB) / cap + (CUR ? 0.28 : 0))); return 478 - 128 * r; }
+  function resize(cv) {
+    var rect = cv.getBoundingClientRect(), dpr = window.devicePixelRatio || 1;
+    var w = Math.max(1, Math.round(rect.width * dpr)), h = Math.round(w * H / W);
+    if (cv.width !== w || cv.height !== h) { cv.width = w; cv.height = h; }
+  }
+  function roundRect(ctx, x, y, w, h, r) { ctx.beginPath(); ctx.moveTo(x + r, y); ctx.arcTo(x + w, y, x + w, y + h, r); ctx.arcTo(x + w, y + h, x, y + h, r); ctx.arcTo(x, y + h, x, y, r); ctx.arcTo(x, y, x + w, y, r); ctx.closePath(); }
+
+  var LABEL_MS = 2400;
+  function drawShip(s, now, C) {
+    var cv = s.cv, ctx = cv.getContext("2d"); resize(cv);
+    var nW = 0, nB = 0, labels = [];
+    s.items.forEach(function (it) {
+      var vis = it.birth <= T + 1e-9, target = vis ? 1 : 0;
+      if (vis && !it.wasVis) it.shownAt = now;
+      it.wasVis = vis;
+      it.p += (target - it.p) * (reduce ? 1 : 0.12); if (Math.abs(target - it.p) < 0.01) it.p = target;
+      if (vis) { if (it.type === "w") nW++; else nB++; }
+    });
+    var tw = targetWl(nW, nB, s.cap);
+    s.wl += (tw - s.wl) * (reduce ? 1 : 0.025);
+    var k = cv.width / W, ph = now / 900;
+    ctx.setTransform(k, 0, 0, k, 0, 0); ctx.clearRect(0, 0, W, H);
+    ctx.fillStyle = C.panel; ctx.fillRect(0, 0, W, H);
+    ctx.fillStyle = C.water; ctx.beginPath(); ctx.moveTo(0, H);
+    for (var x = 0; x <= W; x += 8) ctx.lineTo(x, s.wl + Math.sin(x / 38 + ph) * 1.6);
+    ctx.lineTo(W, H); ctx.closePath(); ctx.fill();
+    ctx.save(); ctx.fillStyle = C.panel; ctx.fill(HULL); ctx.clip(HULL);
+    ctx.fillStyle = C.deep; ctx.globalAlpha = .55; ctx.fillRect(0, s.wl, W, H); ctx.globalAlpha = 1;
+    ctx.restore(); ctx.save();
+    if (CUR) { /* corriente: trazos que cruzan el agua de toda la flota */
+      ctx.strokeStyle = C.ink; ctx.lineWidth = s.small ? 3 : 1.6;
+      for (var cl = 0; cl < 7; cl++) {
+        var cy2 = s.wl + 40 + cl * 22, off = ((now / (reduce ? 1e9 : 9) + cl * 137) % 1300) - 300;
+        ctx.globalAlpha = .28; ctx.beginPath(); ctx.moveTo(off, cy2); ctx.lineTo(off + 140, cy2); ctx.lineTo(off + 128, cy2 - 6); ctx.stroke();
+      }
+      ctx.globalAlpha = 1;
+    }
+    ctx.restore(); ctx.save(); ctx.clip(HULL);
+    s.items.forEach(function (it) {
+      if (it.type !== "w" || it.p < 0.01) return;
+      var sl = s.slots.w[it.idx % s.slots.w.length], e = it.p * it.p * (3 - 2 * it.p), y = sl.y - (1 - e) * 200;
+      ctx.globalAlpha = e; ctx.fillStyle = C.area[it.area]; ctx.fillRect(sl.x, y, sl.w, sl.h);
+      ctx.globalAlpha = e * .75; ctx.strokeStyle = C.ink; ctx.lineWidth = 1; ctx.strokeRect(sl.x, y, sl.w, sl.h);
+      ctx.beginPath(); ctx.moveTo(sl.x, y + sl.h / 2); ctx.lineTo(sl.x + sl.w, y + sl.h / 2); ctx.stroke();
+      ctx.globalAlpha = 1;
+      if (now - it.shownAt < LABEL_MS) labels.push({ it: it, x: sl.x + sl.w / 2, y: y - 4 });
+    });
+    ctx.restore();
+    ctx.strokeStyle = C.ink; ctx.lineWidth = s.small ? 3.2 : 2.4; ctx.stroke(HULL);
+    ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(116, DECK + 14); ctx.lineTo(884, DECK + 14); ctx.stroke();
+    ctx.globalAlpha = .8; ctx.lineWidth = 1.6; ctx.beginPath();
+    for (var x2 = 0; x2 <= W; x2 += 8) { var yy = s.wl + Math.sin(x2 / 38 + ph) * 1.6; if (x2 === 0) ctx.moveTo(x2, yy); else ctx.lineTo(x2, yy); }
+    ctx.stroke(); ctx.globalAlpha = 1;
+    var nS = 0;
+    s.items.forEach(function (it) {
+      if (it.type !== "b" || it.p < 0.01) return;
+      if (it.sound && it.birth <= T) nS++;
+      var sl = s.slots.b[it.idx % s.slots.b.length], e = it.p * it.p * (3 - 2 * it.p);
+      var seed = it.idx * 7 + 3, bob = reduce ? 0 : Math.sin(now / 900 + seed) * 1.5;
+      var bx = sl.x + Math.sin(seed) * 5, by = DECK + 10 - (DECK + 10 - sl.y) * e + bob;
+      ctx.globalAlpha = e; ctx.strokeStyle = C.muted; ctx.lineWidth = 1.2;
+      ctx.beginPath(); ctx.moveTo(sl.x, DECK + 14); ctx.lineTo(bx, by + sl.r); ctx.stroke();
+      ctx.fillStyle = C.area[it.area]; ctx.strokeStyle = C.ink;
+      ctx.beginPath(); ctx.arc(bx, by, sl.r, 0, 6.2832); ctx.fill(); ctx.stroke(); ctx.globalAlpha = 1;
+      if (now - it.shownAt < LABEL_MS) labels.push({ it: it, x: bx, y: by - sl.r - 4 });
+    });
+    var nr = Math.min(nS, s.small ? 3 : 5); ctx.strokeStyle = C.ink; ctx.lineWidth = 1.1;
+    for (var m = 0; m < nr; m++) {
+      var cx = m % 2 === 0 ? 40 + m * 22 : W - 40 - m * 22, cy = s.wl + 34 + m * 12;
+      for (var ring = 0; ring < 3; ring++) {
+        var p2 = reduce ? 0.3 + ring * 0.3 : ((now / 1800 + ring / 3 + m * 0.21) % 1);
+        ctx.globalAlpha = (1 - p2) * .55; ctx.beginPath(); ctx.ellipse(cx, cy, 6 + p2 * 26, 2.5 + p2 * 9, 0, 0, 6.2832); ctx.stroke();
+      }
+    }
+    ctx.globalAlpha = 1;
+    var over = s.wl < PLIM, mc = over ? C.plim : C.ink, mx = edgeX(PLIM) + 26;
+    ctx.strokeStyle = mc; ctx.fillStyle = mc; ctx.lineWidth = s.small ? 3 : 2;
+    ctx.beginPath(); ctx.arc(mx, PLIM, 13, 0, 6.2832); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(mx - 24, PLIM); ctx.lineTo(mx + 24, PLIM); ctx.stroke();
+    for (var d = 1; d <= 2; d++) { ctx.beginPath(); ctx.moveTo(mx + 13, PLIM - d * 11); ctx.lineTo(mx + 27, PLIM - d * 11); ctx.stroke(); }
+    var unitsPerPx = W / Math.max(1, cv.clientWidth);
+    if (!s.small && SCN) {
+      ctx.font = "600 " + (12 * unitsPerPx) + "px 'IBM Plex Mono', monospace"; ctx.textAlign = "center"; ctx.fillStyle = C.ink;
+      ctx.fillText(SCN === "trend" ? "SCENARIO 2040 · SE NULLA CAMBIA" : "SCENARIO 2040 · CON LINEE DI CARICO", W / 2, CUR ? 62 : 38);
+    }
+    if (!s.small && CUR) {
+      ctx.font = "600 " + (12 * unitsPerPx) + "px 'IBM Plex Mono', monospace"; ctx.textAlign = "center"; ctx.fillStyle = C.plim;
+      ctx.fillText("CORRENTE · " + CUR, W / 2, 38);
+    }
+    if (!s.small) {
+      var fs = 11.5 * unitsPerPx;
+      ctx.font = "500 " + fs + "px 'IBM Plex Mono', monospace"; ctx.textAlign = "right";
+      ctx.fillText(over ? "sopra la marca" : "linea di carico", W - 16, PLIM + 44);
+      ctx.fillStyle = C.muted; ctx.textAlign = "left";
+      ctx.fillText("CIÒ CHE SOSTIENE", 24, 38); ctx.fillText("CIÒ CHE PESA", 24, H - 22);
+      ctx.textAlign = "right"; ctx.fillText("1 carico o sostegno = " + s.unit + (s.unit === 1 ? " contributo" : " contributi"), W - 16, 38);
+    }
+    /* etiquetas de lo que acaba de llegar: solo las más recientes */
+    labels.sort(function (a, b) { return b.it.shownAt - a.it.shownAt; });
+    var lf = s.labelPx * unitsPerPx, pad = lf * 0.35;
+    ctx.font = "500 " + lf + "px 'IBM Plex Sans', system-ui, sans-serif"; ctx.textAlign = "left"; ctx.textBaseline = "middle";
+    var placed = [];
+    labels.slice(0, s.maxLabels).reverse().forEach(function (L) {
+      var age = (now - L.it.shownAt) / LABEL_MS, a = age < .1 ? age / .1 : age > .75 ? (1 - age) / .25 : 1;
+      var txt = L.it.word, tw2 = ctx.measureText(txt).width, sq = lf * .7;
+      var bw = tw2 + sq + pad * 3, bh = lf + pad * 1.6;
+      var bx2 = Math.max(4, Math.min(W - bw - 4, L.x - bw / 2)), by2 = Math.max(4, Math.min(H - bh - 4, L.y - bh));
+      /* si choca con otra etiqueta, se sube */
+      for (var tries = 0; tries < 6; tries++) {
+        var hit = placed.some(function (q) { return bx2 < q.x + q.w && bx2 + bw > q.x && by2 < q.y + q.h && by2 + bh > q.y; });
+        if (!hit) break; by2 = Math.max(4, by2 - bh - 3);
+      }
+      placed.push({ x: bx2, y: by2, w: bw, h: bh });
+      ctx.globalAlpha = Math.max(0, a) * .95; ctx.fillStyle = C.panel; ctx.strokeStyle = C.area[L.it.area]; ctx.lineWidth = Math.max(1.2, 1.4 * unitsPerPx);
+      roundRect(ctx, bx2, by2, bw, bh, lf * .25); ctx.fill(); ctx.stroke();
+      ctx.fillStyle = C.area[L.it.area];
+      if (L.it.type === "b") { ctx.beginPath(); ctx.arc(bx2 + pad + sq / 2, by2 + bh / 2, sq / 2, 0, 6.2832); ctx.fill(); }
+      else ctx.fillRect(bx2 + pad, by2 + bh / 2 - sq / 2, sq, sq);
+      ctx.fillStyle = C.ink; ctx.fillText(txt, bx2 + pad * 2 + sq, by2 + bh / 2 + lf * .04);
+    });
+    ctx.globalAlpha = 1; ctx.textBaseline = "alphabetic";
+    return { nW: nW, nB: nB, over: over };
+  }
+
+  /* ---------- estadística y últimos gestos ---------- */
+  var MIN = 10;
+  var SITL = { "Studying": "studia", "Working": "lavora", "Job-seeking": "cerca lavoro", "Caring": "assiste familiari", "Retired": "in pensione" };
+  var SITL = { "Studying": "studia", "Working": "lavora", "Job-seeking": "cerca lavoro", "Caring": "assiste familiari", "Retired": "in pensione" };
+  function pct(a, b) { return b ? Math.round(100 * a / b) : 0; }
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  function renderStats() {
+    var F = G.filter(function (g) { return inFilter(g) && tb(g) <= T + 1e-9; });
+    var label = [fAge === "all" ? "tutte le età" : fAge === "65+" ? "65 anni e oltre" : fAge + " anni", fSit === "all" ? "tutte le situazioni" : (SITL[fSit] || fSit)].concat(fDis === "all" ? [] : [fDis === "None" ? "nessuna disabilità dichiarata" : fDis === "Neurodivergence" ? "neurodivergenza" : "disabilità " + ({ Physical: "fisica", Sensory: "sensoriale", Intellectual: "intellettiva", Psicosocial: "mentale o psicosociale" })[fDis]]).join(" · ");
+    var COLS = PER === "age" ? [["11–25", "11–25"], ["26–64", "26–64"], ["65+", "65+"]] : [["None", "Nessuna"], ["Physical", "Fisica"], ["Sensory", "Sensoriale"], ["Intellectual", "Intellett."], ["Psicosocial", "Mentale"], ["Neurodivergence", "Neurodiv."]];
+    var key = PER === "age" ? "age" : "dis";
+    document.getElementById("thead").innerHTML = "<tr><th>Ambito</th><th>Contrib.</th><th>Carico / sostegno</th><th>Carico</th>" + COLS.map(function (c) { return "<th>" + c[1] + "</th>"; }).join("") + "</tr>";
+    document.getElementById("statTitle").textContent = "Ciò che pesa e ciò che sostiene · " + label + " · " + F.length + " contributi";
+    var Fs = G.filter(function (g) { return (PER === "age" ? (fSit === "all" || g.sit === fSit) && (fDis === "all" || g.dis === fDis) : (fAge === "all" || g.age === fAge) && (fSit === "all" || g.sit === fSit)) && tb(g) <= T + 1e-9; });
+    document.getElementById("tbody").innerHTML = AREAS.map(function (a) {
+      var A = F.filter(function (g) { return g.area === a.id; }), w = A.filter(function (g) { return g.w; }).length;
+      var name = '<td class="area" style="--dot:var(--a-' + a.id + ')"><i></i>' + a.name + '</td>';
+      var ages = COLS.map(function (c) {
+        var X = Fs.filter(function (g) { return g.area === a.id && g[key] === c[0]; }), xw = X.filter(function (g) { return g.w; }).length;
+        return X.length < MIN ? '<td class="hidden-cell">—</td>' : '<td class="num">' + pct(xw, X.length) + ' %</td>';
+      }).join("");
+      if (A.length < MIN) return '<tr>' + name + '<td class="num">' + A.length + '</td><td class="hidden-cell" colspan="2">meno di 10</td>' + ages + '</tr>';
+      var pw = pct(w, A.length);
+      return '<tr>' + name + '<td class="num">' + A.length + '</td><td><div class="split" role="img" aria-label="' + pw + ' % carico"><div class="w" style="width:' + pw + '%"></div><div class="b" style="width:' + (100 - pw) + '%"></div></div></td><td class="num">' + pw + ' %</td>' + ages + '</tr>';
+    }).join("");
+    ["w", "b"].forEach(function (kind) {
+      var counts = {};
+      F.forEach(function (g) { if ((kind === "w") === g.w) { var key = g.area + "|" + g.word; counts[key] = (counts[key] || 0) + 1; } });
+      var arr = Object.keys(counts).map(function (k) { return { k: k, n: counts[k] }; }).sort(function (a, b) { return b.n - a.n; }).slice(0, 6);
+      var max = arr.length ? arr[0].n : 1, tot = F.filter(function (g) { return (kind === "w") === g.w; }).length;
+      document.getElementById(kind === "w" ? "topW" : "topB").innerHTML = arr.length ? arr.map(function (o) {
+        var parts = o.k.split("|");
+        return '<li style="--dot:var(--a-' + parts[0] + ')"><span class="lab"><i></i>' + esc(parts[1]) + '</span><span class="n">' + o.n + ' · ' + pct(o.n, tot) + ' %</span><span class="bar"><span style="width:' + Math.round(100 * o.n / max) + '%"></span></span></li>';
+      }).join("") : '<li><span class="lab" style="color:var(--muted)">Ancora niente</span></li>';
+    });
+  }
+  var feedEl = document.getElementById("feed"), feedT = -1;
+  function updateFeed(force) {
+    if (force) { feedEl.innerHTML = ""; feedT = -1; }
+    var fresh = G.filter(function (g) { return inFilter(g) && tb(g) > feedT && tb(g) <= T + 1e-9; }).sort(function (a, b) { return tb(a) - tb(b); });
+    feedT = T;
+    if (!fresh.length) return;
+    fresh.slice(-8).forEach(function (g) {
+      var el = document.createElement("span"); el.className = "g" + (g.w ? "" : " b"); el.style.setProperty("--dot", "var(--a-" + g.area + ")");
+      el.innerHTML = esc(g.word) + ' <small>' + (g.w ? "carico" : "sostegno") + ' · ' + AREA_NAME[g.area] + '</small>';
+      feedEl.insertBefore(el, feedEl.firstChild);
+    });
+    while (feedEl.children.length > 8) feedEl.removeChild(feedEl.lastChild);
+  }
+
+  /* ---------- bucle ---------- */
+  var tEl = document.getElementById("t"), playEl = document.getElementById("play"), clockEl = document.getElementById("clock"), lastStat = -1;
+  var months = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno"];
+  function setPlaying(v) { playing = v; playEl.textContent = v ? "Pausa" : "Riproduci"; last = performance.now(); }
+  function frame(now) {
+    var dt = Math.min(0.1, (now - last) / 1000); last = now;
+    if (playing) { T += dt * speed / BASE_SECONDS; if (T >= 1) { T = 1; setPlaying(false); } tEl.value = Math.round(T * 1000); }
+    var C = { panel: tok("--panel"), water: tok("--water"), deep: tok("--water-deep"), ink: tok("--ink"), muted: tok("--muted"), plim: tok("--plim"), area: {} };
+    AREAS.forEach(function (a) { C.area[a.id] = tok("--a-" + a.id); });
+    ships.forEach(function (s) {
+      var r = drawShip(s, now, C);
+      var txt = (r.nW * s.unit) + " carichi · " + (r.nB * s.unit) + " sostegni" + (r.over ? " · sopra la marca" : "");
+      if (s.meta.textContent !== txt) { s.meta.textContent = txt; s.meta.classList.toggle("over", r.over); }
+    });
+    drawShip(big, now, C);
+    var q = Math.round(T * 400); if (q !== lastStat) { lastStat = q; renderStats(); updateFeed(false); }
+    var mi = Math.min(5, Math.floor(T * 6)), ctext = "Mese " + (mi + 1) + " di 6 · " + months[mi];
+    if (clockEl.textContent !== ctext) clockEl.textContent = ctext;
+    requestAnimationFrame(frame);
+  }
+  tEl.addEventListener("input", function () { var nt = tEl.value / 1000; if (nt < T) updateFeed(true); T = nt; setPlaying(false); });
+  playEl.addEventListener("click", function () {
+    if (playing) { setPlaying(false); return; }
+    if (T >= 0.999) { T = 0; tEl.value = 0; updateFeed(true); }
+    setPlaying(true);
+  });
+  document.getElementById("reset").addEventListener("click", function () { T = 0; tEl.value = 0; updateFeed(true); setPlaying(true); });
+  document.querySelectorAll("input[name=spd]").forEach(function (el) { el.addEventListener("change", function () { speed = parseFloat(el.value); }); });
+  document.querySelectorAll("input[name=scn]").forEach(function (el) {
+    el.addEventListener("change", function () {
+      SCN = el.value; G = scenario(SCN);
+      T = 1; tEl.value = 1000; buildItems(); updateFeed(true); lastStat = -1; setPlaying(false);
+    });
+  });
+  document.querySelectorAll("input[name=cur]").forEach(function (el) { el.addEventListener("change", function () { CUR = el.value; }); });
+  /* Corrientes nuevas que alguien propone: se añaden como una opción más. */
+  var curNew = document.getElementById("cur-new"), curN = 5;
+  function addCurrent() {
+    var v = curNew.value.trim().replace(/\s+/g, " ");
+    if (!v) { curNew.focus(); return; }
+    var lab = document.createElement("label"); lab.className = "chip";
+    var id = "cur-" + (curN++);
+    lab.innerHTML = '<input type="radio" name="cur" id="' + id + '"><span>' + esc(v.charAt(0).toUpperCase() + v.slice(1)) + '</span>';
+    var inp = lab.querySelector("input"); inp.value = v.toUpperCase();
+    inp.addEventListener("change", function () { CUR = inp.value; });
+    curNew.parentNode.parentNode.insertBefore(lab, curNew.parentNode);
+    inp.checked = true; CUR = inp.value; curNew.value = "";
+  }
+  document.getElementById("cur-add").addEventListener("click", addCurrent);
+  curNew.addEventListener("keydown", function (ev) { if (ev.key === "Enter") { ev.preventDefault(); addCurrent(); } });
+  document.querySelectorAll("input[name=per]").forEach(function (el) { el.addEventListener("change", function () { PER = el.value; lastStat = -1; }); });
+  document.querySelectorAll("input[name=age], input[name=sit], input[name=dis]").forEach(function (el) {
+    el.addEventListener("change", function () {
+      fAge = document.querySelector("input[name=age]:checked").value;
+      fSit = document.querySelector("input[name=sit]:checked").value;
+      fDis = document.querySelector("input[name=dis]:checked").value;
+      buildItems(); updateFeed(true); lastStat = -1;
+    });
+  });
+  document.querySelectorAll("input[name=ord]").forEach(function (el) {
+    el.addEventListener("change", function () {
+      ORDER = document.querySelector("input[name=ord]:checked").value;
+      T = 0; tEl.value = 0; buildItems(); updateFeed(true); lastStat = -1;
+      [big].concat(ships).forEach(function (s) { s.wl = 478; });
+      setPlaying(true);
+    });
+  });
+  var fArea = document.getElementById("f-area"), fType = document.getElementById("f-type"), fWord = document.getElementById("f-word"), fList = document.getElementById("f-words"), msg = document.getElementById("addmsg");
+  fArea.innerHTML = AREAS.map(function (a) { return '<option value="' + a.id + '">' + a.name + '</option>'; }).join("");
+  function fillWords() { fList.innerHTML = WORDS[fArea.value][fType.value].map(function (w) { return '<option value="' + esc(w) + '"></option>'; }).join(""); }
+  fArea.addEventListener("change", fillWords); fType.addEventListener("change", fillWords); fillWords();
+  document.getElementById("addform").addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    var word = fWord.value.trim().replace(/\s+/g, " ").toLowerCase();
+    if (!word) { msg.textContent = "Scrivi o scegli una parola prima di aggiungere."; fWord.focus(); return; }
+    var area = fArea.value, kind = fType.value, list = WORDS[area][kind], isNew = list.indexOf(word) < 0;
+    if (isNew) { list.push(word); fillWords(); }
+    var g = { age: document.getElementById("f-age").value, sit: document.getElementById("f-sit").value, area: area, w: kind === "w", word: word, birth: Math.min(T, 0.9999), user: true, dis: document.getElementById("f-dis").value };
+    G.push(g); if (G !== BASE) BASE.push(g); justAdded = g;
+    if (!inFilter(g)) { fAge = "all"; fSit = "all"; fDis = "all"; document.getElementById("age-all").checked = true; document.getElementById("sit-all").checked = true; document.getElementById("dis-all").checked = true; }
+    buildItems(); justAdded = null; lastStat = -1;
+    var el = document.createElement("span"); el.className = "g" + (g.w ? "" : " b"); el.style.setProperty("--dot", "var(--a-" + g.area + ")");
+    el.innerHTML = esc(g.word) + ' <small>' + (g.w ? "carico" : "sostegno") + ' · ' + AREA_NAME[g.area] + '</small>';
+    feedEl.insertBefore(el, feedEl.firstChild); while (feedEl.children.length > 8) feedEl.removeChild(feedEl.lastChild);
+    msg.textContent = "Aggiunto: «" + word + "», " + (kind === "w" ? "carico" : "sostegno") + " in " + AREA_NAME[area] + (isNew ? ". Era una parola nuova e ora è nell’elenco." : ".");
+    fWord.value = "";
+  });
+  /* Pasar el ratón o tocar una carga o un sostén muestra su nombre. */
+  function hoverShip(s) {
+    function at(ev) {
+      var r = s.cv.getBoundingClientRect(), x = (ev.clientX - r.left) * W / r.width, y = (ev.clientY - r.top) * H / r.height, best = null, bd = 1e9;
+      s.items.forEach(function (it) {
+        if (it.p < 0.5) return;
+        var cx, cy, rad;
+        if (it.type === "w") { var sl = s.slots.w[it.idx % s.slots.w.length]; cx = sl.x + sl.w / 2; cy = sl.y + sl.h / 2; rad = 16; }
+        else { var sb = s.slots.b[it.idx % s.slots.b.length], seed = it.idx * 7 + 3; cx = sb.x + Math.sin(seed) * 5; cy = sb.y; rad = sb.r + 8; }
+        var d = Math.hypot(cx - x, cy - y);
+        if (d < rad * (s.small ? 1.6 : 1) && d < bd) { bd = d; best = it; }
+      });
+      if (best) best.shownAt = performance.now() - 300;
+      s.cv.style.cursor = best ? "pointer" : "default";
+    }
+    s.cv.addEventListener("pointermove", at); s.cv.addEventListener("pointerdown", at);
+  }
+  [big].concat(ships).forEach(hoverShip);
+  buildItems();
+  [big].concat(ships).forEach(function (s) {
+    var nW = s.items.filter(function (i) { return i.type === "w" && i.birth <= T; }).length, nB = s.items.filter(function (i) { return i.type === "b" && i.birth <= T; }).length;
+    s.wl = targetWl(nW, nB, s.cap);
+  });
+  setPlaying(playing); tEl.value = Math.round(T * 1000);
+  requestAnimationFrame(frame);
+})();
+</script>
+
+</html>

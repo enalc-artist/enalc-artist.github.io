@@ -1,36 +1,86 @@
 {
   "_meta": {
     "sourceLanguage": "en",
-    "languages": [
-      "en",
-      "es"
-    ],
+    "languages": ["en", "es", "fr", "it", "de"],
     "project": "E la nave va"
   },
   "project": {
     "meta": {
       "en": "Artist residency proposal · JRC, European Commission · Decoding Depression · Ispra, 2027",
-      "es": "Propuesta de residencia artística · JRC, Comisión Europea · Decoding Depression · Ispra, 2027"
+      "es": "Propuesta de residencia artística · JRC, Comisión Europea · Decoding Depression · Ispra, 2027",
+      "fr": "Proposition de résidence artistique · JRC, Commission européenne · Decoding Depression · Ispra, 2027",
+      "it": "Proposta di residenza artistica · JRC, Commissione europea · Decoding Depression · Ispra, 2027",
+      "de": "Vorschlag für eine Künstlerresidenz · JRC, Europäische Kommission · Decoding Depression · Ispra, 2027"
     },
     "body1": {
       "en": "A ship drawn in section. What weighs on a life is stowed below the waterline; what sustains it floats above. The waterline rises and falls with anonymous contributions and with the currents that move the whole fleet at once: economic crises, pandemics, wars, climate.",
-      "es": "Una nave dibujada en sección. Lo que pesa en una vida se estiba bajo la línea de flotación; lo que la sostiene flota encima. La línea sube y baja con aportaciones anónimas y con las corrientes que mueven a toda la flota a la vez: crisis económicas, pandemias, guerras, el clima."
+      "es": "Una nave dibujada en sección. Lo que pesa en una vida se estiba bajo la línea de flotación; lo que la sostiene flota encima. La línea sube y baja con aportaciones anónimas y con las corrientes que mueven a toda la flota a la vez: crisis económicas, pandemias, guerras, el clima.",
+      "fr": "Un navire dessiné en coupe. Ce qui pèse sur une vie est arrimé sous la ligne de flottaison ; ce qui la soutient flotte au-dessus. La ligne monte et descend avec des contributions anonymes et avec les courants qui déplacent toute la flotte à la fois : crises économiques, pandémies, guerres, climat.",
+      "it": "Una nave disegnata in sezione. Ciò che pesa su una vita è stivato sotto la linea di galleggiamento; ciò che la sostiene galleggia sopra. La linea sale e scende con contributi anonimi e con le correnti che muovono tutta la flotta insieme: crisi economiche, pandemie, guerre, il clima.",
+      "de": "Ein Schiff im Querschnitt. Was auf einem Leben lastet, wird unter der Wasserlinie verstaut; was es trägt, schwimmt darüber. Die Linie steigt und sinkt mit anonymen Beiträgen und mit den Strömungen, die die ganze Flotte zugleich bewegen: Wirtschaftskrisen, Pandemien, Kriege, das Klima."
     },
     "body2": {
       "en": "On the hull sits a Plimsoll line, the safe-load mark that British law made compulsory in 1876. Political decisions are not the sea: they are the rule that sets how much load is safe. The interactive fleet shows six ships (school, work, family, leisure, relationships, digital access), live statistics by age, situation and disability, and two scenarios for 2040. All data in the prototype are invented.",
-      "es": "En el casco, una línea de Plimsoll: la marca de carga segura que la ley británica impuso en 1876. Las decisiones políticas no son el mar: son la norma que marca cuánta carga es segura. La flota interactiva muestra seis naves (estudios, trabajo, familia, ocio, relaciones, acceso digital), estadística en directo por edad, situación y discapacidad, y dos escenarios para 2040. Todos los datos del prototipo son inventados."
+      "es": "En el casco, una línea de Plimsoll: la marca de carga segura que la ley británica impuso en 1876. Las decisiones políticas no son el mar: son la norma que marca cuánta carga es segura. La flota interactiva muestra seis naves (estudios, trabajo, familia, ocio, relaciones, acceso digital), estadística en directo por edad, situación y discapacidad, y dos escenarios para 2040. Todos los datos del prototipo son inventados.",
+      "fr": "Sur la coque, une ligne de Plimsoll : la marque de charge sûre que la loi britannique a rendue obligatoire en 1876. Les décisions politiques ne sont pas la mer : elles sont la règle qui fixe quelle charge est sûre. La flotte interactive montre six navires (études, travail, famille, loisirs, relations, accès numérique), des statistiques en direct par âge, situation et handicap, et deux scénarios pour 2040. Toutes les données du prototype sont inventées.",
+      "it": "Sullo scafo, una linea di Plimsoll: la marca di carico sicuro che la legge britannica rese obbligatoria nel 1876. Le decisioni politiche non sono il mare: sono la regola che stabilisce quanto carico è sicuro. La flotta interattiva mostra sei navi (studio, lavoro, famiglia, tempo libero, relazioni, accesso digitale), statistiche in diretta per età, situazione e disabilità, e due scenari per il 2040. Tutti i dati del prototipo sono inventati.",
+      "de": "Auf dem Rumpf sitzt eine Plimsoll-Marke, die Marke für sichere Beladung, die das britische Recht 1876 vorschrieb. Politische Entscheidungen sind nicht das Meer: Sie sind die Regel, die festlegt, wie viel Last sicher ist. Die interaktive Flotte zeigt sechs Schiffe (Schule, Arbeit, Familie, Freizeit, Beziehungen, digitaler Zugang), Live-Statistiken nach Alter, Lebenslage und Behinderung sowie zwei Szenarien für 2040. Alle Daten im Prototyp sind erfunden."
     },
     "ask": {
       "en": "Interactive fleet · original sketch · application dossier",
-      "es": "Flota interactiva · boceto original · dossier de candidatura"
+      "es": "Flota interactiva · boceto original · dossier de candidatura",
+      "fr": "Flotte interactive · croquis original · dossier de candidature",
+      "it": "Flotta interattiva · bozzetto originale · dossier di candidatura",
+      "de": "Interaktive Flotte · erste Skizze · Bewerbungsunterlagen"
     },
     "alt": {
       "en": "A ship drawn in section: coloured crates below the waterline and buoys above it, from the e la nave va prototype",
-      "es": "Una nave dibujada en sección: cajas de colores bajo la línea de flotación y boyas encima, del prototipo e la nave va"
+      "es": "Una nave dibujada en sección: cajas de colores bajo la línea de flotación y boyas encima, del prototipo e la nave va",
+      "fr": "Un navire dessiné en coupe : des caisses colorées sous la ligne de flottaison et des bouées au-dessus, tiré du prototype e la nave va",
+      "it": "Una nave disegnata in sezione: casse colorate sotto la linea di galleggiamento e boe sopra, dal prototipo e la nave va",
+      "de": "Ein Schiff im Querschnitt: farbige Kisten unter der Wasserlinie und Bojen darüber, aus dem Prototyp e la nave va"
     },
     "video_label": {
       "en": "Animated sketch: a ship drawn in section where, month by month, coloured crates gather below the waterline and buoys rise above it",
-      "es": "Boceto animado: una nave dibujada en sección donde, mes a mes, se acumulan cajas de colores bajo la línea de flotación y suben boyas por encima"
+      "es": "Boceto animado: una nave dibujada en sección donde, mes a mes, se acumulan cajas de colores bajo la línea de flotación y suben boyas por encima",
+      "fr": "Croquis animé : un navire dessiné en coupe où, mois après mois, des caisses colorées s’accumulent sous la ligne de flottaison et des bouées montent au-dessus",
+      "it": "Bozzetto animato: una nave disegnata in sezione dove, mese dopo mese, casse colorate si accumulano sotto la linea di galleggiamento e boe salgono sopra",
+      "de": "Animierte Skizze: ein Schiff im Querschnitt, in dem sich Monat für Monat farbige Kisten unter der Wasserlinie sammeln und Bojen darüber aufsteigen"
+    },
+    "btn_page": {
+      "en": "Full project →",
+      "es": "Proyecto completo →",
+      "fr": "Projet complet →",
+      "it": "Progetto completo →",
+      "de": "Ganzes Projekt →"
+    },
+    "btn_fleet": {
+      "en": "The fleet ↗",
+      "es": "La flota ↗",
+      "fr": "La flotte ↗",
+      "it": "La flotta ↗",
+      "de": "Die Flotte ↗"
+    },
+    "btn_sketch": {
+      "en": "First sketch ↗",
+      "es": "Primer boceto ↗",
+      "fr": "Premier croquis ↗",
+      "it": "Primo bozzetto ↗",
+      "de": "Erste Skizze ↗"
+    },
+    "btn_pdf_en": {
+      "en": "Application PDF (English) ↗",
+      "es": "Candidatura en PDF (inglés) ↗",
+      "fr": "Dossier de candidature (anglais) ↗",
+      "it": "Candidatura in PDF (inglese) ↗",
+      "de": "Bewerbung als PDF (Englisch) ↗"
+    },
+    "btn_pdf_es": {
+      "en": "Application PDF (Spanish) ↗",
+      "es": "Candidatura en PDF (español) ↗",
+      "fr": "Dossier de candidature (espagnol) ↗",
+      "it": "Candidatura in PDF (spagnolo) ↗",
+      "de": "Bewerbung als PDF (Spanisch) ↗"
     }
   }
 }

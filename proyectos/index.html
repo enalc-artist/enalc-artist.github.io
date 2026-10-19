@@ -45,6 +45,7 @@
           <figure class="project-visual shadow-research" style="background:linear-gradient(to bottom,#003153 0 50%,#1a2550 50% 100%)">
             <span class="project-number">JRC · 2027</span>
             <video
+              data-current="/proyectos/e-la-nave-va/ship-loop.mp4"
               poster="/proyectos/e-la-nave-va/ship-loop-poster.webp"
               autoplay muted loop playsinline preload="auto"
               aria-label="Animated sketch: a ship drawn in section where, month by month, coloured crates gather below the waterline and buoys rise above it"
@@ -77,15 +78,49 @@
               Interactive fleet · original sketch · application dossier
             </p>
             <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:26px">
-              <a class="project-button" style="margin-top:0;color:#000;background:#fff" href="/proyectos/e-la-nave-va/">Full project (EN) →</a>
-              <a class="project-button" style="margin-top:0;color:#000;background:#fff" href="/proyectos/e-la-nave-va/es.html">Proyecto completo (ES) →</a>
-              <a class="project-button" style="margin-top:0;color:#fff" href="/proyectos/e-la-nave-va/fleet-en.html" target="_blank" rel="noopener">The fleet (EN) ↗</a>
-              <a class="project-button" style="margin-top:0;color:#fff" href="/proyectos/e-la-nave-va/flota-es.html" target="_blank" rel="noopener">La flota (ES) ↗</a>
-              <a class="project-button" style="margin-top:0;color:#fff" href="/proyectos/e-la-nave-va/sketch-en.html" target="_blank" rel="noopener">First sketch (EN) ↗</a>
-              <a class="project-button" style="margin-top:0;color:#fff" href="/proyectos/e-la-nave-va/boceto-es.html" target="_blank" rel="noopener">Primer boceto (ES) ↗</a>
-              <a class="project-button" style="margin-top:0;color:#fff" href="/proyectos/e-la-nave-va/Enrique_Alcides_JRC_application_EN.pdf" target="_blank" rel="noopener">Application PDF (EN) ↗</a>
-              <a class="project-button" style="margin-top:0;color:#fff" href="/proyectos/e-la-nave-va/Enrique_Alcides_JRC_candidatura_ES.pdf" target="_blank" rel="noopener">Candidatura PDF (ES) ↗</a>
+              <a class="project-button" style="margin-top:0;color:#000;background:#fff" href="/proyectos/e-la-nave-va/" data-nave-link="page">Full project →</a>
+              <a class="project-button" style="margin-top:0;color:#fff" href="/proyectos/e-la-nave-va/fleet-en.html" data-nave-link="fleet" target="_blank" rel="noopener">The fleet ↗</a>
+              <a class="project-button" style="margin-top:0;color:#fff" href="/proyectos/e-la-nave-va/sketch-en.html" data-nave-link="sketch" target="_blank" rel="noopener">First sketch ↗</a>
+              <a class="project-button" style="margin-top:0;color:#fff" href="/proyectos/e-la-nave-va/Enrique_Alcides_JRC_application_EN.pdf" target="_blank" rel="noopener">Application PDF (English) ↗</a>
+              <a class="project-button" style="margin-top:0;color:#fff" href="/proyectos/e-la-nave-va/Enrique_Alcides_JRC_candidatura_ES.pdf" target="_blank" rel="noopener">Application PDF (Spanish) ↗</a>
             </div>
+            <script>
+              (function () {
+                var base = "/proyectos/e-la-nave-va/";
+                var links = {
+                  page: { en: "", es: "es.html", fr: "fr.html", it: "it.html", de: "de.html" },
+                  fleet: { en: "fleet-en.html", es: "flota-es.html", fr: "fleet-fr.html", it: "fleet-it.html", de: "fleet-de.html" },
+                  sketch: { en: "sketch-en.html", es: "boceto-es.html", fr: "sketch-fr.html", it: "sketch-it.html", de: "sketch-de.html" }
+                };
+                var video = document.querySelector("#e-la-nave-va video");
+                var still = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+                function setVideo(locale) {
+                  if (!video) return;
+                  var suffix = locale === "en" ? "" : "-" + locale;
+                  var mp4 = base + "ship-loop" + suffix + ".mp4";
+                  if (video.getAttribute("data-current") === mp4) return;
+                  video.setAttribute("data-current", mp4);
+                  video.poster = base + "ship-loop-poster" + suffix + ".webp";
+                  var sources = video.querySelectorAll("source");
+                  sources[0].src = mp4;
+                  sources[1].src = base + "ship-loop" + suffix + ".webm";
+                  video.load();
+                  if (!still) { var p = video.play(); if (p && p.catch) p.catch(function () {}); }
+                }
+                function apply(locale) {
+                  if (!links.page.hasOwnProperty(locale)) locale = "en";
+                  document.querySelectorAll("[data-nave-link]").forEach(function (a) {
+                    a.href = base + links[a.getAttribute("data-nave-link")][locale];
+                  });
+                  setVideo(locale);
+                }
+                var stored = null;
+                try { stored = localStorage.getItem("enalc-locale"); } catch (e) {}
+                apply(stored || "en");
+                window.addEventListener("enalc:localechange", function (e) { apply(e.detail && e.detail.locale); });
+                window.addEventListener("enalc:i18n-ready", function (e) { apply(e.detail && e.detail.locale); });
+              })();
+            </script>
           </div>
         </article>
         <article class="project-sheet project-sheet-shadow" id="a-la-sombra">

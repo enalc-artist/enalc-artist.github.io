@@ -56,6 +56,7 @@ button:focus-visible, .chip input:focus-visible + span, input[type=range]:focus-
 input[type=range] { width: 100%; accent-color: var(--accent); margin: 0; }
 .ticks { position: relative; height: 15px; font-family: var(--font-mono); font-size: 10px; color: var(--muted); }
 .ticks span { position: absolute; transform: translateX(-50%); white-space: nowrap; }
+.ticks i { font-style: normal; }
 .ticks span:first-child { transform: none; }
 .ticks span:last-child { transform: translateX(-100%); }
 .group { display: flex; flex-wrap: wrap; align-items: center; gap: 5px 6px; }
@@ -125,7 +126,7 @@ td.num { white-space: nowrap; }
 }
 @media (max-width: 620px) {
   .fleet { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .ticks span.opt { display: none; }
+  .ticks span.opt, .ticks i.ms { display: none; }
   .tops { grid-template-columns: minmax(0, 1fr); }
 }
 @media (prefers-reduced-motion: reduce) { .feed .g { animation: none; } }
@@ -137,14 +138,14 @@ td.num { white-space: nowrap; }
       <span class="tag">Sketch · invented example data</span>
       <h1>The fleet of the ship</h1>
     </div>
-    <section class="controls" aria-label="Controles">
+    <section class="controls" aria-label="Controls">
       <div class="row">
         <button id="play" type="button">Pause</button>
         <div class="timeline">
           <input id="t" type="range" min="0" max="1000" value="0" aria-label="Time across the six months">
           <div class="ticks" aria-hidden="true">
             <span style="left:0">Jan</span><span class="opt" style="left:16.6%">Feb</span><span class="opt" style="left:33.3%">Mar</span>
-            <span style="left:50%">Apr · Milestone 1</span><span style="left:100%">Jun · Milestone 2</span>
+            <span style="left:50%">Apr<i class="ms"> · Milestone 1</i></span><span style="left:100%">Jun<i class="ms"> · Milestone 2</i></span>
           </div>
         </div>
         <button id="reset" class="ghost" type="button">From the start</button>
@@ -256,8 +257,8 @@ td.num { white-space: nowrap; }
           <input type="text" id="f-word" list="f-words" maxlength="32" placeholder="Pick or type, e.g. argument with my grandparents" aria-label="Word">
           <datalist id="f-words"></datalist>
           <select id="f-age" aria-label="Age"><option>11–25</option><option selected>26–64</option><option value="65+">65+</option></select>
-          <select id="f-sit" aria-label="Situation"><option>Studying</option><option selected>Working</option><option>Job-seeking</option><option>Caring</option><option>Retired</option></select>
-          <select id="f-dis" aria-label="Disability"><option value="None">No disability declared</option><option>Physical</option><option>Sensory</option><option>Intellectual</option><option value="Psicosocial">Mental or psychosocial</option><option>Neurodivergence</option></select>
+          <select id="f-sit" aria-label="Situation"><option value="Studying">Studying</option><option value="Working" selected>Working</option><option value="Job-seeking">Job-seeking</option><option value="Caring">Caring</option><option value="Retired">Retired</option></select>
+          <select id="f-dis" aria-label="Disability"><option value="None">No disability declared</option><option value="Physical">Physical</option><option value="Sensory">Sensory</option><option value="Intellectual">Intellectual</option><option value="Psicosocial">Mental or psychosocial</option><option value="Neurodivergence">Neurodivergence</option></select>
           <button type="submit">Add</button>
         </form>
         <p class="addmsg" id="addmsg" aria-live="polite">If the word is not on the list, it is created and becomes available to others. Hover over or tap a load or a support to see its name.</p>
@@ -320,7 +321,7 @@ td.num { white-space: nowrap; }
   };
   var DIS = { "None": .74, "Physical": .06, "Sensory": .05, "Intellectual": .04, "Psicosocial": .06, "Neurodivergence": .05 };
   var DIS_W = { "Physical": .12, "Sensory": .14, "Intellectual": .12, "Psicosocial": .14, "Neurodivergence": .1 };
-  var PW = { "estudios|Estudia": .66, "trabajo|Busca empleo": .82, "trabajo|Trabaja": .6, "familia|Cuidados": .62, "relaciones|Jubilada/o": .35 };
+  var PW = { "estudios|Studying": .66, "trabajo|Job-seeking": .82, "trabajo|Working": .6, "familia|Caring": .62, "relaciones|Retired": .35 };
   var PW_AREA = { estudios: .5, trabajo: .55, familia: .45, ocio: .22, relaciones: .45, digital: .55 };
   for (var i = 0; i < 2400; i++) {
     var age = pick(R, { "11–25": .3, "26–64": .5, "65+": .2 });
@@ -559,11 +560,13 @@ td.num { white-space: nowrap; }
 
   /* ---------- estadística y últimos gestos ---------- */
   var MIN = 10;
+  var SITL = { "Studying": "studying", "Working": "working", "Job-seeking": "job-seeking", "Caring": "caring", "Retired": "retired" };
+  var SITL = { "Studying": "studying", "Working": "working", "Job-seeking": "job-seeking", "Caring": "caring", "Retired": "retired" };
   function pct(a, b) { return b ? Math.round(100 * a / b) : 0; }
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
   function renderStats() {
     var F = G.filter(function (g) { return inFilter(g) && tb(g) <= T + 1e-9; });
-    var label = [fAge === "all" ? "all ages" : fAge === "65+" ? "aged 65+" : "aged " + fAge, fSit === "all" ? "all situations" : fSit.toLowerCase()].concat(fDis === "all" ? [] : [fDis === "None" ? "no disability declared" : fDis === "Neurodivergence" ? "neurodivergent" : ({ Physical: "physical", Sensory: "sensory", Intellectual: "intellectual", Psicosocial: "mental or psychosocial" })[fDis] + " disability"]).join(" · ");
+    var label = [fAge === "all" ? "all ages" : fAge === "65+" ? "aged 65+" : "aged " + fAge, fSit === "all" ? "all situations" : (SITL[fSit] || fSit)].concat(fDis === "all" ? [] : [fDis === "None" ? "no disability declared" : fDis === "Neurodivergence" ? "neurodivergent" : ({ Physical: "physical", Sensory: "sensory", Intellectual: "intellectual", Psicosocial: "mental or psychosocial" })[fDis] + " disability"]).join(" · ");
     var COLS = PER === "age" ? [["11–25", "11–25"], ["26–64", "26–64"], ["65+", "65+"]] : [["None", "None"], ["Physical", "Physical"], ["Sensory", "Sensory"], ["Intellectual", "Intellect."], ["Psicosocial", "Mental"], ["Neurodivergence", "Neurodiv."]];
     var key = PER === "age" ? "age" : "dis";
     document.getElementById("thead").innerHTML = "<tr><th>Area</th><th>Contrib.</th><th>Load / support</th><th>Load</th>" + COLS.map(function (c) { return "<th>" + c[1] + "</th>"; }).join("") + "</tr>";
@@ -578,7 +581,7 @@ td.num { white-space: nowrap; }
       }).join("");
       if (A.length < MIN) return '<tr>' + name + '<td class="num">' + A.length + '</td><td class="hidden-cell" colspan="2">fewer than 10</td>' + ages + '</tr>';
       var pw = pct(w, A.length);
-      return '<tr>' + name + '<td class="num">' + A.length + '</td><td><div class="split" role="img" aria-label="' + pw + ' % carga"><div class="w" style="width:' + pw + '%"></div><div class="b" style="width:' + (100 - pw) + '%"></div></div></td><td class="num">' + pw + ' %</td>' + ages + '</tr>';
+      return '<tr>' + name + '<td class="num">' + A.length + '</td><td><div class="split" role="img" aria-label="' + pw + ' % load"><div class="w" style="width:' + pw + '%"></div><div class="b" style="width:' + (100 - pw) + '%"></div></div></td><td class="num">' + pw + ' %</td>' + ages + '</tr>';
     }).join("");
     ["w", "b"].forEach(function (kind) {
       var counts = {};

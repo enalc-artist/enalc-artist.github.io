@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="it" translate="no" class="notranslate">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google" content="notranslate">
+    <link rel="stylesheet" href="/assets/index-CQIT47yq.css">
+    <link rel="stylesheet" href="/assets/enalc-enhancements.css?v=10.1">
+    <link rel="stylesheet" href="/assets/archive-lightbox.css?v=5">
+    <title>ENALC — E la nave va</title>
+    <meta name="description" content="E la nave va: una nave in sezione che rende visibile ciò che pesa su una vita e ciò che la tiene a galla. Proposta di residenza artistica per il JRC, Commissione europea.">
+    <link rel="shortcut icon" href="/favicon.svg">
+    <link rel="icon" href="/favicon.svg">
+    <link rel="alternate" hreflang="en" href="/proyectos/e-la-nave-va/">
+    <link rel="alternate" hreflang="es" href="/proyectos/e-la-nave-va/es.html">
+    <link rel="alternate" hreflang="fr" href="/proyectos/e-la-nave-va/fr.html">
+    <link rel="alternate" hreflang="it" href="/proyectos/e-la-nave-va/it.html">
+    <link rel="alternate" hreflang="de" href="/proyectos/e-la-nave-va/de.html">
+    <script>
+      (function () {
+        var here = "it", base = "/proyectos/e-la-nave-va/", pages = {"en": "", "es": "es.html", "fr": "fr.html", "it": "it.html", "de": "de.html"};
+        try {
+          var q = new URLSearchParams(location.search).get("lang");
+          var stored = localStorage.getItem("enalc-locale");
+          var want = (q && pages.hasOwnProperty(q)) ? q : stored;
+          if (q && pages.hasOwnProperty(q)) localStorage.setItem("enalc-locale", q);
+          if (want && pages.hasOwnProperty(want) && want !== here) { location.replace(base + pages[want] + location.hash); return; }
+          if (!stored) localStorage.setItem("enalc-locale", here);
+        } catch (e) {}
+      })();
+    </script>
+    <style>
+  .nave-page { background: var(--paper); color: var(--ink); }
+  .nave-page .page-intro h1 { font-style: italic; }
+  .nave-body { display: grid; grid-template-columns: minmax(0, 220px) minmax(0, 1fr); gap: 48px; align-items: start; }
+  .nave-toc { position: sticky; top: 96px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; display: flex; flex-direction: column; gap: 10px; }
+  .nave-toc a { text-decoration: none; width: fit-content; padding: 4px 9px; margin-left: -9px; border-radius: 2px; transition: background-color .25s ease, transform .25s ease; }
+  .nave-toc a:hover, .nave-toc a:focus-visible, .nave-toc a:active { background: var(--hl); color: var(--ink); transform: translateX(4px); outline: none; }
+  @media (prefers-reduced-motion: reduce) { .nave-toc a { transition: none; } .nave-toc a:hover, .nave-toc a:focus-visible, .nave-toc a:active { transform: none; } }
+  .nave-content { max-width: 72ch; display: flex; flex-direction: column; gap: 56px; min-width: 0; }
+  .nave-content section { display: flex; flex-direction: column; gap: 16px; scroll-margin-top: 96px; }
+  .nave-content h2 { font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-weight: 400; font-size: clamp(1.6rem, 3vw, 2.3rem); line-height: 1.1; margin: 0; letter-spacing: -.01em; width: fit-content; background: var(--hl, transparent); color: var(--ink); padding: .14em .34em; margin-left: -.34em; border-radius: 2px; }
+  .nave-content p, .nave-content li, .nave-content dd { font-size: 1.08rem; line-height: 1.55; margin: 0; }
+  .nave-content ul { margin: 0; padding-left: 1.2em; display: flex; flex-direction: column; gap: 8px; }
+  .nave-content dl { margin: 0; display: flex; flex-direction: column; gap: 18px; }
+  .nave-content dt { font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-size: .74rem; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
+  .nave-content dd { margin: 0; border-left: 2px solid var(--ink); padding-left: 14px; }
+  .nave-fleet { display: flex; flex-direction: column; gap: 14px; }
+  .nave-fleet iframe { width: 100%; height: 1700px; border: 1px solid var(--line); background: #eceff0; }
+  .nave-links { display: flex; flex-wrap: wrap; gap: 10px; }
+  .nave-links a { font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-size: .72rem; letter-spacing: .09em; text-transform: uppercase; border: 1px solid var(--ink); border-radius: 999px; padding: 11px 16px; text-decoration: none; }
+  .nave-links a:hover, .nave-links a:focus-visible { background: var(--ink); color: var(--paper); }
+  .nave-sources li { font-size: .95rem; }
+  .nave-sources a { text-decoration: underline; }
+  @media (max-width: 860px) {
+    .nave-body { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+    .nave-toc { position: static; flex-direction: row; flex-wrap: wrap; gap: 8px 16px; }
+    .nave-fleet iframe { height: 1900px; }
+  }
+</style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a aria-label="ENALC — home" class="wordmark" href="/">ENALC<span class="wordmark-dot">●</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class href="/obra">Work</a><a class="active" href="/proyectos">Proto-Ideas</a><a class href="/archivo">Archive</a><a class href="/acerca">About</a>
+      </nav>
+      <div class="language-toggle">
+        <label class="sr-only" for="language-select">Language</label>
+        <select id="language-select" aria-label="Language">
+          <option value="en">EN</option>
+          <option value="es">ES</option>
+          <option value="fr">FR</option>
+          <option value="it" selected>IT</option>
+          <option value="de">DE</option>
+        </select>
+      </div>
+    </header>
+    <main class="inner-page nave-page" data-i18n-skip>
+      <section class="page-intro section-pad">
+        <span class="page-index">02</span>
+        <div>
+          <p class="eyebrow">Protoidea · residenza artistica del JRC «Decoding Depression» · Ispra, 2027</p>
+          <h1>E la nave va</h1>
+        </div>
+        <p class="page-lede">Una nave disegnata in sezione. Ciò che pesa su una vita è stivato sotto la linea di galleggiamento; ciò che la sostiene galleggia sopra. La linea sale e scende con ogni contributo e con le correnti che muovono tutta la flotta insieme. Il titolo, preso da Fellini, è anche la mia frase sulla mia condizione: la mia pratica artistica mi tiene a galla e fa avanzare la nave.</p>
+      </section>
+      <section class="section-pad">
+        <div class="nave-links" style="margin-bottom:40px"><a href="/proyectos#e-la-nave-va">← Tutte le protoidee</a></div>
+        <div class="nave-body">
+          <nav class="nave-toc" aria-label="In questa pagina"><a href="#fleet" style="--hl:#ef4452">La flotta interattiva</a><a href="#read" style="--hl:#ff8c1a">Come leggere la nave</a><a href="#method" style="--hl:#ffd60a">Metodo: le tre I</a><a href="#evidence" style="--hl:#2fb34f">Partire dalle evidenze</a><a href="#participation" style="--hl:#3f7bff">Partecipazione ed etica</a><a href="#timeline" style="--hl:#8170f0">Sei mesi, tre momenti</a><a href="#policy" style="--hl:#b05ee8">A chi è rivolta la domanda</a><a href="#me" style="--hl:#f0158f">Perché quest’opera, a partire da me</a><a href="#materials" style="--hl:#a6d36a">Materiali</a><a href="#sources" style="--hl:#3d9be9">Fonti consultate</a></nav>
+          <div class="nave-content">
+            <section id="fleet" class="nave-fleet"><h2 style="--hl:#ef4452">La flotta interattiva</h2><p>Sei navi, una per ambito della vita: studio, lavoro, famiglia, tempo libero, relazioni e accesso digitale. Carichi e sostegni arrivano con il loro nome, le sei navi si uniscono in una sola e le statistiche crescono in diretta. Si può filtrare per età, situazione e disabilità, aggiungere un nuovo carico, sostegno o corrente e confrontare due scenari per il 2040. Tutti i dati di questo prototipo sono inventati.</p><iframe src="/proyectos/e-la-nave-va/fleet-it.html" title="La flotta interattiva" loading="lazy"></iframe><div class="nave-links"><a href="/proyectos/e-la-nave-va/fleet-it.html" target="_blank" rel="noopener">Apri la flotta in una nuova finestra ↗</a></div></section>
+            <section id="read"><h2 style="--hl:#ff8c1a">Come leggere la nave</h2><dl><div><dt>Carichi</dt><dd>Casse sotto la linea di galleggiamento. Ciò che pesa su ogni persona in un ambito della sua vita, anche quando non è colpa sua: un licenziamento, una casa allagata, la solitudine, una lite con il partner.</dd></div><div><dt>Sostegni</dt><dd>Boe sopra il ponte. Ciò che tiene a galla una vita: gli amici, una buona squadra, una giornata in campagna, andare al cinema, qualcuno che aiuta con le pratiche.</dd></div><div><dt>Correnti</dt><dd>Ciò che muove tutta la flotta insieme: una crisi economica, una pandemia, una guerra, un’ondata di calore in tutta Europa. È la policrisi. Il criterio non è se qualcosa dipende da noi, ma se accade a una persona o a tutti: se si allaga la tua casa, è un carico; se il clima peggiora per tutti, è una corrente.</dd></div><div><dt>Linea di carico</dt><dd>La marca di Plimsoll, resa obbligatoria sulle navi britanniche dal Merchant Shipping Act del 1876 per evitare naufragi dovuti al sovraccarico. Fu una legge, promossa dal deputato Samuel Plimsoll. Le decisioni politiche non sono il mare: sono la regola che stabilisce quanto carico è sicuro. Qui la linea chiede dove si trovi il carico sicuro di una vita, e chi debba dipingerla. Non dà voti a nessuno.</dd></div></dl></section><section id="method"><h2 style="--hl:#ffd60a">Metodo: le tre I</h2><p>Leggo l’<em>environome</em> del JRC come una drammaturgia. Gli ambienti personali, sociali, costruiti, naturali e digitali sono attori che <strong>interagiscono</strong>, <strong>intervengono</strong> e <strong>incidono</strong> sul corso della commedia umana. Questi tre verbi sono anche il mio modo di avvicinarmi alla residenza: interagire con i ricercatori e i loro dati, intervenire con l’opera e incidere sulla prevenzione.</p><p>Sotto la prevenzione pulsa la domanda che la nave continua a porre: quanto può portare una vita prima di capovolgersi, e che cosa la trattiene dal naufragare?</p></section><section id="evidence"><h2 style="--hl:#2fb34f">Partire dalle evidenze</h2><p>L’opera parte da InDepDash, il cruscotto del JRC che conta quanti articoli scientifici collegano la depressione a ciascun fattore ambientale. Tra i suoi 153.609 articoli, la luce naturale compare in sette e le catastrofi naturali in 7.863. Ciò non significa che la luce conti meno, solo che è stata studiata meno. Il cruscotto stesso avverte che il numero di studi non è l’unica misura dell’importanza. Contare non è pesare.</p><p>La nave verrebbe caricata da tre fonti e mostrerebbe la distanza, e la possibile dissonanza, tra di esse:</p><ul><li><strong>Ciò che si studia:</strong> il numero di pubblicazioni di InDepDash.</li><li><strong>Ciò che le persone dichiarano:</strong> l’indagine dello stesso JRC sulla salute mentale, se può essere condivisa.</li><li><strong>Ciò che si vive:</strong> i contributi anonimi di un gruppo volontario del personale di Ispra.</li></ul><p>Accanto, terrei un <strong>registro delle omissioni</strong>: tutto ciò che le persone portano e che non rientra in nessuna categoria del JRC, come «pratiche solo online» o «una lite con i miei nonni». Ai ricercatori mostra ciò che manca nella loro classificazione. Prosegue il lavoro iniziato al workshop del JRC a Bruxelles nel giugno 2025.</p></section><section id="participation"><h2 style="--hl:#3f7bff">Partecipazione ed etica</h2><p>Con l’approvazione del comitato etico, chiunque nel gruppo potrebbe dare tutti i contributi che desidera: una breve frase su qualcosa del proprio ambiente che lo trascina giù o lo sostiene, l’ambito a cui appartiene e, se vuole, un’ampia fascia d’età, una situazione e se ha una disabilità o è neurodivergente. Ogni contributo diventa una cassa o una boa.</p><ul><li>Anonimi e volontari, senza nomi, senza testimonianze e senza dati medici.</li><li>I contributi si aggiungono online o su computer dedicati a Ispra, senza la possibilità di cancellare ciò che si è accumulato.</li><li>Si può scegliere una parola dall’elenco o proporne una nuova. Le parole nuove vengono lette da una persona prima di comparire, nel caso qualcuno scriva qualcosa che lo identifichi, come un nome o un luogo preciso.</li><li>Qualsiasi gruppo con meno di dieci contributi viene nascosto nelle statistiche, perché nessuno possa riconoscersi.</li><li>Le categorie di disabilità seguono l’articolo 1 della Convenzione delle Nazioni Unite sui diritti delle persone con disabilità (fisica, mentale o psicosociale, intellettiva, sensoriale), la definizione usata dalla Commissione europea e dalla legge spagnola. La neurodivergenza è indicata a parte perché, per essere riconosciuta ufficialmente, deve rientrare in una di esse.</li><li>L’accesso digitale è un ambito a sé: niente connessione a casa, siti e moduli difficili da usare, appuntamenti solo online. Raccogliere contributi online non deve escludere chi ha più bisogno di essere ascoltato, per questo resta sempre disponibile una via assistita.</li></ul></section><section id="timeline"><h2 style="--hl:#8170f0">Sei mesi, tre momenti</h2><dl><div><dt>Aprile · lavoro in corso</dt><dd>La nave in funzione, presentata al gruppo: un progetto digitale programmato che si trasforma in diretta man mano che arrivano i contributi.</dd></div><div><dt>Maggio · secondo giro</dt><dd>Le stesse persone vedono ciò che è stato raccolto e scelgono che cosa le aiuterebbe di più: quali carichi alleggerire o eliminare, quali sostegni rafforzare.</dd></div><div><dt>Giugno · opera finale</dt><dd>Una proiezione audiovisiva narrata con la mia voce, in cui la nave si carica e si alleggerisce con tutto ciò che è stato raccolto e si conclude con due navi possibili nel 2040: una se nulla cambia, una se le linee di carico vengono rispettate. La accompagnano una conversazione con il gruppo, una nota di una pagina per le politiche pubbliche e una versione digitale portatile per scuole, centri sanitari, ospedali, centri diurni per anziani, associazioni e quartieri.</dd></div></dl><p><strong>Perché il 2040.</strong> Due ragioni che convivono: è l’orizzonte dell’obiettivo climatico dell’UE ed è l’orizzonte di una generazione, perché chi oggi va a scuola allora sarà adulto. Le navi del 2040 sono una prova generale del futuro, non una previsione: il tipo di lavoro sugli scenari che svolge l’EU Policy Lab.</p></section><section id="policy"><h2 style="--hl:#b05ee8">A chi è rivolta la domanda</h2><p>Il JRC è il servizio scientifico della Commissione europea, e in questa residenza sono coinvolti la sua Unità Salute digitale, l’EU Policy Lab e il Centro di studi avanzati. La domanda dell’opera, che cosa potrebbe significare una linea di carico per la casa, la luce naturale, le condizioni di lavoro, la scuola o gli schermi, vuole viaggiare dai ricercatori a chi definisce le politiche sanitarie, educative e digitali.</p></section><section id="me"><h2 style="--hl:#f0158f">Perché quest’opera, a partire da me</h2><p>Convivo da molti anni con una depressione cronica, ed è la mia pratica artistica a tenermi a galla. La mia sindrome di Asperger e la mia disabilità del 67%, riconosciuta ufficialmente, plasmano il modo in cui percepisco il mondo: ramificato, laterale, attento alla ripetizione e alla contraddizione. In me convivono diversi io: l’artista, il bambino cresciuto tra le Canarie e il Sahara Occidentale, l’uomo pronto ad amare e a prendersi cura, la persona con disabilità e neurodivergente, chi vive con una depressione cronica. La depressione può zittirne alcuni, lasciare che uno occupi tutto lo spazio o ridurre il futuro a una sola prospettiva, a volte buia, a volte luminosa. Tratto questa pluralità come un ambiente a sé.</p><p>La depressione non è un luogo romantico da abitare né un fallimento privato: si vive dentro ambienti, politiche, relazioni e gesti di cura. Voglio un’opera che lo mostri con i dati, con la prevenzione come obiettivo, e che ci commuova comunque mentre guardiamo la nave trasformarsi.</p></section>
+            <section id="materials"><h2 style="--hl:#a6d36a">Materiali</h2><div class="nave-links"><a href="/proyectos/e-la-nave-va/fleet-it.html" target="_blank" rel="noopener">La flotta ↗</a><a href="/proyectos/e-la-nave-va/sketch-it.html" target="_blank" rel="noopener">Primo bozzetto ↗</a><a href="/proyectos/e-la-nave-va/Enrique_Alcides_JRC_application_EN.pdf" target="_blank" rel="noopener">Candidatura in PDF (inglese) ↗</a><a href="/proyectos/e-la-nave-va/Enrique_Alcides_JRC_candidatura_ES.pdf" target="_blank" rel="noopener">Candidatura in PDF (spagnolo) ↗</a></div></section>
+            <section id="sources" class="nave-sources"><h2 style="--hl:#3d9be9">Fonti consultate</h2><ul><li><a href="https://knowledge-for-policy.ec.europa.eu/sites/default/files/Open%20Call_Decoding%20Depression_20260917.pdf" target="_blank" rel="noopener">JRC · Bando per una residenza artistica «Decoding Depression» (Open Call, 17-09-2026)</a></li><li><a href="https://publications.jrc.ec.europa.eu/repository/handle/JRC139918" target="_blank" rel="noopener">JRC · Decoding Depression: Exploring the Environome Across Life Course (JRC139918)</a></li><li><a href="https://publications.jrc.ec.europa.eu/repository/handle/JRC140039" target="_blank" rel="noopener">JRC · Decoding Depression and Environmental Influences (JRC140039)</a></li><li>JRC · InDepDash, cruscotto su depressione e ambiente (dati al 7 agosto 2025)</li><li><a href="https://youthdmh.eu/" target="_blank" rel="noopener">YouthDMH · Webinar del JRC «Decoding Depression: Exploring the Environome Across Life Course» (9 luglio 2026)</a></li><li><a href="https://knowledge-for-policy.ec.europa.eu/news/launch-jrc-survey-mental-health_en" target="_blank" rel="noopener">JRC · Avvio dell’indagine del JRC sulla salute mentale</a></li><li><a href="https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/persons-disabilities_en" target="_blank" rel="noopener">Nazioni Unite · Convenzione sui diritti delle persone con disabilità, art. 1 · Commissione europea, «Persone con disabilità»</a></li><li>Regno Unito · Merchant Shipping Act del 1876 (linea di carico obbligatoria, «linea di Plimsoll»)</li></ul></section>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div>
+        <p class="footer-mark">ENALC</p>
+        <p>Opera artistica e laboratorio di protoidee</p>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:enriquealcides@gmail.com">Scrivimi</a><a href="https://www.instagram.com/enalc_artist/" target="_blank" rel="noreferrer">Instagram · art ↗</a><a href="/archivo">Dossier / archive</a>
+      </div>
+      <p class="footer-note">Madrid · EN / ES / FR / IT / DE<br>© 2026 Enrique Alcides</p>
+    </footer>
+    <script id="_R_" type="application/json">{"disabled":true}</script>
+    <script src="/assets/editable-content.js"></script>
+    <script type="module" src="/assets/site-runtime.js?v=11.2"></script>
+    <script>
+      (function () {
+        var sel = document.getElementById("language-select");
+        if (!sel) return;
+        var pages = {"en": "", "es": "es.html", "fr": "fr.html", "it": "it.html", "de": "de.html"};
+        sel.addEventListener("change", function () {
+          var v = sel.value;
+          if (!pages.hasOwnProperty(v) || v === "it") return;
+          try { localStorage.setItem("enalc-locale", v); } catch (e) {}
+          location.href = "/proyectos/e-la-nave-va/" + pages[v] + location.hash;
+        });
+      })();
+    </script>
+  </body>
+</html>

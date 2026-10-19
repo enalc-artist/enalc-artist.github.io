@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="/favicon.svg">
+<title>e la nave va</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:ital,wght@0,400;1,400;1,500&display=swap">
+<style>
+/* Layout: una sola columna de lectura; la nave en sección ocupa el ancho, controles debajo, nota al final. */
+:root {
+  --bg: #ECEFF0;          /* gris azulado de papel de plano */
+  --panel: #F6F8F8;
+  --ink: #16222C;
+  --muted: #55656F;
+  --rule: #C5CED3;
+  --water: #BCD2DD;
+  --water-deep: #9DBBCB;
+  --plim: #B3261E;
+  --accent: #1F4FBF;
+  --c-personal: #7B4FA3;
+  --c-social: #D9822B;
+  --c-built: #6B7A86;
+  --c-natural: #3F8F5B;
+  --c-digital: #C2478E;
+  --font-display: "Spectral", Georgia, serif;
+  --font-body: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #11181E; --panel: #182129; --ink: #E4EAEE; --muted: #96A5AF; --rule: #2C3943;
+    --water: #24465A; --water-deep: #1B3646; --plim: #FF6B5E; --accent: #8FB1FF;
+    --c-personal: #A98AD0; --c-social: #F0A258; --c-built: #93A3AF; --c-natural: #6CC38A; --c-digital: #E574B3;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #11181E; --panel: #182129; --ink: #E4EAEE; --muted: #96A5AF; --rule: #2C3943;
+  --water: #24465A; --water-deep: #1B3646; --plim: #FF6B5E; --accent: #8FB1FF;
+  --c-personal: #A98AD0; --c-social: #F0A258; --c-built: #93A3AF; --c-natural: #6CC38A; --c-digital: #E574B3;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 15px; line-height: 1.5;
+  padding-block: 24px 40px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+main { max-width: 920px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
+header { display: flex; flex-direction: column; gap: 4px; }
+h1 { font-family: var(--font-display); font-style: italic; font-weight: 500; font-size: clamp(2rem, 6vw, 3rem); line-height: 1.05; margin: 0; letter-spacing: -0.01em; text-wrap: balance; }
+.sub { margin: 0; color: var(--muted); max-width: 62ch; }
+.tag { font-family: var(--font-mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.stage { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 8px; }
+canvas { display: block; width: 100%; height: auto; aspect-ratio: 1000 / 620; border-radius: 3px; }
+.controls { display: flex; flex-direction: column; gap: 14px; }
+.row { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; }
+button, .chip span {
+  font: inherit; font-size: 14px;
+}
+button {
+  background: var(--ink); color: var(--bg); border: 1px solid var(--ink); border-radius: 4px; padding: 8px 14px; cursor: pointer; font-weight: 500;
+}
+button.ghost { background: transparent; color: var(--ink); border-color: var(--rule); }
+button:hover { border-color: var(--accent); }
+button:focus-visible, .chip input:focus-visible + span, input[type=range]:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.timeline { flex: 1 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+input[type=range] { width: 100%; accent-color: var(--accent); }
+.ticks { position: relative; height: 16px; font-family: var(--font-mono); font-size: 10.5px; color: var(--muted); }
+.ticks span { position: absolute; transform: translateX(-50%); white-space: nowrap; }
+.ticks span:first-child { transform: none; }
+.ticks span:last-child { transform: translateX(-100%); }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { cursor: pointer; }
+.chip input { position: absolute; opacity: 0; pointer-events: none; }
+.chip span { display: inline-flex; align-items: center; gap: 7px; border: 1px solid var(--rule); border-radius: 4px; padding: 5px 10px; background: var(--panel); }
+.chip span::before { content: ""; width: 10px; height: 10px; background: var(--dot); border-radius: 2px; }
+.chip input:checked + span { border-color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); }
+.read { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+.read div { padding: 10px 12px 10px 0; }
+.read dt { font-family: var(--font-mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.read dd { margin: 2px 0 0; font-family: var(--font-display); font-size: 1.5rem; font-variant-numeric: tabular-nums; }
+.read dd.over { color: var(--plim); }
+.read dd small { font-family: var(--font-body); font-size: 12.5px; color: var(--muted); display: block; line-height: 1.3; }
+.note { color: var(--muted); font-size: 13.5px; max-width: 70ch; margin: 0; }
+.note strong { color: var(--ink); font-weight: 600; }
+@media (max-width: 520px) { .read dd { font-size: 1.3rem; } .ticks span.opt, .ticks i.ms { display: none; } }
+.ticks i { font-style: normal; }
+</style>
+
+<main>
+  <header>
+    <span class="tag">Croquis de l’étape 1 · données d’exemple</span>
+    <h1>e la nave va</h1>
+    <p class="sub">Un navire dessiné en coupe. Ce qui pèse est arrimé sous la ligne de flottaison ; ce qui soutient flotte au-dessus. La ligne de flottaison monte et descend avec ce qui s’accumule. Avance dans le temps ou ajoute tes propres gestes.</p>
+  </header>
+
+  <section class="stage" aria-label="Navire en coupe">
+    <canvas id="c" role="img" aria-label="Navire en coupe avec des charges et des bouées"></canvas>
+  </section>
+
+  <section class="controls" aria-label="Commandes">
+    <div class="row">
+      <button id="play" type="button">Lecture</button>
+      <div class="timeline">
+        <input id="t" type="range" min="0" max="1000" value="620" aria-label="Le temps sur les six mois">
+        <div class="ticks" aria-hidden="true">
+          <span style="left:0">janv.</span><span class="opt" style="left:16.6%">févr.</span><span class="opt" style="left:33.3%">mars</span>
+          <span style="left:50%">avr.<i class="ms"> · Étape 1</i></span><span class="opt" style="left:83.3%">mai</span><span style="left:100%">juin<i class="ms"> · Étape 2</i></span>
+        </div>
+      </div>
+      <button id="reset" class="ghost" type="button">Recommencer</button>
+    </div>
+
+    <div class="row">
+      <div class="chips" role="radiogroup" aria-label="Environnement du geste">
+        <label class="chip" style="--dot:var(--c-personal)"><input type="radio" name="dom" value="personal" checked><span>Personnel</span></label>
+        <label class="chip" style="--dot:var(--c-social)"><input type="radio" name="dom" value="social"><span>Social</span></label>
+        <label class="chip" style="--dot:var(--c-built)"><input type="radio" name="dom" value="built"><span>Bâti</span></label>
+        <label class="chip" style="--dot:var(--c-natural)"><input type="radio" name="dom" value="natural"><span>Naturel</span></label>
+        <label class="chip" style="--dot:var(--c-digital)"><input type="radio" name="dom" value="digital"><span>Numérique</span></label>
+      </div>
+      <button id="addW" class="ghost" type="button">+ Une charge</button>
+      <button id="addB" class="ghost" type="button">+ Une bouée</button>
+    </div>
+  </section>
+
+  <dl class="read" aria-live="polite">
+    <div><dt>Charges</dt><dd id="nW">0</dd></div>
+    <div><dt>Bouées</dt><dd id="nB">0</dd></div>
+    <div><dt>Ligne de flottaison</dt><dd id="state">—<small id="stateNote"></small></dd></div>
+  </dl>
+
+  <p class="note"><strong>Comment le lire.</strong> Chaque caisse ou bouée est un geste anonyme (une ligne, une couleur, un son) ajouté à l’ensemble. Sa couleur est l’environnement auquel il appartient. Les cercles sur l’eau sont des sons. La marque à droite est une ligne de Plimsoll, la charge maximale sûre peinte sur la coque d’un navire. Ici, elle montre où l’accumulation commence à compter, sans noter personne.</p>
+  <p class="note">Tous les éléments de cette version sont fictifs et générés au hasard. Dans l’œuvre réelle, ils viendraient de gestes volontaires de l’équipe, sans portraits, sans témoignages et sans données médicales.</p>
+</main>
+
+<script>
+(function () {
+  var W = 1000, H = 620;
+  var DOMS = ["personal", "social", "built", "natural", "digital"];
+  var cv = document.getElementById("c"), ctx = cv.getContext("2d");
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  function rng(seed) { return function () { seed |= 0; seed = seed + 0x6D2B79F5 | 0; var t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+
+  /* casco: curva de bezier de la banda derecha, espejada para la izquierda */
+  var P = [[500, 520], [700, 520], [870, 430], [890, 290]];
+  var edge = [];
+  for (var i = 0; i <= 300; i++) {
+    var t = i / 300, u = 1 - t;
+    edge.push({
+      x: u*u*u*P[0][0] + 3*u*u*t*P[1][0] + 3*u*t*t*P[2][0] + t*t*t*P[3][0],
+      y: u*u*u*P[0][1] + 3*u*u*t*P[1][1] + 3*u*t*t*P[2][1] + t*t*t*P[3][1]
+    });
+  }
+  function edgeX(y) {
+    var best = edge[0], d = 1e9;
+    for (var k = 0; k < edge.length; k++) { var dd = Math.abs(edge[k].y - y); if (dd < d) { d = dd; best = edge[k]; } }
+    return best.x;
+  }
+  var PLIM = 400;          /* y de la marca de Plimsoll */
+  var DECK = 290;
+
+  function hullPath() {
+    var p = new Path2D();
+    p.moveTo(110, DECK);
+    p.bezierCurveTo(130, 430, 300, 520, 500, 520);
+    p.bezierCurveTo(700, 520, 870, 430, 890, DECK);
+    p.closePath();
+    return p;
+  }
+  var HULL = hullPath();
+
+  /* huecos para cajas: filas desde la quilla */
+  var rr = rng(11), slotsW = [];
+  for (var r = 0; r < 9; r++) {
+    var y = 498 - r * 24, R = edgeX(y), L = 1000 - R, row = [];
+    for (var x = L + 10; x < R - 36; x += 34 + rr() * 6) row.push({ x: x + rr() * 3, y: y, w: 26 + rr() * 6, h: 20 });
+    for (var a = row.length - 1; a > 0; a--) { var b = Math.floor(rr() * (a + 1)); var tmp = row[a]; row[a] = row[b]; row[b] = tmp; }
+    slotsW = slotsW.concat(row);
+  }
+  /* huecos para boyas: repartidos sobre cubierta */
+  var rb = rng(23), slotsB = [];
+  for (var q = 0; q < 44; q++) {
+    var bx = 160 + (q * 37.7) % 680 + rb() * 10;
+    slotsB.push({ x: bx, y: 70 + rb() * 150, r: 10 + rb() * 6 });
+  }
+  for (var s = slotsB.length - 1; s > 0; s--) { var z = Math.floor(rb() * (s + 1)); var tt = slotsB[s]; slotsB[s] = slotsB[z]; slotsB[z] = tt; }
+
+  var items = [], nextW = 0, nextB = 0;
+  function mk(type, dom, birth, sound, auto) {
+    var idx = type === "w" ? nextW++ : nextB++;
+    var slot = type === "w" ? slotsW[idx % slotsW.length] : slotsB[idx % slotsB.length];
+    items.push({ type: type, dom: dom, birth: birth, sound: sound, slot: slot, p: 0, auto: auto, seed: (idx * 7 + 3) });
+  }
+  function seedItems() {
+    items = []; nextW = 0; nextB = 0;
+    var rs = rng(5), list = [];
+    for (var i = 0; i < 46; i++) list.push({ t: "w", b: 0.02 + Math.pow(rs(), 1.5) * 0.78 });
+    for (var j = 0; j < 30; j++) list.push({ t: "b", b: 0.22 + Math.pow(rs(), 0.8) * 0.76 });
+    list.sort(function (a, b) { return a.b - b.b; });
+    list.forEach(function (e, n) { mk(e.t, DOMS[Math.floor(rs() * 5)], e.b, n % 5 === 0, true); });
+  }
+  seedItems();
+
+  var T = 0.62, playing = false, wl = 470, last = performance.now();
+  var tEl = document.getElementById("t"), playEl = document.getElementById("play");
+
+  function tok(n) { return getComputedStyle(document.documentElement).getPropertyValue(n).trim(); }
+
+  function resize() {
+    var rect = cv.getBoundingClientRect(), dpr = window.devicePixelRatio || 1;
+    var w = Math.max(1, Math.round(rect.width * dpr)), h = Math.round(w * H / W);
+    if (cv.width !== w || cv.height !== h) { cv.width = w; cv.height = h; }
+  }
+
+  function crate(x, y, w, h, col, a, ink) {
+    ctx.globalAlpha = a; ctx.fillStyle = col; ctx.fillRect(x, y, w, h);
+    ctx.strokeStyle = ink; ctx.lineWidth = 1; ctx.globalAlpha = a * 0.75; ctx.strokeRect(x, y, w, h);
+    ctx.beginPath(); ctx.moveTo(x, y + h * .5); ctx.lineTo(x + w, y + h * .5); ctx.stroke();
+    ctx.globalAlpha = 1;
+  }
+
+  function draw(now) {
+    var ink = tok("--ink"), muted = tok("--muted"), water = tok("--water"), deep = tok("--water-deep"), plim = tok("--plim"), panel = tok("--panel");
+    var cols = { personal: tok("--c-personal"), social: tok("--c-social"), built: tok("--c-built"), natural: tok("--c-natural"), digital: tok("--c-digital") };
+    var k = cv.width / W;
+    ctx.setTransform(k, 0, 0, k, 0, 0);
+    ctx.clearRect(0, 0, W, H);
+    ctx.fillStyle = panel; ctx.fillRect(0, 0, W, H);
+
+    /* agua exterior con ondulación */
+    var ph = now / 900;
+    ctx.fillStyle = water;
+    ctx.beginPath(); ctx.moveTo(0, H);
+    for (var x = 0; x <= W; x += 8) ctx.lineTo(x, wl + Math.sin(x / 38 + ph) * 3);
+    ctx.lineTo(W, H); ctx.closePath(); ctx.fill();
+
+    /* casco: interior, agua interior y cargas */
+    ctx.save();
+    ctx.fillStyle = panel; ctx.fill(HULL);
+    ctx.clip(HULL);
+    ctx.fillStyle = deep; ctx.globalAlpha = .55;
+    ctx.fillRect(0, wl, W, H); ctx.globalAlpha = 1;
+
+    var nW = 0, nB = 0, nS = 0;
+    items.forEach(function (it) {
+      var vis = it.birth <= T + 1e-9;
+      var target = vis ? 1 : 0;
+      it.p += (target - it.p) * (reduce ? 1 : Math.min(1, 0.12));
+      if (Math.abs(target - it.p) < 0.01) it.p = target;
+      if (vis) { if (it.type === "w") nW++; else nB++; if (it.sound) nS++; }
+      if (it.type === "w" && it.p > 0.01) {
+        var s = it.slot, e = it.p * it.p * (3 - 2 * it.p);
+        crate(s.x, s.y - (1 - e) * 200, s.w, s.h, cols[it.dom], e, ink);
+      }
+    });
+    ctx.restore();
+
+    /* contorno del casco y cubierta */
+    ctx.strokeStyle = ink; ctx.lineWidth = 2.4; ctx.stroke(HULL);
+    ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(116, DECK + 14); ctx.lineTo(884, DECK + 14); ctx.stroke();
+
+    /* ola sobre el casco */
+    ctx.strokeStyle = ink; ctx.lineWidth = 1.6; ctx.globalAlpha = .8;
+    ctx.beginPath();
+    for (var x2 = 0; x2 <= W; x2 += 8) { var yy = wl + Math.sin(x2 / 38 + ph) * 3; if (x2 === 0) ctx.moveTo(x2, yy); else ctx.lineTo(x2, yy); }
+    ctx.stroke(); ctx.globalAlpha = 1;
+
+    /* boyas: cabo desde cubierta y esfera */
+    items.forEach(function (it) {
+      if (it.type !== "b" || it.p < 0.01) return;
+      var s = it.slot, e = it.p * it.p * (3 - 2 * it.p);
+      var bob = reduce ? 0 : Math.sin(now / 700 + it.seed) * 3;
+      var by = DECK + 10 - (DECK + 10 - s.y) * e + bob;
+      ctx.globalAlpha = e;
+      ctx.strokeStyle = muted; ctx.lineWidth = 1.2;
+      ctx.beginPath(); ctx.moveTo(s.x, DECK + 14); ctx.lineTo(s.x + Math.sin(it.seed) * 5, by + s.r); ctx.stroke();
+      ctx.fillStyle = cols[it.dom]; ctx.strokeStyle = ink; ctx.lineWidth = 1.2;
+      ctx.beginPath(); ctx.arc(s.x + Math.sin(it.seed) * 5, by, s.r, 0, 6.2832); ctx.fill(); ctx.stroke();
+      ctx.globalAlpha = 1;
+    });
+
+    /* sonidos: ondas en el agua a ambos lados */
+    var nr = Math.min(nS, 5);
+    ctx.strokeStyle = ink; ctx.lineWidth = 1.1;
+    for (var m = 0; m < nr; m++) {
+      var cx = m % 2 === 0 ? 40 + m * 22 : W - 40 - m * 22, cy = wl + 34 + m * 12;
+      for (var ring = 0; ring < 3; ring++) {
+        var ph2 = reduce ? 0.3 + ring * 0.3 : ((now / 1800 + ring / 3 + m * 0.21) % 1);
+        ctx.globalAlpha = (1 - ph2) * .55;
+        ctx.beginPath(); ctx.ellipse(cx, cy, 6 + ph2 * 26, 2.5 + ph2 * 9, 0, 0, 6.2832); ctx.stroke();
+      }
+    }
+    ctx.globalAlpha = 1;
+
+    /* marca de Plimsoll */
+    var over = wl < PLIM;
+    var mc = over ? plim : ink, mx = edgeX(PLIM) + 26;
+    ctx.strokeStyle = mc; ctx.fillStyle = mc; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.arc(mx, PLIM, 13, 0, 6.2832); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(mx - 24, PLIM); ctx.lineTo(mx + 24, PLIM); ctx.stroke();
+    ctx.lineWidth = 1.6;
+    for (var d = 1; d <= 2; d++) { ctx.beginPath(); ctx.moveTo(mx + 13, PLIM - d * 11); ctx.lineTo(mx + 27, PLIM - d * 11); ctx.stroke(); }
+    var fs = Math.max(15, 11 * W / Math.max(1, cv.clientWidth));
+    ctx.font = "500 " + fs + "px 'IBM Plex Mono', monospace"; ctx.textBaseline = "alphabetic";
+    ctx.textAlign = "left";
+    ctx.textAlign = "right"; ctx.fillText(over ? "au-dessus de la marque" : "ligne de charge", W - 16, PLIM + 44); ctx.textAlign = "left";
+
+    /* etiquetas */
+    ctx.fillStyle = muted; ctx.font = "500 " + fs + "px 'IBM Plex Mono', monospace"; ctx.textAlign = "left";
+    ctx.fillText("CE QUI SOUTIENT", 24, 38);
+    ctx.fillText("CE QUI PÈSE", 24, H - 22);
+
+    return { nW: nW, nB: nB };
+  }
+
+  var elW = document.getElementById("nW"), elB = document.getElementById("nB"), elS = document.getElementById("state"), elN = document.getElementById("stateNote");
+  var months = ["janvier", "février", "mars", "avril", "mai", "juin"];
+  function targetWl(nW, nB) { var net = nW - 0.8 * nB; return Math.max(310, Math.min(482, 482 - 3.4 * net)); }
+
+  function frame(now) {
+    var dt = Math.min(0.1, (now - last) / 1000); last = now;
+    if (playing) {
+      T += dt / 22;
+      if (T >= 1) { T = 1; playing = false; playEl.textContent = "Lecture"; }
+      tEl.value = Math.round(T * 1000);
+    }
+    resize();
+    /* contar antes de dibujar para mover la línea con suavidad */
+    var cW = 0, cB = 0;
+    items.forEach(function (it) { if (it.birth <= T + 1e-9) { if (it.type === "w") cW++; else cB++; } });
+    var tw = targetWl(cW, cB);
+    wl += (tw - wl) * (reduce ? 1 : 0.06);
+    var c = draw(now);
+    elW.textContent = cW; elB.textContent = cB;
+    var over = wl < PLIM;
+    elS.firstChild.nodeValue = over ? "Au-dessus de la marque" : "Sous la marque";
+    elS.classList.toggle("over", over);
+    var mi = Math.min(5, Math.floor(T * 6));
+    elN.textContent = "Mois " + (mi + 1) + " sur 6 (" + months[mi] + ")";
+    cv.setAttribute("aria-label", "Navire en coupe avec " + cW + " charges et " + cB + " bouées. Ligne de flottaison " + (over ? "au-dessus de" : "sous") + " la marque de Plimsoll.");
+    requestAnimationFrame(frame);
+  }
+
+  tEl.addEventListener("input", function () { T = tEl.value / 1000; playing = false; playEl.textContent = "Lecture"; });
+  playEl.addEventListener("click", function () {
+    if (playing) { playing = false; playEl.textContent = "Lecture"; return; }
+    if (T >= 0.999) T = 0;
+    playing = true; playEl.textContent = "Pause"; last = performance.now();
+  });
+  document.getElementById("reset").addEventListener("click", function () {
+    seedItems(); T = 0; tEl.value = 0; playing = false; playEl.textContent = "Lecture"; wl = 482;
+    items.forEach(function (i) { i.p = 0; });
+  });
+  function add(type) {
+    var d = document.querySelector("input[name=dom]:checked").value;
+    mk(type, d, T, false, false);
+  }
+  document.getElementById("addW").addEventListener("click", function () { add("w"); });
+  document.getElementById("addB").addEventListener("click", function () { add("b"); });
+
+  items.forEach(function (i) { i.p = i.birth <= T ? 1 : 0; });
+  wl = targetWl(items.filter(function (i) { return i.type === "w" && i.birth <= T; }).length, items.filter(function (i) { return i.type === "b" && i.birth <= T; }).length);
+  requestAnimationFrame(frame);
+})();
+</script>
+
+</html>

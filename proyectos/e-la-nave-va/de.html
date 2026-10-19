@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="de" translate="no" class="notranslate">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google" content="notranslate">
+    <link rel="stylesheet" href="/assets/index-CQIT47yq.css">
+    <link rel="stylesheet" href="/assets/enalc-enhancements.css?v=10.1">
+    <link rel="stylesheet" href="/assets/archive-lightbox.css?v=5">
+    <title>ENALC — E la nave va</title>
+    <meta name="description" content="E la nave va: ein Schiff im Querschnitt, das sichtbar macht, was auf einem Leben lastet und was es über Wasser hält. Vorschlag für eine Künstlerresidenz am JRC, Europäische Kommission.">
+    <link rel="shortcut icon" href="/favicon.svg">
+    <link rel="icon" href="/favicon.svg">
+    <link rel="alternate" hreflang="en" href="/proyectos/e-la-nave-va/">
+    <link rel="alternate" hreflang="es" href="/proyectos/e-la-nave-va/es.html">
+    <link rel="alternate" hreflang="fr" href="/proyectos/e-la-nave-va/fr.html">
+    <link rel="alternate" hreflang="it" href="/proyectos/e-la-nave-va/it.html">
+    <link rel="alternate" hreflang="de" href="/proyectos/e-la-nave-va/de.html">
+    <script>
+      (function () {
+        var here = "de", base = "/proyectos/e-la-nave-va/", pages = {"en": "", "es": "es.html", "fr": "fr.html", "it": "it.html", "de": "de.html"};
+        try {
+          var q = new URLSearchParams(location.search).get("lang");
+          var stored = localStorage.getItem("enalc-locale");
+          var want = (q && pages.hasOwnProperty(q)) ? q : stored;
+          if (q && pages.hasOwnProperty(q)) localStorage.setItem("enalc-locale", q);
+          if (want && pages.hasOwnProperty(want) && want !== here) { location.replace(base + pages[want] + location.hash); return; }
+          if (!stored) localStorage.setItem("enalc-locale", here);
+        } catch (e) {}
+      })();
+    </script>
+    <style>
+  .nave-page { background: var(--paper); color: var(--ink); }
+  .nave-page .page-intro h1 { font-style: italic; }
+  .nave-body { display: grid; grid-template-columns: minmax(0, 220px) minmax(0, 1fr); gap: 48px; align-items: start; }
+  .nave-toc { position: sticky; top: 96px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; display: flex; flex-direction: column; gap: 10px; }
+  .nave-toc a { text-decoration: none; width: fit-content; padding: 4px 9px; margin-left: -9px; border-radius: 2px; transition: background-color .25s ease, transform .25s ease; }
+  .nave-toc a:hover, .nave-toc a:focus-visible, .nave-toc a:active { background: var(--hl); color: var(--ink); transform: translateX(4px); outline: none; }
+  @media (prefers-reduced-motion: reduce) { .nave-toc a { transition: none; } .nave-toc a:hover, .nave-toc a:focus-visible, .nave-toc a:active { transform: none; } }
+  .nave-content { max-width: 72ch; display: flex; flex-direction: column; gap: 56px; min-width: 0; }
+  .nave-content section { display: flex; flex-direction: column; gap: 16px; scroll-margin-top: 96px; }
+  .nave-content h2 { font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-weight: 400; font-size: clamp(1.6rem, 3vw, 2.3rem); line-height: 1.1; margin: 0; letter-spacing: -.01em; width: fit-content; background: var(--hl, transparent); color: var(--ink); padding: .14em .34em; margin-left: -.34em; border-radius: 2px; }
+  .nave-content p, .nave-content li, .nave-content dd { font-size: 1.08rem; line-height: 1.55; margin: 0; }
+  .nave-content ul { margin: 0; padding-left: 1.2em; display: flex; flex-direction: column; gap: 8px; }
+  .nave-content dl { margin: 0; display: flex; flex-direction: column; gap: 18px; }
+  .nave-content dt { font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-size: .74rem; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
+  .nave-content dd { margin: 0; border-left: 2px solid var(--ink); padding-left: 14px; }
+  .nave-fleet { display: flex; flex-direction: column; gap: 14px; }
+  .nave-fleet iframe { width: 100%; height: 1700px; border: 1px solid var(--line); background: #eceff0; }
+  .nave-links { display: flex; flex-wrap: wrap; gap: 10px; }
+  .nave-links a { font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-size: .72rem; letter-spacing: .09em; text-transform: uppercase; border: 1px solid var(--ink); border-radius: 999px; padding: 11px 16px; text-decoration: none; }
+  .nave-links a:hover, .nave-links a:focus-visible { background: var(--ink); color: var(--paper); }
+  .nave-sources li { font-size: .95rem; }
+  .nave-sources a { text-decoration: underline; }
+  @media (max-width: 860px) {
+    .nave-body { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+    .nave-toc { position: static; flex-direction: row; flex-wrap: wrap; gap: 8px 16px; }
+    .nave-fleet iframe { height: 1900px; }
+  }
+</style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a aria-label="ENALC — home" class="wordmark" href="/">ENALC<span class="wordmark-dot">●</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class href="/obra">Work</a><a class="active" href="/proyectos">Proto-Ideas</a><a class href="/archivo">Archive</a><a class href="/acerca">About</a>
+      </nav>
+      <div class="language-toggle">
+        <label class="sr-only" for="language-select">Language</label>
+        <select id="language-select" aria-label="Language">
+          <option value="en">EN</option>
+          <option value="es">ES</option>
+          <option value="fr">FR</option>
+          <option value="it">IT</option>
+          <option value="de" selected>DE</option>
+        </select>
+      </div>
+    </header>
+    <main class="inner-page nave-page" data-i18n-skip>
+      <section class="page-intro section-pad">
+        <span class="page-index">02</span>
+        <div>
+          <p class="eyebrow">Protoidee · Künstlerresidenz des JRC „Decoding Depression“ · Ispra, 2027</p>
+          <h1>E la nave va</h1>
+        </div>
+        <p class="page-lede">Ein Schiff im Querschnitt. Was auf einem Leben lastet, wird unter der Wasserlinie verstaut; was es trägt, schwimmt darüber. Die Linie steigt und sinkt mit jedem Beitrag und mit den Strömungen, die die ganze Flotte zugleich bewegen. Der Titel, von Fellini entliehen, ist auch mein Satz über meine eigene Lage: Meine künstlerische Praxis hält mich über Wasser und das Schiff in Fahrt.</p>
+      </section>
+      <section class="section-pad">
+        <div class="nave-links" style="margin-bottom:40px"><a href="/proyectos#e-la-nave-va">← Alle Protoideen</a></div>
+        <div class="nave-body">
+          <nav class="nave-toc" aria-label="Auf dieser Seite"><a href="#fleet" style="--hl:#ef4452">Die interaktive Flotte</a><a href="#read" style="--hl:#ff8c1a">Wie man das Schiff liest</a><a href="#method" style="--hl:#ffd60a">Methode: die drei I</a><a href="#evidence" style="--hl:#2fb34f">Von der Evidenz ausgehen</a><a href="#participation" style="--hl:#3f7bff">Beteiligung und Ethik</a><a href="#timeline" style="--hl:#8170f0">Sechs Monate, drei Momente</a><a href="#policy" style="--hl:#b05ee8">An wen sich die Frage richtet</a><a href="#me" style="--hl:#f0158f">Warum dieses Werk, von mir aus</a><a href="#materials" style="--hl:#a6d36a">Materialien</a><a href="#sources" style="--hl:#3d9be9">Herangezogene Quellen</a></nav>
+          <div class="nave-content">
+            <section id="fleet" class="nave-fleet"><h2 style="--hl:#ef4452">Die interaktive Flotte</h2><p>Sechs Schiffe, eines pro Lebensbereich: Schule und Studium, Arbeit, Familie, Freizeit, Beziehungen und digitaler Zugang. Lasten und Stützen kommen mit ihrem Namen an, die sechs Schiffe verschmelzen zu einem, und die Statistik wächst live mit. Man kann nach Alter, Lebenslage und Behinderung filtern, eine neue Last, Stütze oder Strömung hinzufügen und zwei Szenarien für 2040 vergleichen. Alle Daten in diesem Prototyp sind erfunden.</p><iframe src="/proyectos/e-la-nave-va/fleet-de.html" title="Die interaktive Flotte" loading="lazy"></iframe><div class="nave-links"><a href="/proyectos/e-la-nave-va/fleet-de.html" target="_blank" rel="noopener">Die Flotte in einem neuen Fenster öffnen ↗</a></div></section>
+            <section id="read"><h2 style="--hl:#ff8c1a">Wie man das Schiff liest</h2><dl><div><dt>Lasten</dt><dd>Kisten unter der Wasserlinie. Was auf einem Menschen in einem Bereich seines Lebens lastet, auch wenn er nichts dafür kann: eine Kündigung, eine überflutete Wohnung, Einsamkeit, ein Streit mit dem Partner oder der Partnerin.</dd></div><div><dt>Stützen</dt><dd>Bojen über dem Deck. Was ein Leben über Wasser hält: Freunde, ein gutes Team, ein Tag auf dem Land, ins Kino gehen, jemand, der bei Behördengängen hilft.</dd></div><div><dt>Strömungen</dt><dd>Was die ganze Flotte zugleich bewegt: eine Wirtschaftskrise, eine Pandemie, ein Krieg, eine Hitzewelle in ganz Europa. Das ist die Polykrise. Entscheidend ist nicht, ob etwas von uns abhängt, sondern ob es einem Menschen oder allen geschieht: Wird deine eigene Wohnung überflutet, ist es eine Last; verschlechtert sich das Klima für alle, ist es eine Strömung.</dd></div><div><dt>Lademarke</dt><dd>Die Plimsoll-Marke, die der Merchant Shipping Act von 1876 auf britischen Schiffen vorschrieb, um Untergänge durch Überladung zu verhindern. Es war ein Gesetz, vorangetrieben vom Abgeordneten Samuel Plimsoll. Politische Entscheidungen sind nicht das Meer: Sie sind die Regel, die festlegt, wie viel Last sicher ist. Hier fragt die Linie, wo die sichere Last eines Lebens liegt und wer sie malen sollte. Sie bewertet niemanden.</dd></div></dl></section><section id="method"><h2 style="--hl:#ffd60a">Methode: die drei I</h2><p>Ich lese das <em>Environom</em> des JRC als Dramaturgie. Persönliche, soziale, gebaute, natürliche und digitale Umwelten sind Akteure, die im Lauf der menschlichen Komödie <strong>interagieren</strong>, <strong>intervenieren</strong> und <strong>Impulse setzen</strong>. Diese drei Verben sind auch meine Art, mich der Residenz zu nähern: mit den Forschenden und ihren Daten interagieren, mit dem Werk intervenieren und Impulse für die Prävention setzen.</p><p>Unter der Prävention pocht die Frage, die das Schiff immer wieder stellt: Wie viel kann ein Leben tragen, bevor es kentert, und was bewahrt es davor, unterzugehen?</p></section><section id="evidence"><h2 style="--hl:#2fb34f">Von der Evidenz ausgehen</h2><p>Das Werk geht von InDepDash aus, dem Dashboard des JRC, das zählt, wie viele wissenschaftliche Artikel Depression mit jedem Umweltfaktor verbinden. Unter seinen 153.609 Artikeln taucht natürliches Licht in sieben auf, Naturkatastrophen in 7.863. Das heißt nicht, dass Licht weniger wichtig ist, nur dass es weniger untersucht wurde. Das Dashboard selbst warnt, dass die Zahl der Studien nicht das einzige Maß für Bedeutung ist. Zählen ist nicht Wiegen.</p><p>Das Schiff würde aus drei Quellen beladen und den Abstand, und die mögliche Dissonanz, zwischen ihnen zeigen:</p><ul><li><strong>Was untersucht wird:</strong> die Publikationszahlen aus InDepDash.</li><li><strong>Was Menschen angeben:</strong> die eigene Umfrage des JRC zur psychischen Gesundheit, sofern sie geteilt werden kann.</li><li><strong>Was gelebt wird:</strong> anonyme Beiträge einer freiwilligen Gruppe von Mitarbeitenden in Ispra.</li></ul><p>Daneben würde ich ein <strong>Register der Auslassungen</strong> führen: alles, was Menschen einbringen und in keine Kategorie des JRC passt, etwa „Behördengänge nur online“ oder „ein Streit mit meinen Großeltern“. Den Forschenden zeigt es, was ihrer Klassifikation fehlt. Es setzt die Arbeit fort, die im Juni 2025 im Workshop des JRC in Brüssel begonnen hat.</p></section><section id="participation"><h2 style="--hl:#3f7bff">Beteiligung und Ethik</h2><p>Mit Zustimmung der Ethikkommission könnte jede Person im Team so viele Beiträge leisten, wie sie möchte: einen kurzen Satz über etwas in ihrer Umwelt, das sie herunterzieht oder trägt, den Bereich, zu dem es gehört, und auf Wunsch eine grobe Altersgruppe, eine Lebenslage und ob sie eine Behinderung hat oder neurodivergent ist. Jeder Beitrag wird zu einer Kiste oder einer Boje.</p><ul><li>Anonym und freiwillig, ohne Namen, ohne Erfahrungsberichte und ohne medizinische Daten.</li><li>Beiträge werden online oder an eigens bereitgestellten Computern in Ispra hinzugefügt, ohne die Möglichkeit, das Angesammelte zu löschen.</li><li>Man kann ein Wort aus der Liste wählen oder ein neues vorschlagen. Neue Wörter liest ein Mensch, bevor sie erscheinen, falls jemand etwas schreibt, das ihn erkennbar macht, etwa einen Namen oder einen bestimmten Ort.</li><li>Jede Gruppe mit weniger als zehn Beiträgen wird in der Statistik ausgeblendet, damit sich niemand wiedererkennen kann.</li><li>Die Kategorien von Behinderung folgen Artikel 1 des UN-Übereinkommens über die Rechte von Menschen mit Behinderungen (körperlich, seelisch oder psychosozial, intellektuell, Sinnesbeeinträchtigung), der Definition, die die Europäische Kommission und das spanische Recht verwenden. Neurodivergenz steht gesondert, weil sie, um offiziell anerkannt zu werden, in eine dieser Kategorien passen muss.</li><li>Digitaler Zugang ist ein eigener Bereich: kein Internet zu Hause, schwer bedienbare Websites und Formulare, Termine nur online. Beiträge online zu sammeln darf nicht diejenigen ausschließen, die am dringendsten gehört werden müssen; deshalb bleibt immer ein begleiteter Weg offen.</li></ul></section><section id="timeline"><h2 style="--hl:#8170f0">Sechs Monate, drei Momente</h2><dl><div><dt>April · Work in Progress</dt><dd>Das laufende Schiff, dem Team vorgestellt: ein programmiertes digitales Design, das sich live verwandelt, während Beiträge eintreffen.</dd></div><div><dt>Mai · zweite Runde</dt><dd>Dieselben Menschen sehen, was gesammelt wurde, und wählen, was ihnen am meisten helfen würde: welche Lasten erleichtert oder entfernt, welche Stützen verstärkt werden sollen.</dd></div><div><dt>Juni · finales Werk</dt><dd>Eine audiovisuelle Projektion, erzählt mit meiner Stimme, in der sich das Schiff mit allem Gesammelten belädt und erleichtert und mit zwei möglichen Schiffen im Jahr 2040 endet: eines, wenn sich nichts ändert, eines, wenn Lademarken eingehalten werden. Dazu kommen ein Gespräch mit dem Team, eine einseitige Notiz für die Politik und eine tragbare digitale Fassung für Schulen, Gesundheitszentren, Krankenhäuser, Tagesstätten für ältere Menschen, Vereine und Nachbarschaften.</dd></div></dl><p><strong>Warum 2040.</strong> Zwei Gründe, die nebeneinander bestehen: Es ist der Horizont des EU-Klimaziels, und es ist der Horizont einer Generation, denn die Schulkinder von heute sind dann erwachsen. Die Schiffe von 2040 sind eine Probe der Zukunft, keine Vorhersage, genau die Art von Szenarioarbeit, die das EU Policy Lab leistet.</p></section><section id="policy"><h2 style="--hl:#b05ee8">An wen sich die Frage richtet</h2><p>Das JRC ist der wissenschaftliche Dienst der Europäischen Kommission, und an dieser Residenz sind sein Referat Digitale Gesundheit, das EU Policy Lab und das Zentrum für fortgeschrittene Studien beteiligt. Die Frage des Werks, was eine Lademarke für Wohnen, Tageslicht, Arbeitsbedingungen, Schule oder Bildschirme bedeuten könnte, soll von den Forschenden zu denen reisen, die Gesundheits-, Bildungs- und Digitalpolitik gestalten.</p></section><section id="me"><h2 style="--hl:#f0158f">Warum dieses Werk, von mir aus</h2><p>Ich lebe seit vielen Jahren mit einer chronischen Depression, und es ist meine künstlerische Praxis, die mich über Wasser hält. Mein Asperger-Syndrom und meine amtlich anerkannte Behinderung von 67 % prägen, wie ich die Welt wahrnehme: verzweigt, quer, aufmerksam für Wiederholung und Widerspruch. In mir leben mehrere Ichs nebeneinander: der Künstler, das Kind, das zwischen den Kanarischen Inseln und der Westsahara aufwuchs, der Mann, der bereit ist zu lieben und zu sorgen, der behinderte und neurodivergente Mensch, der, der mit chronischer Depression lebt. Die Depression kann einige von ihnen zum Schweigen bringen, einem allen Raum überlassen oder die Zukunft auf eine einzige Perspektive verengen, mal dunkel, mal leuchtend. Ich behandle diese Vielheit als eigene Umwelt.</p><p>Depression ist weder ein romantischer Ort, an dem man wohnt, noch ein privates Scheitern: Sie wird in Umwelten, Politiken, Beziehungen und Akten der Fürsorge gelebt. Ich möchte ein Werk, das dies mit Daten zeigt, mit Prävention als Ziel, und das uns dennoch berührt, während wir zusehen, wie sich das Schiff verwandelt.</p></section>
+            <section id="materials"><h2 style="--hl:#a6d36a">Materialien</h2><div class="nave-links"><a href="/proyectos/e-la-nave-va/fleet-de.html" target="_blank" rel="noopener">Die Flotte ↗</a><a href="/proyectos/e-la-nave-va/sketch-de.html" target="_blank" rel="noopener">Erste Skizze ↗</a><a href="/proyectos/e-la-nave-va/Enrique_Alcides_JRC_application_EN.pdf" target="_blank" rel="noopener">Bewerbung als PDF (Englisch) ↗</a><a href="/proyectos/e-la-nave-va/Enrique_Alcides_JRC_candidatura_ES.pdf" target="_blank" rel="noopener">Bewerbung als PDF (Spanisch) ↗</a></div></section>
+            <section id="sources" class="nave-sources"><h2 style="--hl:#3d9be9">Herangezogene Quellen</h2><ul><li><a href="https://knowledge-for-policy.ec.europa.eu/sites/default/files/Open%20Call_Decoding%20Depression_20260917.pdf" target="_blank" rel="noopener">JRC · Ausschreibung einer Künstlerresidenz „Decoding Depression“ (Open Call, 17.09.2026)</a></li><li><a href="https://publications.jrc.ec.europa.eu/repository/handle/JRC139918" target="_blank" rel="noopener">JRC · Decoding Depression: Exploring the Environome Across Life Course (JRC139918)</a></li><li><a href="https://publications.jrc.ec.europa.eu/repository/handle/JRC140039" target="_blank" rel="noopener">JRC · Decoding Depression and Environmental Influences (JRC140039)</a></li><li>JRC · InDepDash, Dashboard zu Depression und Umwelt (Datenstand 7. August 2025)</li><li><a href="https://youthdmh.eu/" target="_blank" rel="noopener">YouthDMH · Webinar des JRC „Decoding Depression: Exploring the Environome Across Life Course“ (9. Juli 2026)</a></li><li><a href="https://knowledge-for-policy.ec.europa.eu/news/launch-jrc-survey-mental-health_en" target="_blank" rel="noopener">JRC · Start der JRC-Umfrage zur psychischen Gesundheit</a></li><li><a href="https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/persons-disabilities_en" target="_blank" rel="noopener">Vereinte Nationen · Übereinkommen über die Rechte von Menschen mit Behinderungen, Art. 1 · Europäische Kommission, „Menschen mit Behinderungen“</a></li><li>Vereinigtes Königreich · Merchant Shipping Act von 1876 (verpflichtende Lademarke, „Plimsoll-Marke“)</li></ul></section>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div>
+        <p class="footer-mark">ENALC</p>
+        <p>Künstlerisches Werk und Labor für Protoideen</p>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:enriquealcides@gmail.com">Schreib mir</a><a href="https://www.instagram.com/enalc_artist/" target="_blank" rel="noreferrer">Instagram · art ↗</a><a href="/archivo">Dossier / archive</a>
+      </div>
+      <p class="footer-note">Madrid · EN / ES / FR / IT / DE<br>© 2026 Enrique Alcides</p>
+    </footer>
+    <script id="_R_" type="application/json">{"disabled":true}</script>
+    <script src="/assets/editable-content.js"></script>
+    <script type="module" src="/assets/site-runtime.js?v=11.2"></script>
+    <script>
+      (function () {
+        var sel = document.getElementById("language-select");
+        if (!sel) return;
+        var pages = {"en": "", "es": "es.html", "fr": "fr.html", "it": "it.html", "de": "de.html"};
+        sel.addEventListener("change", function () {
+          var v = sel.value;
+          if (!pages.hasOwnProperty(v) || v === "de") return;
+          try { localStorage.setItem("enalc-locale", v); } catch (e) {}
+          location.href = "/proyectos/e-la-nave-va/" + pages[v] + location.hash;
+        });
+      })();
+    </script>
+  </body>
+</html>
